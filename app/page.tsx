@@ -3,6 +3,7 @@
 import Calendly from "@/components/Calendly";
 import Faq from "@/components/faq";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Ourprocess from "@/components/ourprocess";
 import Pricing from "@/components/pricing";
@@ -19,7 +20,6 @@ export default function Home() {
       <Pricing />
       <Faq />
       <Calendly />
-      <Footer />
     </>
   );
 }

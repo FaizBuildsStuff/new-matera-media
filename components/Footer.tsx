@@ -35,7 +35,7 @@ const YoutubeIcon = () => (
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden border-none outline-none bg-[#030303] px-6 pb-10 pt-24 text-white">
+    <footer className="relative overflow-hidden border-none outline-none bg-[#030303] px-6 pb-10 pt-16 sm:pt-24 text-white">
 
       {/* BACKGROUND */}
       <div className="absolute inset-0 overflow-hidden">
@@ -47,13 +47,13 @@ const Footer = () => {
         <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-[#030303] to-transparent z-[45] pointer-events-none" />
 
         {/* HUGE TYPOGRAPHY */}
-        <div className="pointer-events-none absolute bottom-[-8%] left-1/2 -translate-x-1/2 whitespace-nowrap text-[18vw] font-black uppercase leading-none tracking-[-0.08em] text-white/2.5">
+        <div className="pointer-events-none absolute bottom-[-5%] sm:bottom-[-8%] left-1/2 -translate-x-1/2 whitespace-nowrap text-[22vw] sm:text-[18vw] font-black uppercase leading-none tracking-[-0.08em] text-white/2.5">
           MATERA
         </div>
 
         {/* CENTER GLOW */}
         <div
-          className="absolute left-1/2 top-[35%] h-[700px] w-[1400px] -translate-x-1/2"
+          className="absolute left-1/2 top-[35%] h-[500px] w-[1000px] sm:h-[700px] sm:w-[1400px] -translate-x-1/2"
           style={{
             background: `
               radial-gradient(
@@ -64,36 +64,27 @@ const Footer = () => {
                 transparent 72%
               )
             `,
-            filter: "blur(140px)",
+            filter: "blur(100px) sm:blur(140px)",
           }}
         />
 
         {/* LEFT GLOW */}
         <div
-          className="absolute left-[-10%] top-[10%] h-[500px] w-[500px]"
+          className="absolute left-[-15%] sm:left-[-10%] top-[10%] h-[350px] w-[350px] sm:h-[500px] sm:w-[500px]"
           style={{
             background:
               "radial-gradient(circle, rgba(52,211,153,0.10), transparent 72%)",
-            filter: "blur(120px)",
+            filter: "blur(100px) sm:blur(120px)",
           }}
         />
 
         {/* RIGHT GLOW */}
         <div
-          className="absolute right-[-10%] top-[18%] h-[600px] w-[600px]"
+          className="absolute right-[-15%] sm:right-[-10%] top-[18%] h-[400px] w-[400px] sm:h-[600px] sm:w-[600px]"
           style={{
             background:
               "radial-gradient(circle, rgba(45,212,191,0.08), transparent 72%)",
-            filter: "blur(130px)",
-          }}
-        />
-
-        {/* LIGHT LINE */}
-        <div
-          className="absolute left-1/2 top-[70%] h-px w-[70%] -translate-x-1/2"
-          style={{
-            background:
-              "linear-gradient(to right, transparent, rgba(255,255,255,0.08), transparent)",
+            filter: "blur(110px) sm:blur(130px)",
           }}
         />
 
@@ -137,19 +128,19 @@ const Footer = () => {
         <div className="flex flex-col items-center">
 
           {/* LOGO */}
-          <div className="mb-12">
+          <div className="mb-10 sm:mb-12">
             <Image
               src="/Logo.png"
               alt="Matera Media"
-              width={54}
-              height={54}
+              width={48}
+              height={48}
               priority
-              className="opacity-95"
+              className="opacity-95 sm:w-[54px] sm:h-[54px]"
             />
           </div>
 
           {/* NAV */}
-          <nav className="flex flex-wrap items-center justify-center gap-x-10 gap-y-5 text-[11px] font-semibold uppercase tracking-[0.28em] text-white/38">
+          <nav className="flex flex-wrap items-center justify-center gap-x-8 sm:gap-x-10 gap-y-4 text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.2em] sm:tracking-[0.28em] text-white/38">
 
             <a
               href="#"
@@ -169,14 +160,7 @@ const Footer = () => {
               href="#"
               className="transition-all duration-300 hover:text-emerald-300"
             >
-              Organic/YouTube Growth
-            </a>
-
-            <a
-              href="#"
-              className="transition-all duration-300 hover:text-emerald-300"
-            >
-              SaaS Videos
+              Organic
             </a>
 
             <a
@@ -188,146 +172,104 @@ const Footer = () => {
           </nav>
 
           {/* SOCIALS */}
-          <div className="mt-14 flex flex-wrap items-center justify-center gap-5">
+          <div className="mt-12 sm:mt-14 flex flex-wrap items-center justify-center gap-4 sm:gap-5">
 
-            {/* ICON - Twitter/X */}
+            {/* Twitter/X */}
             <a
               href="#"
               className="
-                group relative flex h-14 w-14 items-center justify-center
+                group relative flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center
                 overflow-hidden rounded-full border border-white/10
                 bg-white/3 backdrop-blur-3xl
                 transition-all duration-500
                 hover:border-emerald-400/30
                 hover:bg-emerald-400/10
-                hover:shadow-[0_0_40px_rgba(52,211,153,0.15)]
               "
             >
-              <div
-                className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                style={{
-                  background:
-                    "radial-gradient(circle at center, rgba(52,211,153,0.18), transparent 72%)",
-                }}
-              />
-              <div className="relative z-10 text-white/55 transition-all duration-500 group-hover:text-emerald-300">
+              <div className="relative z-10 text-white/55 transition-all duration-500 group-hover:text-emerald-300 scale-90 sm:scale-100">
                 <TwitterIcon />
               </div>
             </a>
 
-            {/* ICON - Linkedin */}
+            {/* Linkedin */}
             <a
               href="#"
               className="
-                group relative flex h-14 w-14 items-center justify-center
+                group relative flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center
                 overflow-hidden rounded-full border border-white/10
                 bg-white/3 backdrop-blur-3xl
                 transition-all duration-500
                 hover:border-emerald-400/30
                 hover:bg-emerald-400/10
-                hover:shadow-[0_0_40px_rgba(52,211,153,0.15)]
               "
             >
-              <div
-                className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                style={{
-                  background:
-                    "radial-gradient(circle at center, rgba(52,211,153,0.18), transparent 72%)",
-                }}
-              />
-              <div className="relative z-10 text-white/55 transition-all duration-500 group-hover:text-emerald-300">
+              <div className="relative z-10 text-white/55 transition-all duration-500 group-hover:text-emerald-300 scale-90 sm:scale-100">
                 <LinkedinIcon />
               </div>
             </a>
 
-            {/* ICON - Instagram */}
+            {/* Instagram */}
             <a
               href="#"
               className="
-                group relative flex h-14 w-14 items-center justify-center
+                group relative flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center
                 overflow-hidden rounded-full border border-white/10
                 bg-white/3 backdrop-blur-3xl
                 transition-all duration-500
                 hover:border-emerald-400/30
                 hover:bg-emerald-400/10
-                hover:shadow-[0_0_40px_rgba(52,211,153,0.15)]
               "
             >
-              <div
-                className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                style={{
-                  background:
-                    "radial-gradient(circle at center, rgba(52,211,153,0.18), transparent 72%)",
-                }}
-              />
-              <div className="relative z-10 text-white/55 transition-all duration-500 group-hover:text-emerald-300">
+              <div className="relative z-10 text-white/55 transition-all duration-500 group-hover:text-emerald-300 scale-90 sm:scale-100">
                 <InstagramIcon />
               </div>
             </a>
 
-            {/* ICON - Youtube */}
+            {/* Youtube */}
             <a
               href="#"
               className="
-                group relative flex h-14 w-14 items-center justify-center
+                group relative flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center
                 overflow-hidden rounded-full border border-white/10
                 bg-white/3 backdrop-blur-3xl
                 transition-all duration-500
                 hover:border-emerald-400/30
                 hover:bg-emerald-400/10
-                hover:shadow-[0_0_40px_rgba(52,211,153,0.15)]
               "
             >
-              <div
-                className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                style={{
-                  background:
-                    "radial-gradient(circle at center, rgba(52,211,153,0.18), transparent 72%)",
-                }}
-              />
-              <div className="relative z-10 text-white/55 transition-all duration-500 group-hover:text-emerald-300">
+              <div className="relative z-10 text-white/55 transition-all duration-500 group-hover:text-emerald-300 scale-90 sm:scale-100">
                 <YoutubeIcon />
               </div>
             </a>
 
-            {/* ICON - Mail */}
+            {/* Mail */}
             <a
               href="#"
               className="
-                group relative flex h-14 w-14 items-center justify-center
+                group relative flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center
                 overflow-hidden rounded-full border border-white/10
                 bg-white/3 backdrop-blur-3xl
                 transition-all duration-500
                 hover:border-emerald-400/30
                 hover:bg-emerald-400/10
-                hover:shadow-[0_0_40px_rgba(52,211,153,0.15)]
               "
             >
-              <div
-                className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                style={{
-                  background:
-                    "radial-gradient(circle at center, rgba(52,211,153,0.18), transparent 72%)",
-                }}
-              />
-              <Mail className="relative z-10 h-5 w-5 text-white/55 transition-all duration-500 group-hover:text-emerald-300" />
+              <Mail className="relative z-10 h-4 w-4 sm:h-5 sm:w-5 text-white/55 transition-all duration-500 group-hover:text-emerald-300" />
             </a>
           </div>
         </div>
 
         {/* BOTTOM */}
-        <div className="mt-24 border-t border-white/5 pt-8">
+        <div className="mt-16 sm:mt-24 border-t border-white/5 pt-8">
 
           <div className="flex flex-col items-center justify-between gap-5 text-center md:flex-row md:text-left">
 
             {/* LEFT */}
             <div>
-
-              <div className="text-xs font-semibold uppercase tracking-[0.22em] text-white/45">
+              <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.22em] text-white/45">
                 © 2026 Matera Media
               </div>
-
-              <div className="mt-2 text-[11px] uppercase tracking-[0.22em] text-white/20">
+              <div className="mt-1 text-[9px] sm:text-[11px] uppercase tracking-[0.22em] text-white/20">
                 Engineered for Attention & Revenue
               </div>
             </div>
@@ -335,7 +277,7 @@ const Footer = () => {
             {/* RIGHT */}
             <a
               href="#"
-              className="text-[11px] font-semibold uppercase tracking-[0.22em] text-white/30 transition-all duration-300 hover:text-emerald-300"
+              className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.22em] text-white/30 transition-all duration-300 hover:text-emerald-300"
             >
               Privacy Policy
             </a>
