@@ -35,16 +35,10 @@ const YoutubeIcon = () => (
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden border-none outline-none bg-[#030303] px-6 pb-10 pt-16 sm:pt-24 text-white">
+    <footer className="relative border-none outline-none px-6 pb-10 pt-16 sm:pt-24 text-white">
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 overflow-hidden">
-
-        {/* BASE */}
-        <div className="absolute inset-0 bg-[#030303]" />
-        
-        {/* TOP SHROUD */}
-        <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-[#030303] to-transparent z-[45] pointer-events-none" />
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
         {/* HUGE TYPOGRAPHY */}
         <div className="pointer-events-none absolute bottom-[-5%] sm:bottom-[-8%] left-1/2 -translate-x-1/2 whitespace-nowrap text-[22vw] sm:text-[18vw] font-black uppercase leading-none tracking-[-0.08em] text-white/2.5">
@@ -111,14 +105,7 @@ const Footer = () => {
           }}
         />
 
-        {/* VIGNETTE */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(circle at center, transparent 35%, rgba(0,0,0,0.84) 100%)",
-          }}
-        />
+        
       </div>
 
       {/* CONTENT */}
@@ -140,35 +127,97 @@ const Footer = () => {
           </div>
 
           {/* NAV */}
-          <nav className="flex flex-wrap items-center justify-center gap-x-8 sm:gap-x-10 gap-y-4 text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.2em] sm:tracking-[0.28em] text-white/38">
+          <nav
+            className="
+    flex flex-wrap items-center justify-center
 
-            <a
-              href="#"
-              className="transition-all duration-300 hover:text-emerald-300"
-            >
-              Home
-            </a>
+    gap-x-7 gap-y-4
+    sm:gap-x-10
 
-            <a
-              href="#"
-              className="transition-all duration-300 hover:text-emerald-300"
-            >
-              Ad Creatives
-            </a>
+    rounded-full
+    border border-white/[0.06]
 
-            <a
-              href="#"
-              className="transition-all duration-300 hover:text-emerald-300"
-            >
-              Organic
-            </a>
+    bg-white/[0.02]
 
-            <a
-              href="#"
-              className="transition-all duration-300 hover:text-emerald-300"
-            >
-              Privacy
-            </a>
+    px-5 py-4
+    sm:px-7
+
+    backdrop-blur-2xl
+  "
+          >
+
+            {[
+              {
+                name: "Home",
+                href: "/",
+              },
+
+              {
+                name: "Ad-Creative",
+                href: "/ad-creatives",
+              },
+
+              {
+                name: "Youtube",
+                href: "/organic-content-youtube",
+              },
+
+              {
+                name: "SaaS Videos",
+                href: "/saas-videos",
+              },
+
+              {
+                name: "Careers",
+                href: "/careers",
+              },
+
+              {
+                name: "Privacy",
+                href: "/privacy-policy",
+              },
+            ].map((item, i) => (
+              <a
+                key={i}
+                href={item.href}
+                className="
+        group relative
+
+        text-[10px]
+        font-semibold
+        uppercase
+
+        tracking-[0.18em]
+
+        text-white/38
+        transition-all duration-300
+
+        hover:text-white
+
+        sm:text-[11px]
+        sm:tracking-[0.24em]
+      "
+              >
+
+                {item.name}
+
+                {/* UNDERLINE */}
+                <span
+                  className="
+          absolute -bottom-2 left-0
+          h-px w-0
+
+          bg-gradient-to-r
+          from-lime-300
+          to-green-400
+
+          transition-all duration-500
+
+          group-hover:w-full
+        "
+                />
+              </a>
+            ))}
           </nav>
 
           {/* SOCIALS */}

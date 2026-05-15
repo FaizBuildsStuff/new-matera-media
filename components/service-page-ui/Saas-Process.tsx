@@ -42,8 +42,8 @@ const SaasProcess = () => {
   return (
     <section
       className="
-        relative overflow-hidden
-        bg-black
+        relative 
+        
         py-28 text-white
 
         md:py-36
@@ -51,10 +51,9 @@ const SaasProcess = () => {
     >
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-        {/* BASE */}
-        <div className="absolute inset-0 bg-[#020202]" />
+        
 
         {/* MAIN PURPLE/BLUE ATMOSPHERE */}
         <div
@@ -74,7 +73,7 @@ const SaasProcess = () => {
                 transparent 76%
               )
             `,
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -88,7 +87,7 @@ const SaasProcess = () => {
           style={{
             background:
               "radial-gradient(circle, rgba(59,130,246,0.12), transparent 72%)",
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -102,7 +101,7 @@ const SaasProcess = () => {
           style={{
             background:
               "radial-gradient(circle, rgba(168,85,247,0.14), transparent 72%)",
-            filter: "blur(220px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -117,7 +116,7 @@ const SaasProcess = () => {
           style={{
             background:
               "radial-gradient(circle, rgba(6,182,212,0.10), transparent 72%)",
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -138,7 +137,7 @@ const SaasProcess = () => {
                 transparent
               )
             `,
-            filter: "blur(70px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -165,20 +164,7 @@ const SaasProcess = () => {
           }}
         />
 
-        {/* VIGNETTE */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: `
-              radial-gradient(
-                ellipse at center,
-                transparent 38%,
-                rgba(0,0,0,0.28) 74%,
-                rgba(0,0,0,0.95) 100%
-              )
-            `,
-          }}
-        />
+        
       </div>
 
       {/* CONTENT */}

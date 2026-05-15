@@ -38,8 +38,8 @@ const AdResults = () => {
     return (
         <section
             className="
-        relative overflow-hidden
-        bg-black
+        relative 
+        
         py-20 text-white
 
         md:py-28
@@ -47,7 +47,7 @@ const AdResults = () => {
         >
 
             {/* BACKGROUND */}
-            <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
                 {/* BASE */}
                 <div className="absolute inset-0 bg-black" />
@@ -69,7 +69,7 @@ const AdResults = () => {
                 transparent 74%
               )
             `,
-                        filter: "blur(120px)",
+                        filter: "blur(50px)",
                     }}
                 />
 

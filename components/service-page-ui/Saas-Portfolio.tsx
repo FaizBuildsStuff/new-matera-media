@@ -40,8 +40,8 @@ const SaasPortfolio = () => {
   return (
     <section
       className="
-        relative overflow-hidden
-        bg-black
+        relative 
+        
         py-24 text-white
 
         md:py-32
@@ -49,10 +49,9 @@ const SaasPortfolio = () => {
     >
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-        {/* BASE */}
-        <div className="absolute inset-0 bg-[#020202]" />
+        
 
         {/* MASSIVE PURPLE ATMOSPHERE */}
         <div
@@ -71,7 +70,7 @@ const SaasPortfolio = () => {
                 transparent 72%
               )
             `,
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -85,7 +84,7 @@ const SaasPortfolio = () => {
           style={{
             background:
               "radial-gradient(circle, rgba(59,130,246,0.10), transparent 72%)",
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -99,7 +98,7 @@ const SaasPortfolio = () => {
           style={{
             background:
               "radial-gradient(circle, rgba(168,85,247,0.12), transparent 72%)",
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -120,7 +119,7 @@ const SaasPortfolio = () => {
                 transparent
               )
             `,
-            filter: "blur(70px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -147,20 +146,7 @@ const SaasPortfolio = () => {
           }}
         />
 
-        {/* VIGNETTE */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: `
-              radial-gradient(
-                ellipse at center,
-                transparent 34%,
-                rgba(0,0,0,0.24) 72%,
-                rgba(0,0,0,0.94) 100%
-              )
-            `,
-          }}
-        />
+        
       </div>
 
       {/* CONTENT */}

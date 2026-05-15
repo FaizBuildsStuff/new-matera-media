@@ -70,13 +70,10 @@ const Calendly = () => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-[#030303] px-6 py-24 sm:py-32 lg:py-40 text-white">
+    <section id="calendly" className="relative px-6 py-24 sm:py-32 lg:py-40 text-white">
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 overflow-hidden">
-
-        {/* BASE */}
-        <div className="absolute inset-0 bg-[#030303]" />
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
         {/* GIANT ATMOSPHERIC CORE */}
         <div
@@ -199,14 +196,7 @@ const Calendly = () => {
           }}
         />
 
-        {/* VIGNETTE */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(circle at center, transparent 35%, rgba(0,0,0,0.84) 100%)",
-          }}
-        />
+        
       </div>
 
       {/* CONTENT */}
@@ -236,7 +226,7 @@ const Calendly = () => {
           <div
             className="absolute inset-x-[8%] bottom-[-40px] h-[140px] rounded-full bg-emerald-400/20"
             style={{
-              filter: "blur(70px)",
+              filter: "blur(50px)",
             }}
           />
 
@@ -261,7 +251,7 @@ const Calendly = () => {
               style={{
                 background:
                   "radial-gradient(circle, rgba(52,211,153,0.14), transparent 72%)",
-                filter: "blur(80px)",
+                filter: "blur(50px)",
               }}
             />
 

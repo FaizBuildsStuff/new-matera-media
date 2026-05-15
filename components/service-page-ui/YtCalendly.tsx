@@ -10,10 +10,9 @@ import {
 
 const YtCalendly = () => {
   return (
-    <section
-      className="
-        relative overflow-hidden
-        bg-black
+    <section id="calendly" className="
+        relative 
+        
         py-24 text-white
 
         md:py-32
@@ -21,10 +20,9 @@ const YtCalendly = () => {
     >
 
       {/* BACKGROUND */}
-<div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-  {/* BASE */}
-  <div className="absolute inset-0 bg-[#020202]" />
+  
 
   {/* MASSIVE RED ATMOSPHERE */}
   <div
@@ -44,7 +42,7 @@ const YtCalendly = () => {
           transparent 74%
         )
       `,
-      filter: "blur(180px)",
+      filter: "blur(50px)",
     }}
   />
 
@@ -64,7 +62,7 @@ const YtCalendly = () => {
           transparent 72%
         )
       `,
-      filter: "blur(120px)",
+      filter: "blur(50px)",
     }}
   />
 
@@ -78,7 +76,7 @@ const YtCalendly = () => {
     style={{
       background:
         "radial-gradient(circle, rgba(255,0,76,0.14), transparent 72%)",
-      filter: "blur(180px)",
+      filter: "blur(50px)",
     }}
   />
 
@@ -92,7 +90,7 @@ const YtCalendly = () => {
     style={{
       background:
         "radial-gradient(circle, rgba(255,50,50,0.12), transparent 72%)",
-      filter: "blur(200px)",
+      filter: "blur(50px)",
     }}
   />
 
@@ -133,7 +131,7 @@ const YtCalendly = () => {
           transparent
         )
       `,
-      filter: "blur(70px)",
+      filter: "blur(50px)",
     }}
   />
 
@@ -172,7 +170,7 @@ const YtCalendly = () => {
           transparent 72%
         )
       `,
-      filter: "blur(80px)",
+      filter: "blur(50px)",
     }}
   />
 
@@ -206,20 +204,7 @@ const YtCalendly = () => {
     }}
   />
 
-  {/* CINEMATIC VIGNETTE */}
-  <div
-    className="absolute inset-0"
-    style={{
-      background: `
-        radial-gradient(
-          ellipse at center,
-          transparent 38%,
-          rgba(0,0,0,0.28) 72%,
-          rgba(0,0,0,0.94) 100%
-        )
-      `,
-    }}
-  />
+  
 </div>
 
       {/* CONTENT */}
@@ -251,7 +236,7 @@ const YtCalendly = () => {
                   transparent 72%
                 )
               `,
-              filter: "blur(80px)",
+              filter: "blur(50px)",
             }}
           />
 
@@ -303,7 +288,7 @@ const YtCalendly = () => {
                 style={{
                   background:
                     "radial-gradient(circle, rgba(190,242,100,0.14), transparent 72%)",
-                  filter: "blur(100px)",
+                  filter: "blur(50px)",
                 }}
               />
 

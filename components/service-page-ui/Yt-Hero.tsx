@@ -37,8 +37,8 @@ const YtHero = () => {
     return (
         <section
             className="
-        relative overflow-hidden
-        bg-black
+        relative 
+        
         pt-36 text-white
 
         md:pt-44
@@ -46,10 +46,9 @@ const YtHero = () => {
         >
 
             {/* BACKGROUND */}
-            <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-                {/* BASE */}
-                <div className="absolute inset-0 bg-[#020202]" />
+                
 
                 {/* MASSIVE RED YOUTUBE ATMOSPHERE */}
                 <div
@@ -69,7 +68,7 @@ const YtHero = () => {
                 transparent 72%
               )
             `,
-                        filter: "blur(180px)",
+                        filter: "blur(50px)",
                     }}
                 />
 
@@ -89,7 +88,7 @@ const YtHero = () => {
                 transparent 72%
               )
             `,
-                        filter: "blur(180px)",
+                        filter: "blur(50px)",
                     }}
                 />
 
@@ -109,7 +108,7 @@ const YtHero = () => {
                 transparent 72%
               )
             `,
-                        filter: "blur(190px)",
+                        filter: "blur(50px)",
                     }}
                 />
 
@@ -129,7 +128,7 @@ const YtHero = () => {
                 transparent 72%
               )
             `,
-                        filter: "blur(120px)",
+                        filter: "blur(50px)",
                     }}
                 />
 
@@ -221,21 +220,7 @@ const YtHero = () => {
                     }}
                 />
 
-                {/* BOTTOM BLEND */}
-                <div
-                    className="absolute bottom-0 left-0 h-[40%] w-full"
-                    style={{
-                        background: `
-              linear-gradient(
-                to bottom,
-                rgba(0,0,0,0) 0%,
-                rgba(0,0,0,0.4) 35%,
-                rgba(0,0,0,0.82) 75%,
-                #000 100%
-              )
-            `,
-                    }}
-                />
+                
             </div>
 
             {/* FLOATING CARDS */}
@@ -607,7 +592,7 @@ const YtHero = () => {
                     transparent 72%
                   )
                 `,
-                                filter: "blur(80px)",
+                                filter: "blur(50px)",
                             }}
                         />
 

@@ -68,8 +68,8 @@ const SaasPricing = () => {
   return (
     <section
       className="
-        relative overflow-hidden
-        bg-black
+        relative 
+        
         py-28 text-white
 
         md:py-36
@@ -77,10 +77,9 @@ const SaasPricing = () => {
     >
 
       {/* BACKGROUND */}
-<div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-  {/* BASE */}
-  <div className="absolute inset-0 bg-[#020202]" />
+  
 
   {/* MASSIVE CINEMATIC AURORA */}
   <div
@@ -104,7 +103,7 @@ const SaasPricing = () => {
           transparent 76%
         )
       `,
-      filter: "blur(220px)",
+      filter: "blur(50px)",
       opacity: 0.9,
     }}
   />
@@ -126,7 +125,7 @@ const SaasPricing = () => {
           transparent 72%
         )
       `,
-      filter: "blur(120px)",
+      filter: "blur(50px)",
     }}
   />
 
@@ -149,7 +148,7 @@ const SaasPricing = () => {
           transparent 72%
         )
       `,
-      filter: "blur(200px)",
+      filter: "blur(50px)",
       opacity: 0.8,
     }}
   />
@@ -173,7 +172,7 @@ const SaasPricing = () => {
           transparent 72%
         )
       `,
-      filter: "blur(240px)",
+      filter: "blur(50px)",
       opacity: 0.85,
     }}
   />
@@ -194,7 +193,7 @@ const SaasPricing = () => {
           transparent 72%
         )
       `,
-      filter: "blur(160px)",
+      filter: "blur(50px)",
       opacity: 0.7,
     }}
   />
@@ -215,7 +214,7 @@ const SaasPricing = () => {
           transparent 72%
         )
       `,
-      filter: "blur(220px)",
+      filter: "blur(50px)",
       opacity: 0.7,
     }}
   />
@@ -252,7 +251,7 @@ const SaasPricing = () => {
           transparent
         )
       `,
-      filter: "blur(80px)",
+      filter: "blur(50px)",
       opacity: 0.9,
     }}
   />
@@ -273,7 +272,7 @@ const SaasPricing = () => {
           transparent 72%
         )
       `,
-      filter: "blur(130px)",
+      filter: "blur(50px)",
       mixBlendMode: "screen",
     }}
   />
@@ -294,7 +293,7 @@ const SaasPricing = () => {
           transparent 72%
         )
       `,
-      filter: "blur(120px)",
+      filter: "blur(50px)",
       mixBlendMode: "screen",
     }}
   />
@@ -331,44 +330,11 @@ const SaasPricing = () => {
     }}
   />
 
-  {/* VIGNETTE */}
-  <div
-    className="absolute inset-0"
-    style={{
-      background: `
-        radial-gradient(
-          ellipse at center,
-          transparent 36%,
-          rgba(0,0,0,0.34) 74%,
-          rgba(0,0,0,0.96) 100%
-        )
-      `,
-    }}
-  />
+  
 
-  {/* TOP SHADOW */}
-  <div
-    className="
-      absolute top-0 left-0
-      h-44 w-full
-    "
-    style={{
-      background:
-        "linear-gradient(to bottom, rgba(0,0,0,0.72), transparent)",
-    }}
-  />
+  
 
-  {/* BOTTOM BLEND */}
-  <div
-    className="
-      absolute bottom-0 left-0
-      h-60 w-full
-    "
-    style={{
-      background:
-        "linear-gradient(to top, rgba(0,0,0,0.98), transparent)",
-    }}
-  />
+  
 </div>
 
       {/* CONTENT */}
@@ -532,7 +498,7 @@ const SaasPricing = () => {
                       : plan.accent === "cyan"
                         ? "radial-gradient(circle, rgba(6,182,212,0.12), transparent 72%)"
                         : "radial-gradient(circle, rgba(59,130,246,0.12), transparent 72%)",
-                  filter: "blur(80px)",
+                  filter: "blur(50px)",
                 }}
               />
 

@@ -87,19 +87,14 @@ const Hero = () => {
   className="
     relative
     min-h-screen
-    overflow-hidden
     border-none
     outline-none
-    bg-[#030303]
     text-white
     pb-20
   "
 >
   {/* BACKGROUND */}
-  <div className="absolute inset-0 overflow-hidden border-none">
-
-    {/* BASE */}
-    <div className="absolute inset-0 bg-[#030303]" />
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform border-none">
 
     {/* MAIN GREEN LIGHT */}
     <div
@@ -115,7 +110,7 @@ const Hero = () => {
         lg:w-[1200px]
       "
       style={{
-        filter: "blur(180px)",
+        filter: "blur(50px)",
       }}
     />
 
@@ -133,7 +128,7 @@ const Hero = () => {
         lg:w-[1000px]
       "
       style={{
-        filter: "blur(180px)",
+        filter: "blur(50px)",
       }}
     />
 
@@ -149,7 +144,7 @@ const Hero = () => {
         lg:h-[700px] lg:w-[900px]
       "
       style={{
-        filter: "blur(160px)",
+        filter: "blur(50px)",
       }}
     />
 
@@ -165,7 +160,7 @@ const Hero = () => {
         lg:h-[500px] lg:w-[1400px]
       "
       style={{
-        filter: "blur(180px)",
+        filter: "blur(50px)",
       }}
     />
 
@@ -184,7 +179,7 @@ const Hero = () => {
         lg:w-[900px]
       "
       style={{
-        filter: "blur(120px)",
+        filter: "blur(50px)",
       }}
     />
 
@@ -202,7 +197,7 @@ const Hero = () => {
         lg:w-[800px]
       "
       style={{
-        filter: "blur(120px)",
+        filter: "blur(50px)",
       }}
     />
 
@@ -218,7 +213,7 @@ const Hero = () => {
         lg:h-[350px] lg:w-[350px]
       "
       style={{
-        filter: "blur(80px)",
+        filter: "blur(50px)",
       }}
     />
 
@@ -226,7 +221,7 @@ const Hero = () => {
     <div
       className="absolute inset-0 bg-emerald-400/[0.03]"
       style={{
-        filter: "blur(100px)",
+        filter: "blur(50px)",
       }}
     />
 
@@ -322,16 +317,7 @@ const Hero = () => {
       }}
     />
 
-    {/* VIGNETTE */}
-    <div
-      className="absolute inset-0"
-      style={{
-        background:
-          "radial-gradient(circle at 50% 40%, transparent 20%, rgba(0,0,0,0.8) 100%)",
-        maskImage:
-          "linear-gradient(to bottom, black 85%, transparent 100%)",
-      }}
-    />
+    
   </div>
 
   {/* CONTENT */}
@@ -567,8 +553,6 @@ const Hero = () => {
     </div>
   </div>
 
-  {/* SEAM BRIDGE */}
-  <div className="absolute bottom-[-1px] left-0 h-[2px] w-full bg-[#030303] z-[50]" />
 </section>
   );
 }

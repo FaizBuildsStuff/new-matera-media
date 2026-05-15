@@ -11,10 +11,9 @@ import {
 
 const AdCalendly = () => {
     return (
-        <section
-            className="
-        relative overflow-hidden
-        bg-black
+        <section id="calendly" className="
+        relative 
+        
         py-24 text-white
 
         md:py-32
@@ -22,10 +21,9 @@ const AdCalendly = () => {
         >
 
             {/* BACKGROUND */}
-            <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-                {/* BASE */}
-                <div className="absolute inset-0 bg-[#020202]" />
+                
 
                 {/* MASSIVE TOP AURORA */}
                 <div
@@ -45,7 +43,7 @@ const AdCalendly = () => {
           rgba(190,242,100,0.18)
         )
       `,
-                        filter: "blur(180px)",
+                        filter: "blur(50px)",
                         opacity: 0.9,
                     }}
                 />
@@ -67,7 +65,7 @@ const AdCalendly = () => {
           transparent 72%
         )
       `,
-                        filter: "blur(180px)",
+                        filter: "blur(50px)",
                     }}
                 />
 
@@ -88,7 +86,7 @@ const AdCalendly = () => {
           transparent 74%
         )
       `,
-                        filter: "blur(190px)",
+                        filter: "blur(50px)",
                     }}
                 />
 
@@ -108,7 +106,7 @@ const AdCalendly = () => {
           transparent 72%
         )
       `,
-                        filter: "blur(120px)",
+                        filter: "blur(50px)",
                     }}
                 />
 
@@ -127,7 +125,7 @@ const AdCalendly = () => {
           transparent 72%
         )
       `,
-                        filter: "blur(140px)",
+                        filter: "blur(50px)",
                     }}
                 />
 
@@ -146,7 +144,7 @@ const AdCalendly = () => {
           transparent 72%
         )
       `,
-                        filter: "blur(160px)",
+                        filter: "blur(50px)",
                     }}
                 />
 
@@ -216,7 +214,7 @@ const AdCalendly = () => {
                     style={{
                         background:
                             "linear-gradient(to right, transparent, rgba(190,242,100,0.10), transparent)",
-                        filter: "blur(90px)",
+                        filter: "blur(50px)",
                     }}
                 />
 
@@ -230,7 +228,7 @@ const AdCalendly = () => {
                     style={{
                         background:
                             "linear-gradient(to right, transparent, rgba(16,185,129,0.08), transparent)",
-                        filter: "blur(90px)",
+                        filter: "blur(50px)",
                     }}
                 />
 
@@ -269,20 +267,7 @@ const AdCalendly = () => {
                     }}
                 />
 
-                {/* VIGNETTE */}
-                <div
-                    className="absolute inset-0"
-                    style={{
-                        background: `
-        radial-gradient(
-          ellipse at center,
-          transparent 35%,
-          rgba(0,0,0,0.28) 72%,
-          rgba(0,0,0,0.90) 100%
-        )
-      `,
-                    }}
-                />
+                
             </div>
 
             {/* CONTENT */}
@@ -392,7 +377,7 @@ const AdCalendly = () => {
                     transparent 72%
                   )
                 `,
-                                filter: "blur(120px)",
+                                filter: "blur(50px)",
                             }}
                         />
 
@@ -638,7 +623,7 @@ const AdCalendly = () => {
                     transparent 72%
                   )
                 `,
-                                filter: "blur(120px)",
+                                filter: "blur(50px)",
                             }}
                         />
 

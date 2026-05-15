@@ -18,8 +18,8 @@ const YtTestimonials = () => {
   return (
     <section
       className="
-        relative overflow-hidden
-        bg-black
+        relative 
+        
         py-28 text-white
 
         md:py-36
@@ -27,10 +27,9 @@ const YtTestimonials = () => {
     >
 
       {/* BACKGROUND */}
-<div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-  {/* BASE */}
-  <div className="absolute inset-0 bg-[#020202]" />
+  
 
   {/* MASSIVE TOP ATMOSPHERE */}
   <div
@@ -53,7 +52,7 @@ const YtTestimonials = () => {
           transparent 74%
         )
       `,
-      filter: "blur(180px)",
+      filter: "blur(50px)",
       opacity: 0.95,
     }}
   />
@@ -74,7 +73,7 @@ const YtTestimonials = () => {
           transparent 72%
         )
       `,
-      filter: "blur(130px)",
+      filter: "blur(50px)",
     }}
   />
 
@@ -94,7 +93,7 @@ const YtTestimonials = () => {
           transparent 72%
         )
       `,
-      filter: "blur(180px)",
+      filter: "blur(50px)",
     }}
   />
 
@@ -114,7 +113,7 @@ const YtTestimonials = () => {
           transparent 72%
         )
       `,
-      filter: "blur(200px)",
+      filter: "blur(50px)",
     }}
   />
 
@@ -134,7 +133,7 @@ const YtTestimonials = () => {
           transparent 72%
         )
       `,
-      filter: "blur(80px)",
+      filter: "blur(50px)",
       opacity: 0.7,
     }}
   />
@@ -149,7 +148,7 @@ const YtTestimonials = () => {
     style={{
       background:
         "linear-gradient(to right, transparent, rgba(255,0,76,0.10), transparent)",
-      filter: "blur(90px)",
+      filter: "blur(50px)",
     }}
   />
 
@@ -163,7 +162,7 @@ const YtTestimonials = () => {
     style={{
       background:
         "linear-gradient(to right, transparent, rgba(255,255,255,0.06), transparent)",
-      filter: "blur(80px)",
+      filter: "blur(50px)",
     }}
   />
 
@@ -230,44 +229,11 @@ const YtTestimonials = () => {
     }}
   />
 
-  {/* DEPTH VIGNETTE */}
-  <div
-    className="absolute inset-0"
-    style={{
-      background: `
-        radial-gradient(
-          ellipse at center,
-          transparent 34%,
-          rgba(0,0,0,0.28) 68%,
-          rgba(0,0,0,0.92) 100%
-        )
-      `,
-    }}
-  />
+  
 
-  {/* TOP FADE */}
-  <div
-    className="
-      absolute top-0 left-0
-      h-[220px] w-full
-    "
-    style={{
-      background:
-        "linear-gradient(to bottom, rgba(0,0,0,0.65), transparent)",
-    }}
-  />
+  
 
-  {/* BOTTOM BLEND */}
-  <div
-    className="
-      absolute bottom-0 left-0
-      h-[260px] w-full
-    "
-    style={{
-      background:
-        "linear-gradient(to top, rgba(0,0,0,0.95), transparent)",
-    }}
-  />
+  
 </div>
 
       {/* CONTENT */}

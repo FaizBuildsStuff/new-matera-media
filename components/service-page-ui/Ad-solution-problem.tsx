@@ -50,8 +50,8 @@ const Adsolutionproblem = () => {
   return (
     <section
       className="
-        relative overflow-hidden
-        bg-[#020202]
+        relative 
+        
         py-24 text-white
 
         md:py-32
@@ -59,10 +59,9 @@ const Adsolutionproblem = () => {
     >
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-        {/* BASE */}
-        <div className="absolute inset-0 bg-[#020202]" />
+        
 
         {/* MASSIVE CENTER AURORA */}
         <div
@@ -82,7 +81,7 @@ const Adsolutionproblem = () => {
                 transparent 78%
               )
             `,
-            filter: "blur(140px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -96,7 +95,7 @@ const Adsolutionproblem = () => {
           style={{
             background:
               "radial-gradient(circle, rgba(239,68,68,0.16), transparent 72%)",
-            filter: "blur(150px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -110,7 +109,7 @@ const Adsolutionproblem = () => {
           style={{
             background:
               "radial-gradient(circle, rgba(16,185,129,0.16), transparent 72%)",
-            filter: "blur(160px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -130,7 +129,7 @@ const Adsolutionproblem = () => {
                 transparent 72%
               )
             `,
-            filter: "blur(100px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -204,20 +203,7 @@ const Adsolutionproblem = () => {
           }}
         />
 
-        {/* VIGNETTE */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: `
-              radial-gradient(
-                ellipse at center,
-                transparent 35%,
-                rgba(0,0,0,0.24) 72%,
-                rgba(0,0,0,0.82) 100%
-              )
-            `,
-          }}
-        />
+        
       </div>
 
       {/* CONTENT */}
@@ -317,7 +303,7 @@ const Adsolutionproblem = () => {
               style={{
                 background:
                   "radial-gradient(circle, rgba(239,68,68,0.18), transparent 72%)",
-                filter: "blur(110px)",
+                filter: "blur(50px)",
               }}
             />
 
@@ -494,7 +480,7 @@ const Adsolutionproblem = () => {
               style={{
                 background:
                   "radial-gradient(circle, rgba(16,185,129,0.18), transparent 72%)",
-                filter: "blur(120px)",
+                filter: "blur(50px)",
               }}
             />
 

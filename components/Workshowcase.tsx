@@ -52,22 +52,10 @@ const Workshowcase = () => {
     );
 
     return (
-        <section className="relative overflow-hidden border-none outline-none bg-[#030303] px-6 py-24 sm:py-32 lg:py-40 text-white">
+        <section className="relative border-none outline-none px-6 py-24 sm:py-32 lg:py-40 text-white">
 
             {/* BACKGROUND */}
-            <div className="absolute inset-0 overflow-hidden">
-
-                {/* BASE */}
-                <div className="absolute inset-0 bg-[#030303]" />
-
-                {/* TOP FADE */}
-                <div
-                    className="absolute inset-x-0 top-0 z-[40] h-40"
-                    style={{
-                        background:
-                            "linear-gradient(to bottom, #030303, transparent)",
-                    }}
-                />
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
                 {/* MASSIVE ATMOSPHERIC CORE */}
                 <div
@@ -212,23 +200,9 @@ const Workshowcase = () => {
                     }}
                 />
 
-                {/* CINEMATIC VIGNETTE */}
-                <div
-                    className="absolute inset-0"
-                    style={{
-                        background:
-                            "radial-gradient(circle at center, transparent 34%, rgba(0,0,0,0.84) 100%)",
-                    }}
-                />
+                
 
-                {/* BOTTOM FADE */}
-                <div
-                    className="absolute inset-x-0 bottom-0 z-[40] h-40"
-                    style={{
-                        background:
-                            "linear-gradient(to top, #030303, transparent)",
-                    }}
-                />
+
             </div>
 
             {/* CONTENT */}
@@ -300,7 +274,7 @@ const Workshowcase = () => {
                             <div
                                 className="absolute left-1/2 top-[20%] h-[500px] w-[900px] -translate-x-1/2 rounded-full bg-emerald-400/10"
                                 style={{
-                                    filter: "blur(120px)",
+                                    filter: "blur(50px)",
                                 }}
                             />
 
@@ -349,7 +323,7 @@ const Workshowcase = () => {
                                         <div
                                             className="absolute bottom-[-15%] left-1/2 h-[300px] w-[700px] -translate-x-1/2 rounded-full bg-emerald-400/20 opacity-0 transition-opacity duration-700 group-hover:opacity-100"
                                             style={{
-                                                filter: "blur(120px)",
+                                                filter: "blur(50px)",
                                             }}
                                         />
 
@@ -485,7 +459,7 @@ const Workshowcase = () => {
                                         <div
                                             className="absolute inset-[-20%] rounded-full bg-emerald-400/0 opacity-0 transition-all duration-700 group-hover:bg-emerald-400/10 group-hover:opacity-100"
                                             style={{
-                                                filter: "blur(120px)",
+                                                filter: "blur(50px)",
                                             }}
                                         />
 

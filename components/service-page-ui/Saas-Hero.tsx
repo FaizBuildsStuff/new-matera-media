@@ -13,8 +13,8 @@ const SaasHero = () => {
   return (
     <section
       className="
-        relative overflow-hidden
-        bg-black
+        relative 
+        
         px-5 pt-36 pb-24 text-white
 
         sm:px-8
@@ -24,10 +24,9 @@ const SaasHero = () => {
     >
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-        {/* BASE */}
-        <div className="absolute inset-0 bg-[#020202]" />
+        
 
         {/* MASSIVE PURPLE/BLUE ATMOSPHERE */}
         <div
@@ -47,7 +46,7 @@ const SaasHero = () => {
                 transparent 76%
               )
             `,
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -61,7 +60,7 @@ const SaasHero = () => {
           style={{
             background:
               "radial-gradient(circle, rgba(59,130,246,0.14), transparent 72%)",
-            filter: "blur(200px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -75,7 +74,7 @@ const SaasHero = () => {
           style={{
             background:
               "radial-gradient(circle, rgba(168,85,247,0.16), transparent 72%)",
-            filter: "blur(220px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -95,7 +94,7 @@ const SaasHero = () => {
                 transparent 72%
               )
             `,
-            filter: "blur(90px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -116,7 +115,7 @@ const SaasHero = () => {
                 transparent
               )
             `,
-            filter: "blur(70px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -136,7 +135,7 @@ const SaasHero = () => {
                 transparent
               )
             `,
-            filter: "blur(80px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -170,20 +169,7 @@ const SaasHero = () => {
           }}
         />
 
-        {/* VIGNETTE */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: `
-              radial-gradient(
-                ellipse at center,
-                transparent 34%,
-                rgba(0,0,0,0.28) 72%,
-                rgba(0,0,0,0.95) 100%
-              )
-            `,
-          }}
-        />
+        
       </div>
 
       {/* CONTENT */}

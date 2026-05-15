@@ -49,8 +49,8 @@ const Adportfolio = () => {
   return (
     <section
       className="
-        relative overflow-hidden
-        bg-[#020202]
+        relative 
+        
         py-24 text-white
 
         md:py-32
@@ -58,10 +58,9 @@ const Adportfolio = () => {
     >
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-        {/* BASE */}
-        <div className="absolute inset-0 bg-[#020202]" />
+        
 
         {/* MASSIVE GREEN ATMOSPHERE */}
         <div
@@ -84,7 +83,7 @@ const Adportfolio = () => {
                 transparent 78%
               )
             `,
-            filter: "blur(130px)",
+            filter: "blur(50px)",
             opacity: 0.95,
           }}
         />
@@ -106,7 +105,7 @@ const Adportfolio = () => {
                 transparent 72%
               )
             `,
-            filter: "blur(90px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -118,7 +117,7 @@ const Adportfolio = () => {
             rounded-full bg-lime-300/12
           "
           style={{
-            filter: "blur(160px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -130,7 +129,7 @@ const Adportfolio = () => {
             rounded-full bg-green-300/10
           "
           style={{
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -196,20 +195,7 @@ const Adportfolio = () => {
           }}
         />
 
-        {/* VIGNETTE */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: `
-              radial-gradient(
-                ellipse at center,
-                transparent 35%,
-                rgba(0,0,0,0.28) 70%,
-                rgba(0,0,0,0.82) 100%
-              )
-            `,
-          }}
-        />
+        
       </div>
 
       {/* CONTENT */}

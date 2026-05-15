@@ -22,16 +22,10 @@ const steps = [
 
 const Ourprocess = () => {
   return (
-    <section className="relative overflow-hidden border-none outline-none bg-[#030303] px-6 py-40 text-white">
+    <section className="relative border-none outline-none px-6 py-40 text-white">
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 overflow-hidden">
-
-        {/* BASE */}
-        <div className="absolute inset-0 bg-[#030303]" />
-        
-        {/* TOP SHROUD */}
-        <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-[#030303] to-transparent z-[45] pointer-events-none" />
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
         {/* MASSIVE SMOOTH AURORA */}
         <div
@@ -46,7 +40,7 @@ const Ourprocess = () => {
                 transparent 72%
               )
             `,
-            filter: "blur(190px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -54,7 +48,7 @@ const Ourprocess = () => {
         <div
           className="absolute left-[-15%] top-[5%] h-[800px] w-[800px] rounded-full bg-emerald-400/10"
           style={{
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -62,7 +56,7 @@ const Ourprocess = () => {
         <div
           className="absolute right-[-10%] top-[15%] h-[800px] w-[800px] rounded-full bg-teal-300/10"
           style={{
-            filter: "blur(190px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -70,7 +64,7 @@ const Ourprocess = () => {
         <div
           className="absolute left-1/2 top-[50%] h-[500px] w-[1000px] -translate-x-1/2 rounded-full bg-white/[0.03]"
           style={{
-            filter: "blur(120px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -122,18 +116,8 @@ const Ourprocess = () => {
           }}
         />
 
-        {/* VIGNETTE - Blended for continuity */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(circle at center, transparent 35%, rgba(0,0,0,0.72) 100%)",
-            maskImage: "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent 100%)"
-          }}
-        />
         
-        {/* BOTTOM SHROUD */}
-        <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-[#030303] to-transparent z-[45] pointer-events-none" />
+
       </div>
 
       {/* CONTENT */}

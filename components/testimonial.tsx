@@ -37,13 +37,10 @@ const testimonials = [
 
 const Testimonial = () => {
   return (
-    <section className="relative overflow-hidden border-none outline-none bg-[#030303] px-6 py-36 text-white">
+    <section className="relative border-none outline-none px-6 py-36 text-white">
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 overflow-hidden border-none">
-
-        {/* BASE */}
-        <div className="absolute inset-0 bg-[#030303]" />
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform border-none">
 
         {/* MASSIVE SMOOTH AURORA */}
         <div
@@ -56,7 +53,7 @@ const Testimonial = () => {
         rgba(45,212,191,0.06) 38%,
         transparent 72%)
       `,
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -64,7 +61,7 @@ const Testimonial = () => {
         <div
           className="absolute left-[-15%] top-[10%] h-[700px] w-[700px] rounded-full bg-emerald-400/10"
           style={{
-            filter: "blur(170px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -72,7 +69,7 @@ const Testimonial = () => {
         <div
           className="absolute right-[-10%] top-[15%] h-[700px] w-[700px] rounded-full bg-teal-300/10"
           style={{
-            filter: "blur(190px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -82,7 +79,7 @@ const Testimonial = () => {
           style={{
             background:
               "radial-gradient(circle, rgba(255,255,255,0.06), transparent 72%)",
-            filter: "blur(120px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -90,7 +87,7 @@ const Testimonial = () => {
         <div
           className="absolute bottom-[-20%] left-1/2 h-[500px] w-[1400px] -translate-x-1/2 rounded-full bg-emerald-400/8"
           style={{
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -101,7 +98,7 @@ const Testimonial = () => {
         <div
           className="absolute left-1/2 top-0 h-[500px] w-full -translate-x-1/2 bg-emerald-500/10"
           style={{
-            filter: "blur(140px)",
+            filter: "blur(50px)",
             borderRadius: "0 0 100% 100%"
           }}
         />
@@ -158,15 +155,7 @@ const Testimonial = () => {
           }}
         />
 
-        {/* VIGNETTE - Modified to fade out at top for blending */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(circle at 50% 60%, transparent 25%, rgba(0,0,0,0.8) 100%)",
-            maskImage: "linear-gradient(to top, black 85%, transparent 100%)"
-          }}
-        />
+        
       </div>
 
       {/* CONTENT */}
@@ -205,7 +194,7 @@ const Testimonial = () => {
                 <div
                   className="absolute inset-[-20%] rounded-full bg-emerald-400/10"
                   style={{
-                    filter: "blur(100px)",
+                    filter: "blur(50px)",
                   }}
                 />
               </div>

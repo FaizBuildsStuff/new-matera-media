@@ -36,16 +36,10 @@ const Faq = () => {
   const [active, setActive] = useState(2);
 
   return (
-    <section className="relative overflow-hidden border-none outline-none bg-[#030303] px-6 py-24 sm:py-32 lg:py-40 text-white">
+    <section className="relative border-none outline-none px-6 py-24 sm:py-32 lg:py-40 text-white">
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 overflow-hidden">
-
-        {/* BASE */}
-        <div className="absolute inset-0 bg-[#030303]" />
-
-        {/* TOP SHROUD */}
-        <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-[#030303] to-transparent z-[45] pointer-events-none" />
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
         {/* MASSIVE CENTER ATMOSPHERE */}
         <div
@@ -165,14 +159,7 @@ const Faq = () => {
           }}
         />
 
-        {/* VIGNETTE */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(circle at center, transparent 35%, rgba(0,0,0,0.82) 100%)",
-          }}
-        />
+        
       </div>
 
       {/* CONTENT */}
@@ -208,7 +195,7 @@ const Faq = () => {
             style={{
               background:
                 "radial-gradient(circle, rgba(52,211,153,0.12), transparent 72%)",
-              filter: "blur(70px)",
+              filter: "blur(50px)",
             }}
           />
 

@@ -35,8 +35,8 @@ const AdProcess = () => {
   return (
     <section
       className="
-        relative overflow-hidden
-        bg-black
+        relative 
+        
         py-24 text-white
 
         md:py-32
@@ -44,10 +44,9 @@ const AdProcess = () => {
     >
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-        {/* BASE */}
-        <div className="absolute inset-0 bg-[#020202]" />
+        
 
         {/* HUGE GREEN ATMOSPHERE */}
         <div
@@ -65,7 +64,7 @@ const AdProcess = () => {
                 transparent 72%
               )
             `,
-            filter: "blur(160px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -84,7 +83,7 @@ const AdProcess = () => {
                 transparent 72%
               )
             `,
-            filter: "blur(160px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -112,20 +111,7 @@ const AdProcess = () => {
           }}
         />
 
-        {/* VIGNETTE */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: `
-              radial-gradient(
-                ellipse at center,
-                transparent 35%,
-                rgba(0,0,0,0.25) 72%,
-                rgba(0,0,0,0.88) 100%
-              )
-            `,
-          }}
-        />
+        
       </div>
 
       {/* CONTENT */}
@@ -306,7 +292,7 @@ const AdProcess = () => {
           transparent 72%
         )
       `,
-      filter: "blur(150px)",
+      filter: "blur(50px)",
     }}
   />
 

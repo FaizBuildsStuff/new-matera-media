@@ -2,12 +2,14 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import gsap from "gsap";
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const scrolledRef = React.useRef(false);
 
   useEffect(() => {
     gsap.fromTo(
@@ -25,7 +27,11 @@ const Header = () => {
     );
 
     const handleScroll = () => {
-      setScrolled(window.scrollY > 30);
+      const isScrolled = window.scrollY > 30;
+      if (isScrolled !== scrolledRef.current) {
+        scrolledRef.current = isScrolled;
+        setScrolled(isScrolled);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -35,7 +41,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed left-0 top-0 z-[999] w-full px-4 pt-5 md:px-8">
+      <header className="fixed left-0 top-0 z-999 w-full px-4 pt-5 md:px-8">
 
         {/* FLOATING NAV */}
         <div
@@ -44,19 +50,20 @@ const Header = () => {
             mx-auto flex max-w-7xl items-center justify-between
             rounded-full border
             px-4 py-3 md:px-6
-            transition-all duration-500
+            transition-[background,border,box-shadow,backdrop-filter] duration-500
+            transform-gpu will-change-transform
             ${scrolled
               ? "border-white/10 bg-black/45 shadow-[0_0_80px_rgba(0,0,0,0.45)] backdrop-blur-3xl"
-              : "border-white/[0.08] bg-white/[0.03] backdrop-blur-2xl"
+              : "border-white/8 bg-white/3 backdrop-blur-2xl"
             }
           `}
         >
 
           {/* LEFT */}
-          <div className="flex items-center gap-10">
+          <div className="flex items-center">
 
             {/* LOGO */}
-            <a
+            <Link
               href="/"
               className="group relative flex items-center gap-3"
             >
@@ -78,82 +85,148 @@ const Header = () => {
               <span className="hidden text-sm font-semibold tracking-[-0.04em] text-white md:block">
                 Matera Media
               </span>
-            </a>
-
-            {/* NAV */}
-            <nav className="hidden items-center gap-8 lg:flex">
-
-
-              <a
-                href="/ad-creatives"
-                className="group relative text-[13px] font-medium text-white/50 transition-all duration-300 hover:text-white"
-              >
-                Ad-creative
-
-                <span className="absolute -bottom-2 left-0 h-px w-0 bg-emerald-300 transition-all duration-500 group-hover:w-full" />
-              </a>
-
-              <a
-                href="/organic-content-youtube"
-                className="group relative text-[13px] font-medium text-white/50 transition-all duration-300 hover:text-white"
-              >
-                Youtube
-
-                <span className="absolute -bottom-2 left-0 h-px w-0 bg-emerald-300 transition-all duration-500 group-hover:w-full" />
-              </a>
-
-              <a
-                href="/saas-videos"
-                className="group relative text-[13px] font-medium text-white/50 transition-all duration-300 hover:text-white"
-              >
-                Saas Videos
-
-                <span className="absolute -bottom-2 left-0 h-px w-0 bg-emerald-300 transition-all duration-500 group-hover:w-full" />
-              </a>
-
-              <a
-                href="/careers"
-                className="group relative text-[13px] font-medium text-white/50 transition-all duration-300 hover:text-white"
-              >
-                Careers
-
-                <span className="absolute -bottom-2 left-0 h-px w-0 bg-emerald-300 transition-all duration-500 group-hover:w-full" />
-              </a>
-            </nav>
+            </Link>
           </div>
 
           {/* RIGHT */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-7">
+
+            {/* NAV */}
+            <nav className="hidden items-center gap-7 lg:flex">
+
+              {[
+                {
+                  name: "Ad-Creative",
+                  href: "/ad-creatives",
+                },
+
+                {
+                  name: "Youtube",
+                  href: "/organic-content-youtube",
+                },
+
+                {
+                  name: "SaaS Videos",
+                  href: "/saas-videos",
+                },
+
+                {
+                  name: "Careers",
+                  href: "/careers",
+                },
+
+                {
+                  name: "Privacy",
+                  href: "/privacy-policy",
+                },
+              ].map((item, i) => (
+                <Link
+                  key={i}
+                  href={item.href}
+                  className="
+          group relative
+
+          text-[13px]
+          font-medium
+
+          text-white/45
+          transition-all duration-300
+
+          hover:text-white
+        "
+                >
+
+                  {item.name}
+
+                  {/* UNDERLINE */}
+                  <span
+                    className="
+            absolute -bottom-2 left-0
+            h-px w-0
+
+            bg-linear-to-r
+            from-lime-300
+            to-green-400
+
+            transition-all duration-500
+
+            group-hover:w-full
+          "
+                  />
+                </Link>
+              ))}
+            </nav>
 
             {/* CTA */}
-            <a
-              href="#"
+            <Link
+              href="#calendly"
               className="
-                group hidden items-center gap-3
-                rounded-full border border-white/10
-                bg-white px-5 py-3
-                text-[13px] font-medium text-black
-                transition-all duration-500
-                hover:scale-[1.03]
-                md:flex
-              "
+      group hidden items-center gap-3
+      overflow-hidden
+
+      rounded-full
+      border border-white/10
+
+      bg-white px-5 py-3
+
+      text-[13px]
+      font-medium
+      text-black
+
+      transition-all duration-500
+
+      hover:scale-[1.03]
+      hover:shadow-[0_0_40px_rgba(255,255,255,0.12)]
+
+      md:flex
+    "
             >
 
-              Book Call
+              {/* SHINE */}
+              <div
+                className="
+        absolute inset-0
+        bg-linear-to-r
+        from-transparent
+        via-black/4
+        to-transparent
 
-              <ArrowUpRight className="h-4 w-4 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />
-            </a>
+        opacity-0
+        transition-all duration-700
+
+        group-hover:opacity-100
+      "
+              />
+
+              <span className="relative z-10">
+                Book Call
+              </span>
+
+              <ArrowUpRight
+                className="
+        relative z-10 h-4 w-4
+        transition-transform duration-500
+
+        group-hover:translate-x-1
+        group-hover:-translate-y-1
+      "
+              />
+            </Link>
 
             {/* MOBILE BUTTON */}
             <button
               onClick={() => setMobileMenu(!mobileMenu)}
               className="
-                flex h-12 w-12 items-center justify-center
-                rounded-full border border-white/10
-                bg-white/[0.03]
-                text-white backdrop-blur-2xl
-                lg:hidden
-              "
+      flex h-12 w-12 items-center justify-center
+      rounded-full border border-white/10
+
+      bg-white/3
+      text-white
+
+      backdrop-blur-2xl
+
+      lg:hidden
+    "
             >
               {mobileMenu ? (
                 <X className="h-5 w-5" />
@@ -167,76 +240,226 @@ const Header = () => {
         {/* MOBILE MENU */}
         <div
           className={`
-            overflow-hidden transition-all duration-500 lg:hidden
-            ${mobileMenu
-              ? "pointer-events-auto mt-4 max-h-[500px] opacity-100"
+    overflow-hidden transition-all duration-500 lg:hidden
+
+    ${mobileMenu
+              ? "pointer-events-auto mt-4 max-h-[700px] opacity-100"
               : "pointer-events-none max-h-0 opacity-0"
             }
-          `}
+  `}
         >
 
           <div
             className="
-              rounded-[30px]
-              border border-white/10
-              bg-black/45
-              p-5
-              backdrop-blur-3xl
-            "
+      relative overflow-hidden
+
+      rounded-[28px]
+      border border-white/10
+
+      bg-black/45
+      p-5
+
+      backdrop-blur-3xl
+    "
           >
 
-            <nav className="flex flex-col">
-
-              <a
-                href="#"
-                className="border-b border-white/5 py-4 text-sm text-white/70 transition-all duration-300 hover:text-white"
-              >
-                Home
-              </a>
-
-              <a
-                href="#"
-                className="border-b border-white/5 py-4 text-sm text-white/70 transition-all duration-300 hover:text-white"
-              >
-                Services
-              </a>
-
-              <a
-                href="#"
-                className="border-b border-white/5 py-4 text-sm text-white/70 transition-all duration-300 hover:text-white"
-              >
-                Work
-              </a>
-
-              <a
-                href="#"
-                className="border-b border-white/5 py-4 text-sm text-white/70 transition-all duration-300 hover:text-white"
-              >
-                Process
-              </a>
-
-              <a
-                href="#"
-                className="py-4 text-sm text-white/70 transition-all duration-300 hover:text-white"
-              >
-                Pricing
-              </a>
-            </nav>
-
-            {/* MOBILE CTA */}
-            <a
-              href="#"
+            {/* TOP GLOW */}
+            <div
               className="
-                mt-6 flex items-center justify-center gap-3
-                rounded-full bg-white py-4
-                text-sm font-medium text-black
+        pointer-events-none absolute
+        left-1/2 top-0
+        h-[220px] w-[420px]
+        -translate-x-1/2
+      "
+              style={{
+                background: `
+          radial-gradient(
+            ellipse,
+            rgba(163,230,53,0.08),
+            transparent 72%
+          )
+        `,
+                filter: "blur(60px)",
+              }}
+            />
+
+            {/* GRAIN */}
+            <div
+              className="
+        absolute inset-0
+        opacity-[0.08]
+        mix-blend-soft-light
+      "
+              style={{
+                backgroundImage:
+                  "url('https://www.transparenttextures.com/patterns/asfalt-dark.png')",
+              }}
+            />
+
+            <div className="relative z-10">
+
+              {/* MOBILE LINKS */}
+              <nav className="flex flex-col gap-2">
+
+                {[
+                  {
+                    name: "Ad-Creative",
+                    href: "/ad-creatives",
+                  },
+
+                  {
+                    name: "Youtube",
+                    href: "/organic-content-youtube",
+                  },
+
+                  {
+                    name: "SaaS Videos",
+                    href: "/saas-videos",
+                  },
+
+                  {
+                    name: "Careers",
+                    href: "/careers",
+                  },
+
+                  {
+                    name: "Privacy Policy",
+                    href: "/privacy-policy",
+                  },
+                ].map((item, i) => (
+                  <Link
+                    key={i}
+                    href={item.href}
+                    onClick={() => setMobileMenu(false)}
+                    className="
+              group relative overflow-hidden
+
+              rounded-2xl
+              border border-white/[0.06]
+
+              bg-white/3
+              px-5 py-4
+
+              transition-all duration-500
+
+              hover:bg-white/[0.05]
+            "
+                  >
+
+                    {/* HOVER GLOW */}
+                    <div
+                      className="
+                absolute inset-0
+                opacity-0 transition-all duration-500
+
+                group-hover:opacity-100
               "
-            >
+                      style={{
+                        background: `
+                  radial-gradient(
+                    circle at left,
+                    rgba(163,230,53,0.10),
+                    transparent 72%
+                  )
+                `,
+                      }}
+                    />
 
-              Book Strategy Call
+                    <div className="relative z-10 flex items-center justify-between">
 
-              <ArrowUpRight className="h-4 w-4" />
-            </a>
+                      <span
+                        className="
+                  text-[13px]
+                  font-medium
+                  tracking-[-0.02em]
+
+                  text-white/70
+                  transition-all duration-300
+
+                  group-hover:text-white
+                "
+                      >
+                        {item.name}
+                      </span>
+
+                      <ArrowUpRight
+                        className="
+                  h-4 w-4
+                  text-white/30
+                  transition-all duration-500
+
+                  group-hover:translate-x-1
+                  group-hover:-translate-y-1
+                  group-hover:text-lime-300
+                "
+                      />
+                    </div>
+                  </Link>
+                ))}
+              </nav>
+
+              {/* MOBILE CTA */}
+              <Link
+                href="#calendly"
+                onClick={() => setMobileMenu(false)}
+                className="
+          group relative mt-5
+          flex items-center justify-between
+          overflow-hidden
+
+          rounded-2xl
+
+          border border-lime-400/15
+          bg-gradient-to-r
+          from-lime-300
+          to-green-500
+
+          px-5 py-4
+
+          transition-all duration-500
+        "
+              >
+
+                {/* SHINE */}
+                <div
+                  className="
+            absolute inset-0
+            bg-linear-to-r
+            from-transparent
+            via-white/20
+            to-transparent
+          "
+                />
+
+                <span
+                  className="
+            relative z-10
+            text-[13px]
+            font-semibold
+            tracking-[-0.02em]
+
+            text-black
+          "
+                >
+                  Book Strategy Call
+                </span>
+
+                <div
+                  className="
+            relative z-10 flex
+            h-10 w-10
+            items-center justify-center
+
+            rounded-full
+            bg-black
+            text-white
+          "
+                >
+
+                  <ArrowUpRight className="h-4 w-4" />
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </header>

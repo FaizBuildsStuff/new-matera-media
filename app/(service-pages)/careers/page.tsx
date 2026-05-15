@@ -178,17 +178,17 @@ const page = () => {
             <div className="relative z-20 mx-auto max-w-7xl px-5 sm:px-8">
 
                 {/* HERO */}
-<section className="relative pt-32 pb-24 md:pt-40">
+                <section className="relative pt-32 pb-24 md:pt-40">
 
-  {/* HERO GLOW */}
-  <div
-    className="
+                    {/* HERO GLOW */}
+                    <div
+                        className="
       absolute left-1/2 top-[8%]
       h-[700px] w-[1200px]
       -translate-x-1/2
     "
-    style={{
-      background: `
+                        style={{
+                            background: `
         radial-gradient(
           ellipse,
           rgba(74,222,128,0.16),
@@ -196,13 +196,13 @@ const page = () => {
           transparent 72%
         )
       `,
-      filter: "blur(120px)",
-    }}
-  />
+                            filter: "blur(120px)",
+                        }}
+                    />
 
-  {/* FLOATING GLASS */}
-  <div
-    className="
+                    {/* FLOATING GLASS */}
+                    <div
+                        className="
       absolute right-[10%] top-[10%]
       hidden h-[240px] w-[240px]
       rounded-full border border-white/[0.04]
@@ -211,16 +211,16 @@ const page = () => {
 
       lg:block
     "
-  />
+                    />
 
-  <div className="relative z-10 text-center">
+                    <div className="relative z-10 text-center">
 
-    {/* LABEL */}
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      className="
+                        {/* LABEL */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8 }}
+                            className="
         mb-8 inline-flex items-center gap-3
         rounded-full
         border border-green-400/10
@@ -228,37 +228,37 @@ const page = () => {
         px-5 py-3
         backdrop-blur-xl
       "
-    >
+                        >
 
-      <div className="relative flex h-2 w-2">
+                            <div className="relative flex h-2 w-2">
 
-        <div className="absolute inset-0 animate-ping rounded-full bg-green-300" />
+                                <div className="absolute inset-0 animate-ping rounded-full bg-green-300" />
 
-        <div className="relative h-2 w-2 rounded-full bg-green-300" />
-      </div>
+                                <div className="relative h-2 w-2 rounded-full bg-green-300" />
+                            </div>
 
-      <span
-        className="
+                            <span
+                                className="
           text-[10px]
           font-semibold
           uppercase
           tracking-[0.24em]
           text-green-100/80
         "
-      >
-        WE ARE HIRING
-      </span>
-    </motion.div>
+                            >
+                                WE ARE HIRING
+                            </span>
+                        </motion.div>
 
-    {/* HEADING */}
-    <motion.h1
-      initial={{ opacity: 0, y: 60 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 1,
-        ease: [0.16, 1, 0.3, 1],
-      }}
-      className="
+                        {/* HEADING */}
+                        <motion.h1
+                            initial={{ opacity: 0, y: 60 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 1,
+                                ease: [0.16, 1, 0.3, 1],
+                            }}
+                            className="
         mx-auto max-w-6xl
 
         text-[3.5rem]
@@ -270,15 +270,15 @@ const page = () => {
 
         lg:text-[8rem]
       "
-    >
-      Build The Career
-      <br />
+                        >
+                            Build The Career
+                            <br />
 
-      <span className="relative inline-block">
+                            <span className="relative inline-block">
 
-        {/* TEXT GLOW */}
-        <span
-          className="
+                                {/* TEXT GLOW */}
+                                <span
+                                    className="
             absolute inset-0
             bg-gradient-to-r
             from-green-300
@@ -286,10 +286,10 @@ const page = () => {
             to-green-300
             opacity-20 blur-3xl
           "
-        />
+                                />
 
-        <span
-          className="
+                                <span
+                                    className="
             relative bg-gradient-to-b
             from-white
             via-green-100
@@ -297,21 +297,21 @@ const page = () => {
             bg-clip-text
             text-transparent
           "
-        >
-          You’re Proud Of.
-        </span>
-      </span>
-    </motion.h1>
+                                >
+                                    You’re Proud Of.
+                                </span>
+                            </span>
+                        </motion.h1>
 
-    {/* TEXT */}
-    <motion.p
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 1,
-        delay: 0.15,
-      }}
-      className="
+                        {/* TEXT */}
+                        <motion.p
+                            initial={{ opacity: 0, y: 40 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 1,
+                                delay: 0.15,
+                            }}
+                            className="
         mx-auto mt-10 max-w-2xl
         text-[15px]
         leading-[2]
@@ -319,13 +319,13 @@ const page = () => {
 
         sm:text-[18px]
       "
-    >
-      Join a high-performance creative agency
-      building premium content systems, visual
-      experiences, and campaigns viewed by millions.
-    </motion.p>
-  </div>
-</section>
+                        >
+                            Join a high-performance creative agency
+                            building premium content systems, visual
+                            experiences, and campaigns viewed by millions.
+                        </motion.p>
+                    </div>
+                </section>
 
                 {/* OPEN ROLES */}
                 <section className="pb-24">
@@ -487,9 +487,9 @@ const page = () => {
 
                                         {/* RIGHT */}
                                         <Link
-  href={role.links}
-  target="_blank"
-  className="
+                                            href={role.links}
+                                            target="_blank"
+                                            className="
     group/button relative flex
     items-center gap-5
     self-start overflow-hidden
@@ -508,11 +508,11 @@ const page = () => {
     hover:text-black
     hover:shadow-[0_0_40px_rgba(74,222,128,0.25)]
   "
->
+                                        >
 
-  {/* SHINE */}
-  <div
-    className="
+                                            {/* SHINE */}
+                                            <div
+                                                className="
       absolute inset-0
       bg-gradient-to-r
       from-transparent
@@ -524,22 +524,22 @@ const page = () => {
 
       group-hover/button:opacity-100
     "
-  />
+                                            />
 
-  <span
-    className="
+                                            <span
+                                                className="
       relative z-10
       text-[11px]
       font-semibold
       uppercase
       tracking-[0.20em]
     "
-  >
-    Apply Now
-  </span>
+                                            >
+                                                Apply Now
+                                            </span>
 
-  <div
-    className="
+                                            <div
+                                                className="
       relative z-10 flex
       h-11 w-11
       items-center justify-center
@@ -554,11 +554,11 @@ const page = () => {
       group-hover/button:bg-black
       group-hover/button:text-white
     "
-  >
+                                            >
 
-    <ArrowRight className="h-4 w-4" />
-  </div>
-</Link>
+                                                <ArrowRight className="h-4 w-4" />
+                                            </div>
+                                        </Link>
                                     </div>
                                 </motion.div>
                             );

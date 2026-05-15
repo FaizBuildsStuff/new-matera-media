@@ -20,8 +20,8 @@ const YtPricing = () => {
   return (
     <section
       className="
-        relative overflow-hidden
-        bg-black
+        relative 
+        
         py-24 text-white
 
         md:py-32
@@ -29,10 +29,9 @@ const YtPricing = () => {
     >
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-        {/* BASE */}
-        <div className="absolute inset-0 bg-[#020202]" />
+        
 
         {/* MASSIVE RED ATMOSPHERE */}
         <div
@@ -51,7 +50,7 @@ const YtPricing = () => {
                 transparent 74%
               )
             `,
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -65,7 +64,7 @@ const YtPricing = () => {
           style={{
             background:
               "radial-gradient(circle, rgba(255,0,76,0.12), transparent 72%)",
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -79,7 +78,7 @@ const YtPricing = () => {
           style={{
             background:
               "radial-gradient(circle, rgba(255,40,40,0.12), transparent 72%)",
-            filter: "blur(200px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -99,7 +98,7 @@ const YtPricing = () => {
                 transparent 72%
               )
             `,
-            filter: "blur(90px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -113,7 +112,7 @@ const YtPricing = () => {
           style={{
             background:
               "linear-gradient(to right, transparent, rgba(255,0,76,0.10), transparent)",
-            filter: "blur(90px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -140,20 +139,7 @@ const YtPricing = () => {
           }}
         />
 
-        {/* VIGNETTE */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: `
-              radial-gradient(
-                ellipse at center,
-                transparent 35%,
-                rgba(0,0,0,0.25) 72%,
-                rgba(0,0,0,0.92) 100%
-              )
-            `,
-          }}
-        />
+        
       </div>
 
       {/* CONTENT */}
@@ -286,7 +272,7 @@ const YtPricing = () => {
                   transparent 72%
                 )
               `,
-              filter: "blur(70px)",
+              filter: "blur(50px)",
             }}
           />
 

@@ -61,8 +61,8 @@ const YtResults = () => {
   return (
     <section
       className="
-        relative overflow-hidden
-        bg-black
+        relative 
+        
         py-24 text-white
 
         md:py-32
@@ -70,10 +70,9 @@ const YtResults = () => {
     >
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-        {/* BASE */}
-        <div className="absolute inset-0 bg-[#020202]" />
+        
 
         {/* MASSIVE CENTER ATMOSPHERE */}
         <div
@@ -92,7 +91,7 @@ const YtResults = () => {
                 transparent 72%
               )
             `,
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -106,7 +105,7 @@ const YtResults = () => {
           style={{
             background:
               "radial-gradient(circle, rgba(255,0,76,0.12), transparent 72%)",
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -120,7 +119,7 @@ const YtResults = () => {
           style={{
             background:
               "radial-gradient(circle, rgba(255,40,40,0.10), transparent 72%)",
-            filter: "blur(200px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -134,7 +133,7 @@ const YtResults = () => {
           style={{
             background:
               "linear-gradient(to right, transparent, rgba(255,0,76,0.10), transparent)",
-            filter: "blur(90px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -164,20 +163,7 @@ const YtResults = () => {
           }}
         />
 
-        {/* VIGNETTE */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: `
-              radial-gradient(
-                ellipse at center,
-                transparent 35%,
-                rgba(0,0,0,0.25) 72%,
-                rgba(0,0,0,0.9) 100%
-              )
-            `,
-          }}
-        />
+        
       </div>
 
       {/* CONTENT */}
@@ -458,17 +444,7 @@ const YtResults = () => {
                   </button>
                 </div>
 
-                {/* BOTTOM FADE */}
-                <div
-                  className="
-                    absolute bottom-0 left-0
-                    h-[50%] w-full
-                  "
-                  style={{
-                    background:
-                      "linear-gradient(to top, rgba(0,0,0,0.9), transparent)",
-                  }}
-                />
+                
 
                 {/* RESULT TAG */}
                 <div

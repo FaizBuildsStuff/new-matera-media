@@ -23,8 +23,8 @@ const AdPricing = () => {
   return (
     <section
       className="
-        relative overflow-hidden
-        bg-black
+        relative 
+        
         py-24 text-white
 
         md:py-32
@@ -32,10 +32,9 @@ const AdPricing = () => {
     >
 
       {/* BACKGROUND */}
-<div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-  {/* BASE */}
-  <div className="absolute inset-0 bg-[#020202]" />
+  
 
   {/* LEFT MASSIVE GRAINY GLOW */}
   <div
@@ -54,7 +53,7 @@ const AdPricing = () => {
           transparent 72%
         )
       `,
-      filter: "blur(160px)",
+      filter: "blur(50px)",
       opacity: 0.95,
     }}
   />
@@ -76,7 +75,7 @@ const AdPricing = () => {
           transparent 74%
         )
       `,
-      filter: "blur(180px)",
+      filter: "blur(50px)",
       opacity: 0.9,
     }}
   />
@@ -97,7 +96,7 @@ const AdPricing = () => {
           transparent 72%
         )
       `,
-      filter: "blur(120px)",
+      filter: "blur(50px)",
     }}
   />
 
@@ -212,20 +211,7 @@ const AdPricing = () => {
     }}
   />
 
-  {/* VIGNETTE */}
-  <div
-    className="absolute inset-0"
-    style={{
-      background: `
-        radial-gradient(
-          ellipse at center,
-          transparent 35%,
-          rgba(0,0,0,0.30) 72%,
-          rgba(0,0,0,0.90) 100%
-        )
-      `,
-    }}
-  />
+  
 </div>
 
       {/* CONTENT */}
@@ -315,7 +301,7 @@ const AdPricing = () => {
                   transparent 72%
                 )
               `,
-              filter: "blur(120px)",
+              filter: "blur(50px)",
             }}
           />
 
@@ -561,7 +547,7 @@ const AdPricing = () => {
                         transparent 72%
                       )
                     `,
-                    filter: "blur(120px)",
+                    filter: "blur(50px)",
                   }}
                 />
 

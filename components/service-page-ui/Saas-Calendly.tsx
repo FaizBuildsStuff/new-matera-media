@@ -11,10 +11,9 @@ import {
 
 const SaasCalendly = () => {
   return (
-    <section
-      className="
-        relative overflow-hidden
-        bg-black
+    <section id="calendly" className="
+        relative 
+        
         py-24 text-white
 
         md:py-32
@@ -22,10 +21,9 @@ const SaasCalendly = () => {
     >
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-        {/* BASE */}
-        <div className="absolute inset-0 bg-[#020202]" />
+        
 
         {/* TOP ATMOSPHERE */}
         <div
@@ -44,7 +42,7 @@ const SaasCalendly = () => {
                 transparent 76%
               )
             `,
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -57,7 +55,7 @@ const SaasCalendly = () => {
           style={{
             background:
               "radial-gradient(circle, rgba(6,182,212,0.10), transparent 72%)",
-            filter: "blur(180px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -70,7 +68,7 @@ const SaasCalendly = () => {
           style={{
             background:
               "radial-gradient(circle, rgba(168,85,247,0.12), transparent 72%)",
-            filter: "blur(200px)",
+            filter: "blur(50px)",
           }}
         />
 
@@ -97,20 +95,7 @@ const SaasCalendly = () => {
           }}
         />
 
-        {/* VIGNETTE */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: `
-              radial-gradient(
-                ellipse at center,
-                transparent 38%,
-                rgba(0,0,0,0.38) 78%,
-                rgba(0,0,0,0.95) 100%
-              )
-            `,
-          }}
-        />
+        
       </div>
 
       {/* CONTENT */}

@@ -132,3 +132,12 @@
     @apply bg-background text-foreground;
   }
 }
+/* Fix flickering for blurred backgrounds and GSAP animations */
+[style*="blur"], [class*="orb"], [class*="glow"] {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform, filter;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  perspective: 1000;
+}

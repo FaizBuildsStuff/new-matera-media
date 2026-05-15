@@ -43,7 +43,7 @@ export default function RootLayout({
     >
       <head />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${instrumentSans.variable} ${instrumentSerif.variable} antialiased overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} ${instrumentSans.variable} ${instrumentSerif.variable} antialiased overflow-x-hidden bg-[#030303]`}
         suppressHydrationWarning
       >
         <ThemeProvider

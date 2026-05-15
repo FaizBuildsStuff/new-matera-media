@@ -80,16 +80,16 @@ const AdHero = () => {
   }, []);
 
   return (
-    <section ref={containerRef} className="relative min-h-screen overflow-hidden bg-[#030303] text-white selection:bg-lime-500/30">
+    <section ref={containerRef} className="relative min-h-screen   text-white selection:bg-lime-500/30">
 
       {/* BACKGROUND ARCHITECTURE */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
         {/* Main Vibrant Glow */}
         <div
           className="main-glow absolute left-1/2 top-[-15%] h-[1000px] w-[1800px] -translate-x-1/2 rounded-full"
           style={{
             background: "radial-gradient(circle, #84cc16 0%, #3f6212 45%, transparent 75%)",
-            filter: "blur(140px)",
+            filter: "blur(50px)",
             opacity: 0.75,
           }}
         />
