@@ -103,19 +103,19 @@ const Header = () => {
               </a>
 
               <a
-                href="#"
+                href="/saas-videos"
                 className="group relative text-[13px] font-medium text-white/50 transition-all duration-300 hover:text-white"
               >
-                Process
+                Saas Videos
 
                 <span className="absolute -bottom-2 left-0 h-px w-0 bg-emerald-300 transition-all duration-500 group-hover:w-full" />
               </a>
 
               <a
-                href="#"
+                href="/careers"
                 className="group relative text-[13px] font-medium text-white/50 transition-all duration-300 hover:text-white"
               >
-                Pricing
+                Careers
 
                 <span className="absolute -bottom-2 left-0 h-px w-0 bg-emerald-300 transition-all duration-500 group-hover:w-full" />
               </a>
