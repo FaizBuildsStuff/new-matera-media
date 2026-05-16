@@ -6,17 +6,17 @@ const steps = [
   {
     phase: "PHASE 01",
     title: "Strategy & Concept",
-    desc: "We deeply study your brand, audience, positioning, and market to build winning concepts, scripts, and creative direction.",
+    desc: "We Study your Brand and Offering then we build Winning Scripts and Creative Direction around it.",
   },
   {
     phase: "PHASE 02",
     title: "Production & Design",
-    desc: "From cinematic editing to motion systems and ad creatives — every frame is designed to stop the scroll and increase retention.",
+    desc: "Then we go into Full Production on those with Winning Scripts and Creative Direction.",
   },
   {
     phase: "PHASE 03",
     title: "Launch & Optimization",
-    desc: "We optimize creatives using real performance data to improve engagement, conversions, watch time, and overall ROI.",
+    desc: "Finally, we Launch it all and Tweak things based on the Results to make it Perform even better.",
   },
 ];
 
@@ -140,11 +140,6 @@ const Ourprocess = () => {
             to Reality.
           </h2>
 
-          {/* SUBTEXT */}
-          <p className="mx-auto mt-8 max-w-2xl text-[17px] leading-relaxed text-white/45">
-            Every system we build blends cinematic storytelling, creative
-            strategy, and performance-focused execution.
-          </p>
         </div>
 
         {/* TIMELINE */}

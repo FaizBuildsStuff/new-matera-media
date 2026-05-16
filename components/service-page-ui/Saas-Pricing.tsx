@@ -16,14 +16,12 @@ const plans = [
     featured: false,
     accent: "cyan",
     description:
-      "Perfect for SaaS founders that need clean, high-converting creatives to start scaling.",
+      "A clear starting point for your product",
     features: [
-      "2 Premium SaaS Videos",
-      "Hook Variations",
-      "Script + Creative Direction",
-      "Motion Graphics",
-      "Thumbnail Design",
-      "Fast Turnaround",
+      "Messaging and narrative defined",
+      "Script and storyboard included",
+      "Product visuals with clean motion",
+      "Final video ready for site and sales",
     ],
   },
 
@@ -34,14 +32,12 @@ const plans = [
     featured: true,
     accent: "violet",
     description:
-      "Built for SaaS brands ready to scale with premium ad creatives and conversion-focused systems.",
+      "For launches and growth pushes",
     features: [
-      "5 Premium SaaS Videos",
-      "Advanced Motion Design",
-      "Performance Editing",
-      "CTR Optimization",
-      "Creative Strategy",
-      "Unlimited Revisions",
+      "Product or feature launch videos",
+      "Cutdowns for ads and social",
+      "Landing page ready edits",
+      "Structured for distribution",
     ],
   },
 
@@ -52,14 +48,12 @@ const plans = [
     featured: false,
     accent: "blue",
     description:
-      "A complete SaaS video production system designed for aggressive growth and paid acquisition.",
+      "Ongoing production for growth teams.",
     features: [
-      "10+ Premium Videos",
-      "Full Funnel Creatives",
-      "Weekly Iterations",
-      "Dedicated Team",
-      "Analytics & Reports",
-      "Priority Delivery",
+      "Launch, product, and feature videos",
+      "Cutdowns for ads and distribution",
+      "Onboarding and education content",
+      "Ongoing support with a dedicated team",
     ],
   },
 ];
@@ -393,7 +387,7 @@ const SaasPricing = () => {
               lg:text-[7.4rem]
             "
           >
-            One System.
+            Plans for SaaS
             <br />
 
             <span
@@ -406,7 +400,7 @@ const SaasPricing = () => {
                 text-transparent
               "
             >
-              Built To Scale.
+              Video production.
             </span>
           </h2>
 
@@ -594,8 +588,6 @@ const SaasPricing = () => {
                     "
                   >
                     {plan.name}
-                    <br />
-                    System.
                   </h3>
 
                   <p

@@ -201,7 +201,7 @@ const YtPricing = () => {
                 text-transparent
               "
             >
-              Consistent Publishing.
+              Youtube Growth
             </span>
           </h2>
 

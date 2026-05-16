@@ -210,31 +210,11 @@ const SaasHero = () => {
 
           {/* HEADING */}
 <h1
-  className="
-    mx-auto max-w-[95%]
-    text-center
-    font-semibold
-    text-white
-
-    leading-[1.02]
-    tracking-[-0.045em]
-
-    text-[2.9rem]
-
-    sm:max-w-5xl
-    sm:text-[4.5rem]
-    sm:leading-[1]
-
-    md:text-[5.6rem]
-
-    lg:max-w-7xl
-    lg:text-[7.4rem]
-    lg:leading-[0.96]
-  "
+  className="mx-auto max-w-[95%] text-center font-semibold text-white leading-[1.03] tracking-[-0.035em] text-[2.1rem] sm:max-w-5xl sm:text-[3.2rem] sm:leading-[1] md:text-[4.2rem] lg:max-w-6xl lg:text-[5.4rem] lg:leading-[0.97]"
 >
 
   <span className="block">
-    Turn Your SaaS Into
+    Stop over-explaining your
   </span>
 
   {/* GRADIENT TEXT */}
@@ -269,12 +249,15 @@ const SaasHero = () => {
         text-transparent
       "
     >
-      A Conversion Machine
+      Product and start turning it
     </span>
   </span>
 
   <span className="block">
-    With Premium Video Ads.
+    into
+videos people instantly understand
+and want to buy.
+
   </span>
 </h1>
 
@@ -290,12 +273,7 @@ const SaasHero = () => {
               sm:text-[18px]
             "
           >
-            We create high-converting SaaS videos
-            designed to explain your product,
-            increase retention, lower CAC,
-            and turn cold traffic into paying users.
-            From motion graphics to product storytelling —
-            everything is built for conversions.
+            We create SaaS videos that break down complex features into clear value so users get it faster, trust it more, and actually convert.
           </p>
 
           {/* BUTTONS */}
@@ -364,45 +342,6 @@ const SaasHero = () => {
               </div>
             </button>
 
-            {/* SECONDARY */}
-            <button
-              className="
-                group flex items-center gap-4
-                rounded-full
-                border border-white/[0.08]
-                bg-white/[0.03]
-                px-8 py-5
-                backdrop-blur-xl
-                transition-all duration-500
-
-                hover:border-violet-400/20
-                hover:bg-white/[0.05]
-              "
-            >
-
-              <div
-                className="
-                  flex h-10 w-10
-                  items-center justify-center
-                  rounded-full
-                  bg-violet-500/20
-                  text-violet-200
-                "
-              >
-                <Play className="ml-0.5 h-4 w-4 fill-current" />
-              </div>
-
-              <span
-                className="
-                  text-[11px]
-                  font-semibold
-                  uppercase
-                  tracking-[0.18em]
-                "
-              >
-                Watch Showreel
-              </span>
-            </button>
           </div>
         </div>
       </div>

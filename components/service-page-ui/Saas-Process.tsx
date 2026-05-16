@@ -223,38 +223,9 @@ const SaasProcess = () => {
               lg:text-[7rem]
             "
           >
-            Turning Complex SaaS
-            <br />
-
-            <span
-              className="
-                bg-gradient-to-b
-                from-white
-                via-blue-100
-                to-violet-200
-                bg-clip-text
-                text-transparent
-              "
-            >
-              Into Videos People Understand.
-            </span>
+            The Workflow
+            
           </h2>
-
-          {/* TEXT */}
-          <p
-            className="
-              mx-auto mt-8 max-w-2xl
-              text-[15px]
-              leading-[1.9]
-              text-white/45
-
-              sm:text-[17px]
-            "
-          >
-            A streamlined creative system designed
-            to simplify your product, improve clarity,
-            and convert viewers into customers.
-          </p>
         </motion.div>
 
         {/* TIMELINE */}

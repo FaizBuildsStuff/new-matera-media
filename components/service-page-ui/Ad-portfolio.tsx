@@ -243,9 +243,7 @@ const Adportfolio = () => {
                 sm:text-[17px]
               "
             >
-              Premium performance creatives engineered to
-              stop the scroll, increase retention, lower CAC,
-              and scale paid campaigns profitably.
+              These Creatives Lowered CAC's and lifted ROAS
             </p>
           </div>
 

@@ -228,8 +228,7 @@ const Workshowcase = () => {
 
                         {/* SUBTEXT */}
                         <p className="max-w-sm text-[16px] sm:text-[17px] leading-relaxed text-white/45">
-                            Where content meets ROI. Cinematic visuals designed to stop the
-                            scroll and scale modern brands.
+                            Where content meets ROI.
                         </p>
 
                         {/* FILTER */}

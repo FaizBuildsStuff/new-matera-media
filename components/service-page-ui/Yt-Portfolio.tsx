@@ -200,20 +200,10 @@ const YtPortfolio = () => {
                 lg:text-[6rem]
               "
             >
-              Reels Designed
+              Our Work
               <br />
 
-              <span
-                className="
-                  bg-gradient-to-b
-                  from-white
-                  to-red-200
-                  bg-clip-text
-                  text-transparent
-                "
-              >
-                To Pull Attention.
-              </span>
+              
             </h2>
 
             {/* TEXT */}
@@ -227,9 +217,7 @@ const YtPortfolio = () => {
                 sm:text-[17px]
               "
             >
-              Every short-form reel is crafted with
-              retention psychology, cinematic editing,
-              and viral pacing to convert viewers into clients.
+              Industry-leading production.
             </p>
           </div>
 

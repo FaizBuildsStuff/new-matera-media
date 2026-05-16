@@ -335,21 +335,9 @@ const YtHero = () => {
 
                     {/* HEADING */}
                     <h1
-                        className="
-    max-w-7xl
-    text-[3rem]
-    font-semibold
-    leading-[1.02]
-    tracking-[-0.045em]
-
-    sm:text-[5rem]
-    sm:leading-[1]
-
-    lg:text-[7rem]
-    lg:leading-[0.97]
-  "
+                        className="max-w-6xl text-[2.5rem] font-semibold leading-[1.04] tracking-[-0.04em] sm:text-[4rem] sm:leading-[1] lg:text-[5.8rem] lg:leading-[0.98]"
                     >
-                        Turn YouTube Into
+                        Stop posting for views and
                         <br />
 
                         {/* SELECTED TEXT EFFECT */}
@@ -440,13 +428,15 @@ const YtHero = () => {
         text-transparent
       "
                             >
-                                A Client Machine
+                                start building a
                             </span>
                         </span>
 
                         <br />
 
-                        On Autopilot.
+                        YouTube Revenue Engine
+that fills your calendar on autopilot.
+
                     </h1>
 
                     {/* TEXT */}
@@ -515,7 +505,7 @@ const YtHero = () => {
                             <div className="relative z-10 flex items-center gap-4">
 
                                 <span>
-                                    Book Strategy Call
+                                    BOOK A FREE CALL
                                 </span>
 
                                 <div
@@ -531,44 +521,6 @@ const YtHero = () => {
                             </div>
                         </button>
 
-                        {/* SECONDARY */}
-                        <button
-                            className="
-                group relative overflow-hidden
-                rounded-full
-                border border-white/[0.08]
-                bg-white/[0.03]
-                px-8 py-5
-                text-sm
-                font-semibold
-                uppercase
-                tracking-[0.16em]
-                text-white
-                backdrop-blur-3xl
-                transition-all duration-500
-
-                hover:bg-white/[0.05]
-              "
-                        >
-
-                            <div className="flex items-center gap-4">
-
-                                <div
-                                    className="
-                    flex h-10 w-10
-                    items-center justify-center
-                    rounded-full
-                    bg-white text-black
-                  "
-                                >
-                                    <Play className="ml-0.5 h-4 w-4 fill-black text-black" />
-                                </div>
-
-                                <span>
-                                    Watch Case Study
-                                </span>
-                            </div>
-                        </button>
                     </div>
 
                     {/* VIDEO PREVIEW */}

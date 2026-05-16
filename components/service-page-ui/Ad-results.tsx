@@ -137,7 +137,7 @@ const AdResults = () => {
                 lg:text-[5rem]
               "
                         >
-                            Over 7 Years Of Expertise In
+                            Over Many Years Of Expertise In
                             <br />
 
                             <span className="relative inline-flex items-center gap-4">

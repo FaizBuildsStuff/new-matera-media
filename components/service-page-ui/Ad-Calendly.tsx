@@ -21,9 +21,9 @@ const AdCalendly = () => {
         >
 
             {/* BACKGROUND */}
-      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
+            <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-                
+
 
                 {/* MASSIVE TOP AURORA */}
                 <div
@@ -267,7 +267,7 @@ const AdCalendly = () => {
                     }}
                 />
 
-                
+
             </div>
 
             {/* CONTENT */}
@@ -317,9 +317,9 @@ const AdCalendly = () => {
               lg:text-[6rem]
             "
                     >
-                        Let’s Build Ads
+                        Get Yourself
                         <br />
-                        That Actually Scale.
+                        Winner Creatives.
                     </h2>
 
                     {/* TEXT */}
@@ -333,9 +333,7 @@ const AdCalendly = () => {
               sm:text-[17px]
             "
                     >
-                        Book a free strategy call and we’ll break down
-                        your creative system, hooks, ad structure,
-                        and scaling opportunities.
+                        Book a free call today.
                     </p>
                 </div>
 

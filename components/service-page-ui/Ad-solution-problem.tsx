@@ -12,36 +12,36 @@ import {
 
 const problems = [
   {
-    title: "Creative Fatigue Kills Performance",
-    desc: "Most ads die because the creative system behind them isn't designed for iteration and retention.",
+    title: "Ads lose CTR and ROAS too fast.",
+    desc: "If you don't stop the scroll in 2 seconds, your entire spend is wasted. Most brands fail to test hooks aggressively.",
     icon: TrendingDown,
   },
   {
-    title: "Weak Hooks = Burned Budget",
-    desc: "If the first seconds fail to stop the scroll, CAC spikes and campaigns collapse fast.",
+    title: "No clear script or creative plan.",
+    desc: "Most brands ship 'pretty' videos without a testing framework. High production value doesn't equal high conversion.",
     icon: ShieldAlert,
   },
   {
-    title: "No Scalable Creative Framework",
-    desc: "Random editing and inconsistent messaging create unstable results and weak ROAS.",
+    title: "Slow communication or late first drafts.",
+    desc: "Wasting budget on random creative edits instead of following an iteration loop of data-backed winners.",
     icon: BrainCircuit,
   },
 ];
 
 const solutions = [
   {
-    title: "Hook-First Creative Engineering",
-    desc: "We build high-retention openings engineered specifically for paid social performance.",
+    title: "Hook testing + iteration loop",
+    desc: "We make creatives that actually keep performing and bring results in.",
     icon: Sparkles,
   },
   {
-    title: "Performance Editing System",
-    desc: "Every scene, subtitle, pacing cut, and transition is optimized for conversion psychology.",
+    title: "Performance-first editing system",
+    desc: "We handle scripting + direction so every ad hits the BullsEye.",
     icon: Orbit,
   },
   {
-    title: "Fast Iteration & Testing Loops",
-    desc: "Winning creatives are scaled aggressively while weak angles are removed instantly.",
+    title: "Creative strategy built into production",
+    desc: "Our team delivers fast first drafts and keeps communication 24/7 on autopilot so you’re always up to date.",
     icon: Check,
   },
 ];

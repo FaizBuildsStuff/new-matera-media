@@ -175,7 +175,7 @@ const Testimonial = () => {
           </h2>
 
           <p className="mt-5 text-sm font-medium uppercase tracking-[0.25em] text-white/25">
-            Built on performance, creativity, and trust.
+            And there's a good reason why.
           </p>
         </div>
 

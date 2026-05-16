@@ -7,16 +7,15 @@ import {
   ArrowUpRight,
   BadgeDollarSign,
 } from "lucide-react";
+import Link from "next/link";
 
 const features = [
-  "10 High-Converting Ad Creatives",
+  "10 Motion Ad Creatives",
   "Multiple Hook Variations",
-  "Creative Strategy + Scripting",
-  "Performance-Focused Editing",
-  "Motion Graphics & Captions",
-  "Thumbnail / Frame Design",
-  "Fast Turnaround System",
-  "1-on-1 Creative Direction",
+  "Winning scripts + Creative direction",
+  "Performance Tracking",
+  "Perfect for Testing the Waters",
+  "Voiceover Included",
 ];
 
 const AdPricing = () => {
@@ -261,9 +260,9 @@ const AdPricing = () => {
               lg:text-[6rem]
             "
           >
-            One System.
+            Plans Built for
             <br />
-            Built To Scale.
+            Performance.
           </h2>
 
           {/* TEXT */}
@@ -412,9 +411,9 @@ const AdPricing = () => {
                     sm:text-[5rem]
                   "
                 >
-                  Ad Creative
+                  Winner ad
                   <br />
-                  System.
+                  Creatives.
                 </h3>
 
                 {/* DESC */}
@@ -428,38 +427,10 @@ const AdPricing = () => {
                     sm:text-[17px]
                   "
                 >
-                  Built for brands that need
-                  scroll-stopping creatives, strong hooks,
-                  and performance-focused editing designed
-                  to scale revenue.
+                  HQ Motion Ad Creatives designed to stop the scroll and drop your CAC.
                 </p>
 
-                {/* PRICE */}
-                <div className="mt-12 flex items-end gap-4">
-
-                  <h4
-                    className="
-                      text-[4rem]
-                      font-semibold
-                      leading-none
-                      tracking-[-0.08em]
-
-                      sm:text-[5.5rem]
-                    "
-                  >
-                    $3.5k
-                  </h4>
-
-                  <span
-                    className="
-                      mb-3
-                      text-lg
-                      text-white/40
-                    "
-                  >
-                    /month
-                  </span>
-                </div>
+                
 
                 {/* CTA */}
                 <button
@@ -482,9 +453,10 @@ const AdPricing = () => {
                   "
                 >
 
+                  <Link href='#calendly'>
                   <span className="relative z-10">
                     Book Strategy Call
-                  </span>
+                  </span></Link>
 
                   <div
                     className="

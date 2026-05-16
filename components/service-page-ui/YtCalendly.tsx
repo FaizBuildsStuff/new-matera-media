@@ -22,17 +22,17 @@ const YtCalendly = () => {
       {/* BACKGROUND */}
       <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-  
 
-  {/* MASSIVE RED ATMOSPHERE */}
-  <div
-    className="
+
+        {/* MASSIVE RED ATMOSPHERE */}
+        <div
+          className="
       absolute left-1/2 top-[-24%]
       h-[1300px] w-[2600px]
       -translate-x-1/2
     "
-    style={{
-      background: `
+          style={{
+            background: `
         radial-gradient(
           ellipse at center,
           rgba(255,0,76,0.24) 0%,
@@ -42,19 +42,19 @@ const YtCalendly = () => {
           transparent 74%
         )
       `,
-      filter: "blur(50px)",
-    }}
-  />
+            filter: "blur(50px)",
+          }}
+        />
 
-  {/* SECOND RED LAYER */}
-  <div
-    className="
+        {/* SECOND RED LAYER */}
+        <div
+          className="
       absolute left-1/2 top-[2%]
       h-[900px] w-[1800px]
       -translate-x-1/2
     "
-    style={{
-      background: `
+          style={{
+            background: `
         radial-gradient(
           ellipse,
           rgba(255,0,76,0.16),
@@ -62,47 +62,47 @@ const YtCalendly = () => {
           transparent 72%
         )
       `,
-      filter: "blur(50px)",
-    }}
-  />
+            filter: "blur(50px)",
+          }}
+        />
 
-  {/* LEFT RED CLOUD */}
-  <div
-    className="
+        {/* LEFT RED CLOUD */}
+        <div
+          className="
       absolute left-[-12%] top-[18%]
       h-[900px] w-[900px]
       rounded-full
     "
-    style={{
-      background:
-        "radial-gradient(circle, rgba(255,0,76,0.14), transparent 72%)",
-      filter: "blur(50px)",
-    }}
-  />
+          style={{
+            background:
+              "radial-gradient(circle, rgba(255,0,76,0.14), transparent 72%)",
+            filter: "blur(50px)",
+          }}
+        />
 
-  {/* RIGHT RED CLOUD */}
-  <div
-    className="
+        {/* RIGHT RED CLOUD */}
+        <div
+          className="
       absolute right-[-10%] top-[0%]
       h-[1000px] w-[1000px]
       rounded-full
     "
-    style={{
-      background:
-        "radial-gradient(circle, rgba(255,50,50,0.12), transparent 72%)",
-      filter: "blur(50px)",
-    }}
-  />
+          style={{
+            background:
+              "radial-gradient(circle, rgba(255,50,50,0.12), transparent 72%)",
+            filter: "blur(50px)",
+          }}
+        />
 
-  {/* RED LIGHT WAVE */}
-  <div
-    className="
+        {/* RED LIGHT WAVE */}
+        <div
+          className="
       absolute left-[-5%] top-[34%]
       h-[260px] w-[120%]
       rotate-[-6deg]
     "
-    style={{
-      background: `
+          style={{
+            background: `
         linear-gradient(
           to right,
           transparent,
@@ -111,19 +111,19 @@ const YtCalendly = () => {
           transparent
         )
       `,
-      filter: "blur(60px)",
-    }}
-  />
+            filter: "blur(60px)",
+          }}
+        />
 
-  {/* SECOND WAVE */}
-  <div
-    className="
+        {/* SECOND WAVE */}
+        <div
+          className="
       absolute left-[-10%] top-[46%]
       h-[180px] w-[120%]
       rotate-[4deg]
     "
-    style={{
-      background: `
+          style={{
+            background: `
         linear-gradient(
           to right,
           transparent,
@@ -131,38 +131,38 @@ const YtCalendly = () => {
           transparent
         )
       `,
-      filter: "blur(50px)",
-    }}
-  />
+            filter: "blur(50px)",
+          }}
+        />
 
-  {/* LEFT ORBIT */}
-  <div
-    className="
+        {/* LEFT ORBIT */}
+        <div
+          className="
       absolute left-[-8%] bottom-[-18%]
       h-[500px] w-[500px]
       rounded-full
       border border-red-400/[0.08]
     "
-  />
+        />
 
-  <div
-    className="
+        <div
+          className="
       absolute left-[-2%] bottom-[-10%]
       h-[360px] w-[360px]
       rounded-full
       border border-red-300/[0.05]
     "
-  />
+        />
 
-  {/* CENTER WHITE LIGHT */}
-  <div
-    className="
+        {/* CENTER WHITE LIGHT */}
+        <div
+          className="
       absolute left-1/2 top-[28%]
       h-[320px] w-[800px]
       -translate-x-1/2
     "
-    style={{
-      background: `
+          style={{
+            background: `
         radial-gradient(
           ellipse,
           rgba(255,255,255,0.10),
@@ -170,42 +170,42 @@ const YtCalendly = () => {
           transparent 72%
         )
       `,
-      filter: "blur(50px)",
-    }}
-  />
+            filter: "blur(50px)",
+          }}
+        />
 
-  {/* FLOATING PARTICLES */}
-  <div className="absolute left-[16%] top-[68%] h-2.5 w-2.5 rounded-full bg-red-300 shadow-[0_0_25px_rgba(255,0,76,0.9)]" />
+        {/* FLOATING PARTICLES */}
+        <div className="absolute left-[16%] top-[68%] h-2.5 w-2.5 rounded-full bg-red-300 shadow-[0_0_25px_rgba(255,0,76,0.9)]" />
 
-  <div className="absolute right-[18%] top-[28%] h-3 w-3 rounded-full bg-red-200 shadow-[0_0_30px_rgba(255,60,60,0.9)]" />
+        <div className="absolute right-[18%] top-[28%] h-3 w-3 rounded-full bg-red-200 shadow-[0_0_30px_rgba(255,60,60,0.9)]" />
 
-  <div className="absolute left-[26%] top-[24%] h-2 w-2 rounded-full bg-white shadow-[0_0_18px_rgba(255,255,255,0.8)]" />
+        <div className="absolute left-[26%] top-[24%] h-2 w-2 rounded-full bg-white shadow-[0_0_18px_rgba(255,255,255,0.8)]" />
 
-  {/* GRID */}
-  <div
-    className="absolute inset-0 opacity-[0.022]"
-    style={{
-      backgroundImage: `
+        {/* GRID */}
+        <div
+          className="absolute inset-0 opacity-[0.022]"
+          style={{
+            backgroundImage: `
         linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)
       `,
-      backgroundSize: "90px 90px",
-      maskImage:
-        "radial-gradient(circle at center, black, transparent 82%)",
-    }}
-  />
+            backgroundSize: "90px 90px",
+            maskImage:
+              "radial-gradient(circle at center, black, transparent 82%)",
+          }}
+        />
 
-  {/* PREMIUM GRAIN */}
-  <div
-    className="absolute inset-0 opacity-[0.12] mix-blend-soft-light"
-    style={{
-      backgroundImage:
-        "url('https://www.transparenttextures.com/patterns/asfalt-dark.png')",
-    }}
-  />
+        {/* PREMIUM GRAIN */}
+        <div
+          className="absolute inset-0 opacity-[0.12] mix-blend-soft-light"
+          style={{
+            backgroundImage:
+              "url('https://www.transparenttextures.com/patterns/asfalt-dark.png')",
+          }}
+        />
 
-  
-</div>
+
+      </div>
 
       {/* CONTENT */}
       <div className="relative z-20 mx-auto max-w-[1650px] px-5 sm:px-8 lg:px-10">

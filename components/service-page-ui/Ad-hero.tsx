@@ -112,11 +112,11 @@ const AdHero = () => {
 
         {/* HERO HEADING */}
         <div className="hero-reveal relative mb-10">
-          <h1 className="text-[2.6rem] font-semibold leading-[1.05] tracking-[-0.06em] text-white sm:text-6xl md:text-7xl lg:text-[96px]">
+          <h1 className="text-[2.4rem] font-semibold leading-[1.05] tracking-[-0.045em] text-white sm:text-[3.8rem] md:text-[5.3rem] lg:text-[82px]">
 
-            We Create{" "}
+            We produce winning{" "}
 
-            <span className="selection-box relative inline-block px-6 py-2 mx-2">
+            <span className="selection-box relative mx-1.5 inline-block px-5 py-1.5">
 
               {/* SELECTION BOX ARTIFACT */}
               <div className="absolute inset-0 border-[1.5px] border-lime-400/90 bg-lime-400/5">
@@ -128,7 +128,7 @@ const AdHero = () => {
                 <div className="handle absolute -right-[4px] -bottom-[4px] h-[8px] w-[8px] bg-lime-400" />
               </div>
 
-              High-Converting
+              ad creatives
 
               {/* MINI LABEL */}
               <div className="absolute -right-12 -top-5">
@@ -144,26 +144,25 @@ const AdHero = () => {
 
             <br className="hidden md:block" />
 
-            Ad Creatives That
+            that drops your CAC and get
             <br className="hidden md:block" />
-            Scale Revenue Fast
+            you results within a month.
+
           </h1>
         </div>
 
         {/* DESCRIPTION SUBTEXT */}
         <p className="mx-auto mt-8 max-w-3xl text-sm leading-[1.9] text-white/55 sm:text-base md:text-lg">
-          We craft performance-driven ad creatives engineered
-          to lower CAC, improve CTR, and generate consistent
-          revenue growth across Meta, TikTok, YouTube, and paid social campaigns.
+          We start by studying your offer then create ads which are built to get strong CTR, Then we keep optimizing them to improve ROAS and bring down your CAC.
         </p>
 
         {/* CTA BUTTON */}
         <div className="hero-reveal mt-14">
           <button className="group flex items-center overflow-hidden rounded-full bg-white shadow-[0_0_40px_rgba(255,255,255,0.05)] transition-all duration-300 hover:scale-[1.04]">
-            <span className="px-10 py-5 text-[16px] font-bold tracking-tight text-black">
-              Contact us
+            <span className="px-9 py-4 text-[15px] font-semibold tracking-[-0.01em] text-black">
+              BOOK A FREE CALL
             </span>
-            <div className="flex h-[64px] w-[64px] items-center justify-center bg-lime-400 transition-all duration-300 group-hover:bg-lime-300">
+            <div className="flex h-[58px] w-[58px] items-center justify-center bg-lime-400 transition-all duration-300 group-hover:bg-lime-300">
               <ArrowUpRight className="h-7 w-7 text-black stroke-[3px]" />
             </div>
           </button>
@@ -191,7 +190,7 @@ const AdHero = () => {
         </div>
 
         {/* CLIENT LOGO SECTION */}
-        <div className="hero-reveal mt-36 w-full max-w-6xl">
+        <div className="hero-reveal mt-28 w-full max-w-6xl">
           <h3 className="mb-14 text-[13px] font-bold tracking-[0.35em] text-white/25 uppercase">
             Our Clients
           </h3>

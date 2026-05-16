@@ -8,12 +8,12 @@ const faqItems = [
   {
     question: "What is your typical turnaround time?",
     answer:
-      "Most projects are delivered within 5–14 days depending on complexity, revisions, and production requirements.",
+      "Our standard turnaround for most projects is 2-4 weeks, depending on complexity. For expedited deliveries, we offer rush options upon request.",
   },
   {
     question: "Do you offer revisions?",
     answer:
-      "Yes. Every project includes revisions to ensure the final creative matches your brand vision and performance goals.",
+      "Absolutely. We include 3 rounds of revisions in our standard packages to ensure the final output aligns perfectly with your vision.",
   },
   {
     question: "How does the payment structure work?",
@@ -23,12 +23,12 @@ const faqItems = [
   {
     question: "Can you help with strategy, not just production?",
     answer:
-      "Absolutely. We help with creative strategy, scripting, positioning, hooks, ad angles, retention systems, and overall content direction.",
+      "Yes. Strategy is at the core of what we do. We don't just make things look good; we ensure they perform by aligning creative with your business goals.",
   },
   {
     question: "What assets do I need to provide?",
     answer:
-      "Usually your branding, raw footage (if available), product details, references, and any important messaging you want highlighted.",
+      "It depends on the project. Generally, we'll need your brand guidelines, logo files, and any specific footage or copy you want included. We can handle the rest.",
   },
 ];
 

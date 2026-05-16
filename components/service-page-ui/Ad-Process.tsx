@@ -171,26 +171,9 @@ const AdProcess = () => {
     lg:leading-[0.98]
   "
 >
-  Performance-Driven
-  <br />
-  Creative System.
+  The Workflow
 </h2>
 
-            {/* TEXT */}
-            <p
-              className="
-                mt-7 max-w-2xl
-                text-[15px]
-                leading-[1.9]
-                text-white/45
-
-                sm:text-[17px]
-              "
-            >
-              Every creative is engineered with a strategic framework
-              focused on retention, conversion psychology, and scalable
-              paid social performance.
-            </p>
 
             {/* STEPS */}
             <div className="mt-16 space-y-10">

@@ -7,7 +7,7 @@ const plans = [
   {
     title: "Youtube Growth",
     description:
-      "Designed to grow your YouTube presence with cinematic long-form content systems.",
+      "This Plan is designed to Grow your Youtube and Deliver real results every month.",
     features: [
       "4 Premium Long-Form Videos per Month",
       "Scripting & Creative Direction",
@@ -20,7 +20,7 @@ const plans = [
   {
     title: "Winner Ad Creatives",
     description:
-      "High-converting motion ad creatives engineered to stop the scroll and scale your CAC.",
+      "HQ Motion Ad Creatives designed to stop the scroll and drop your CAC.",
     features: [
       "10 Motion Ad Creatives",
       "Multiple Hook Variations",
@@ -33,7 +33,7 @@ const plans = [
   {
     title: "Product Launch Video",
     description:
-      "Premium launch visuals designed to make your product feel world-class.",
+      "A Launch Video designed for your Product or Feature release.",
     features: [
       "30–45 Sec Launch Video",
       "Scripting & Creative Direction",
@@ -167,15 +167,12 @@ const Pricing = () => {
 
           {/* HEADING */}
           <h2 className="mx-auto max-w-4xl text-4xl sm:text-5xl lg:text-7xl font-semibold leading-[1.1] sm:leading-[0.95] tracking-[-0.06em] text-white">
-            Premium Creative
-            <br />
-            Growth Systems.
+            Popular Plans
           </h2>
 
           {/* SUBTEXT */}
           <p className="mx-auto mt-8 max-w-2xl text-[16px] sm:text-[17px] leading-relaxed text-white/45">
-            Every plan is engineered to combine cinematic storytelling,
-            performance-focused strategy, and world-class execution.
+            The results will speak for themselves.
           </p>
         </div>
 
