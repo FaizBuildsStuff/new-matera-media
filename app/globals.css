@@ -124,6 +124,8 @@
     @apply font-sans;
     /* Smooth scroll for in-page anchor links */
     scroll-behavior: smooth;
+    /* Slightly reduce base size for UI elements like text and buttons */
+    font-size: 85%;
   }
   body {
     @apply bg-background text-foreground;

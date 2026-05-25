@@ -138,16 +138,16 @@ const Hero = () => {
       </div>
 
       {/* CONTENT */}
-      <div className="relative z-20 mx-auto flex min-h-screen max-w-[1600px] flex-col items-center justify-start px-4 pt-28 text-center sm:px-6 lg:px-8">
+      <div className="relative z-20 mx-auto flex min-h-[88vh] max-w-[1180px] flex-col items-center justify-start px-4 pt-28 sm:pt-32 lg:pt-36 text-center sm:px-6 lg:px-8">
         {/* Label */}
-        <div className="hero-reveal mb-6 sm:mb-8">
+        <div className="hero-reveal mb-4 sm:mb-5">
           <span className="text-[10px] font-bold uppercase tracking-[0.24em] text-emerald-300 sm:text-[11px] sm:tracking-[0.3em]">
             Service Founders &amp; Info Entrepreneurs
           </span>
         </div>
 
         {/* H1 */}
-        <h1 className="hero-reveal max-w-6xl text-[2.2rem] font-semibold leading-[0.94] tracking-[-0.06em] text-white sm:text-[3.4rem] md:text-[4.4rem] lg:text-[76px]">
+        <h1 className="hero-reveal max-w-5xl text-[1.55rem] font-semibold leading-[0.92] tracking-[-0.055em] text-white sm:text-[2.3rem] md:text-[3rem] lg:text-[52px]">
           We help B2B Brands and{" "}
           <br className="hidden sm:block" />
           Content Creators scale their{" "}
@@ -158,23 +158,23 @@ const Hero = () => {
         </h1>
 
         {/* CTA */}
-        <div className="hero-reveal mt-10 sm:mt-12">
+        <div className="hero-reveal mt-6 sm:mt-7">
           <button
             onClick={handleBookCall}
             aria-label="Book a strategy call"
-            className="group flex items-center gap-3 rounded-full bg-white px-2 py-2 pr-5 text-black transition-all duration-500 hover:scale-[1.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 sm:pr-8"
+            className="group flex items-center gap-2 rounded-full bg-white px-2 py-2 pr-4 text-black transition-all duration-300 hover:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 sm:pr-6"
           >
-            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-emerald-500 transition-all duration-500 group-hover:bg-emerald-400 sm:h-12 sm:w-12">
+            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-500 transition-all duration-300 group-hover:bg-emerald-400">
               <ArrowRight className="h-5 w-5 stroke-[2.5px]" aria-hidden="true" />
             </div>
-            <span className="text-[14px] font-semibold tracking-tight sm:text-[15px]">
+            <span className="text-[12px] font-medium tracking-tight sm:text-[13px]">
               Book a Strategy Call
             </span>
           </button>
         </div>
 
         {/* VIDEO */}
-        <div className="hero-reveal relative mt-16 w-full max-w-[1300px] sm:mt-20 lg:mt-24">
+        <div className="hero-reveal relative mt-12 w-full max-w-[1050px] sm:mt-16 lg:mt-20">
           <div className="absolute inset-[-40px] rounded-[50px] bg-emerald-500/20 blur-[100px]" aria-hidden="true" />
           <div className="relative overflow-hidden rounded-[24px] border border-emerald-500/20 bg-black/30 p-1.5 backdrop-blur-3xl sm:rounded-[32px] sm:p-2 lg:rounded-[42px]">
             <div className="relative overflow-hidden rounded-[20px] border border-white/10 sm:rounded-[28px] lg:rounded-[34px]">

@@ -22,7 +22,7 @@ const steps = [
 
 const Ourprocess = () => {
   return (
-    <section className="relative border-none outline-none px-6 py-40 text-white" aria-label="Our process">
+    <section className="relative border-none outline-none px-6 py-24 sm:py-28 text-white" aria-label="Our process">
 
       {/* BACKGROUND */}
       <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
@@ -84,7 +84,7 @@ const Ourprocess = () => {
         />
 
         {/* MASSIVE BLURRED ORB */}
-        <div className="absolute left-1/2 top-[50%] h-[1100px] w-[1100px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/[0.03]" />
+        <div className="absolute left-1/2 top-[50%] h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/[0.03]" />
 
         {/* GRID - Size/Opacity matched with Hero */}
         <div
@@ -124,7 +124,7 @@ const Ourprocess = () => {
       <div className="relative z-10 mx-auto max-w-7xl">
 
         {/* TOP */}
-        <div className="mb-36 text-center">
+        <div className="mb-20 text-center">
 
           {/* LABEL */}
           <div className="mb-5">
@@ -134,7 +134,7 @@ const Ourprocess = () => {
           </div>
 
           {/* HEADING */}
-          <h2 className="mx-auto max-w-5xl text-5xl font-semibold leading-[0.92] tracking-[-0.06em] text-white md:text-7xl">
+          <h2 className="mx-auto max-w-4xl text-[2.4rem] font-semibold leading-[0.95] tracking-[-0.05em] text-white sm:text-[3.2rem] md:text-[4.2rem]">
             From Concept
             <br />
             to Reality.
@@ -156,12 +156,12 @@ const Ourprocess = () => {
           </div>
 
           {/* STEPS */}
-          <div className="space-y-36">
+          <div className="space-y-20 sm:space-y-24">
 
             {steps.map((step, index) => (
               <div
                 key={index}
-                className={`relative grid items-center gap-20 lg:grid-cols-2 ${
+                className={`relative grid items-center gap-10 sm:gap-14 lg:grid-cols-2 ${
                   index % 2 !== 0 ? "lg:[&>*:first-child]:order-2" : ""
                 }`}
               >
@@ -183,12 +183,12 @@ const Ourprocess = () => {
                   </div>
 
                   {/* TITLE */}
-                  <h3 className="text-4xl font-semibold tracking-[-0.06em] text-white md:text-5xl">
+                  <h3 className="text-[1.8rem] font-semibold tracking-[-0.05em] text-white sm:text-[2.4rem]">
                     {step.title}
                   </h3>
 
                   {/* DESC */}
-                  <p className="mt-8 text-[17px] leading-relaxed text-white/45">
+                  <p className="mt-5 text-[14px] leading-relaxed text-white/50 sm:text-[15px]">
                     {step.desc}
                   </p>
                 </div>

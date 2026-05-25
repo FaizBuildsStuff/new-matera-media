@@ -38,7 +38,7 @@ const Calendly = () => {
   }, []);
 
   return (
-    <section id="calendly" className="relative px-6 py-24 sm:py-32 lg:py-40 text-white" aria-labelledby="calendly-heading">
+    <section id="calendly" className="relative px-6 py-20 sm:py-24 lg:py-28 text-white" aria-labelledby="calendly-heading">
       {/* BACKGROUND */}
       <div className="absolute inset-0 pointer-events-none transform-gpu" aria-hidden="true">
         <div
@@ -91,13 +91,13 @@ const Calendly = () => {
 
       {/* CONTENT */}
       <div className="relative z-10 mx-auto max-w-7xl">
-        <div className="mb-16 sm:mb-24 text-center">
-          <h2 id="calendly-heading" className="mx-auto max-w-5xl text-4xl sm:text-5xl lg:text-7xl font-semibold leading-[1.1] sm:leading-[0.92] tracking-[-0.07em] text-white">
+        <div className="mb-10 sm:mb-14 text-center">
+          <h2 id="calendly-heading" className="mx-auto max-w-4xl text-[2.2rem] sm:text-[3rem] lg:text-[4rem] font-semibold leading-[1] tracking-[-0.05em] text-white">
             Let&rsquo;s Get You
             <br />
             More Qualified Leads
           </h2>
-          <p className="mx-auto mt-6 sm:mt-7 max-w-2xl text-base sm:text-lg leading-relaxed text-white/45">
+          <p className="mx-auto mt-4 max-w-xl text-[14px] sm:text-[15px] leading-relaxed text-white/50">
             Schedule a free strategy call and let&rsquo;s build a content system
             designed to scale your brand organically.
           </p>
@@ -111,7 +111,7 @@ const Calendly = () => {
           />
           <div
             ref={cardRef}
-            className="relative overflow-hidden rounded-[32px] sm:rounded-[42px] border border-white/10 bg-white/[0.05] shadow-[0_0_120px_rgba(16,185,129,0.08)] backdrop-blur-[40px]"
+            className="relative overflow-hidden rounded-[24px] sm:rounded-[30px] border border-white/10 bg-white/[0.05] shadow-[0_0_80px_rgba(16,185,129,0.06)] backdrop-blur-[24px]"
           >
             <div
               className="absolute left-1/2 top-0 h-[260px] w-[700px] -translate-x-1/2"
@@ -120,35 +120,35 @@ const Calendly = () => {
             />
             <div className="relative z-10 grid lg:grid-cols-[0.9fr_1.1fr]">
               {/* LEFT INFO */}
-              <div className="border-b border-white/[0.08] p-8 sm:p-10 lg:border-b-0 lg:border-r">
+              <div className="border-b border-white/[0.08] p-6 sm:p-7 lg:border-b-0 lg:border-r">
                 <div className="mb-8">
                   <div className="text-xs sm:text-sm uppercase tracking-[0.28em] text-emerald-300">
                     Strategy Session
                   </div>
-                  <h3 className="mt-4 text-3xl sm:text-5xl font-semibold tracking-[-0.06em] text-white">
+                  <h3 className="mt-3 text-[1.8rem] sm:text-[2.5rem] font-semibold tracking-[-0.05em] text-white">
                     30 Minute Meeting
                   </h3>
                 </div>
-                <div className="space-y-4 sm:space-y-5">
+                <div className="space-y-3 sm:space-y-4">
                   <div className="flex items-center gap-4 text-white/55 text-sm sm:text-base">
-                    <div className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] shrink-0">
+                    <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] shrink-0">
                       <Clock3 className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-300" aria-hidden="true" />
                     </div>
                     <span>30 Minute Strategy Session</span>
                   </div>
                   <div className="flex items-center gap-4 text-white/55 text-sm sm:text-base">
-                    <div className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] shrink-0">
+                    <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] shrink-0">
                       <Video className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-300" aria-hidden="true" />
                     </div>
                     <span>Google Meet link provided automatically.</span>
                   </div>
                 </div>
-                <div className="mt-10 sm:mt-14">
+                <div className="mt-8 sm:mt-10">
                   <a
                     href="https://calendly.com/m-faizurrehman-crypto/30min"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group inline-flex items-center gap-3 rounded-full border border-white/10 bg-white px-6 sm:px-7 py-3.5 sm:py-4 text-xs sm:text-sm font-medium text-black transition-all duration-500 hover:scale-[1.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+                    className="group inline-flex items-center gap-2 rounded-full border border-white/10 bg-white px-5 sm:px-6 py-3 text-[11px] sm:text-xs font-medium text-black transition-all duration-500 hover:scale-[1.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
                     aria-label="Book a 30 minute strategy call via Calendly"
                   >
                     Book Strategy Call
@@ -163,8 +163,8 @@ const Calendly = () => {
                   <iframe
                     src="https://calendly.com/m-faizurrehman-crypto/30min?primary_color=10b981&background_color=05180D&text_color=ffffff&hide_landing_page_details=1&hide_gdpr_banner=1"
                     width="100%"
-                    height="700"
-                    className="min-h-[500px] sm:min-h-[600px] lg:min-h-[700px] w-full"
+                    height="560"
+                    className="min-h-[420px] sm:min-h-[520px] lg:min-h-[560px] w-full"
                     title="Book a strategy call with Matera Media"
                     loading="lazy"
                   />

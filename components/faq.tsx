@@ -36,7 +36,7 @@ const Faq = () => {
   const [active, setActive] = useState(2);
 
   return (
-    <section className="relative border-none outline-none px-6 py-24 sm:py-32 lg:py-40 text-white">
+    <section className="relative border-none outline-none px-6 py-20 sm:py-24 lg:py-28 text-white">
 
       {/* BACKGROUND */}
       <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
@@ -118,10 +118,10 @@ const Faq = () => {
             <Image
               src="/Logo.png"
               alt="Logo"
-              width={520}
-              height={520}
+              width={380}
+              height={380}
               priority
-              className="w-[300px] sm:w-[520px] opacity-[0.16] blur-[1px] brightness-125 contrast-125 object-contain select-none pointer-events-none"
+              className="w-[180px] sm:w-[320px] opacity-[0.16] blur-[1px] brightness-125 contrast-125 object-contain select-none pointer-events-none"
               style={{
                 filter: "blur(1px) drop-shadow(0 0 40px rgba(52,211,153,0.22))",
               }}
@@ -159,14 +159,14 @@ const Faq = () => {
           }}
         />
 
-        
+
       </div>
 
       {/* CONTENT */}
       <div className="relative z-10 mx-auto max-w-4xl">
 
         {/* TOP */}
-        <div className="mb-12 sm:mb-20 text-center">
+        <div className="mb-10 sm:mb-14 text-center">
 
           {/* LABEL */}
           <div className="mb-5 flex items-center justify-center gap-3">
@@ -179,7 +179,7 @@ const Faq = () => {
           </div>
 
           {/* HEADING */}
-          <h2 className="text-4xl sm:text-5xl lg:text-7xl font-semibold leading-[1.1] sm:leading-[0.92] tracking-[-0.07em] text-white">
+          <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[4rem] font-semibold leading-[1] tracking-[-0.05em] text-white">
             Answers to
             <br />
             Your Questions
@@ -187,7 +187,7 @@ const Faq = () => {
         </div>
 
         {/* FAQ */}
-        <div className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] border border-white/10 bg-white/[0.03] backdrop-blur-3xl">
+        <div className="relative overflow-hidden rounded-[24px] sm:rounded-[28px] border border-white/10 bg-white/[0.03] backdrop-blur-2xl">
 
           {/* INNER LIGHT */}
           <div
@@ -209,7 +209,7 @@ const Faq = () => {
           />
 
           {/* ITEMS */}
-          <div className="relative z-10 px-5 sm:px-8">
+          <div className="relative z-10 px-4 sm:px-6">
 
             {faqItems.map((item, index) => {
               const isOpen = active === index;
@@ -225,14 +225,14 @@ const Faq = () => {
                     onClick={() =>
                       setActive(isOpen ? -1 : index)
                     }
-                    className="group flex w-full items-center justify-between gap-6 py-5 sm:py-7 text-left"
+                    className="group flex w-full items-center justify-between gap-4 py-4 sm:py-5 text-left"
                   >
 
                     {/* QUESTION */}
                     <h3
-                      className={`text-base sm:text-[20px] font-medium tracking-[-0.04em] transition-all duration-300 ${isOpen
-                          ? "text-white"
-                          : "text-white/75 group-hover:text-white"
+                      className={`text-[15px] sm:text-[17px] font-medium tracking-[-0.03em] transition-all duration-300 ${isOpen
+                        ? "text-white"
+                        : "text-white/75 group-hover:text-white"
                         }`}
                     >
                       {item.question}
@@ -240,16 +240,16 @@ const Faq = () => {
 
                     {/* ICON */}
                     <div
-                      className={`flex h-9 w-9 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-full border transition-all duration-500 ${isOpen
-                          ? "border-emerald-400/20 bg-emerald-400/10"
-                          : "border-white/10 bg-white/[0.03]"
+                      className={`flex h-8 w-8 sm:h-9 sm:w-9 shrink-0 items-center justify-center rounded-full border transition-all duration-500 ${isOpen
+                        ? "border-emerald-400/20 bg-emerald-400/10"
+                        : "border-white/10 bg-white/[0.03]"
                         }`}
                     >
 
                       <ChevronDown
                         className={`h-4 w-4 sm:h-5 sm:w-5 transition-all duration-500 ${isOpen
-                            ? "rotate-180 text-emerald-300"
-                            : "text-white/55"
+                          ? "rotate-180 text-emerald-300"
+                          : "text-white/55"
                           }`}
                       />
                     </div>
@@ -258,12 +258,12 @@ const Faq = () => {
                   {/* ANSWER */}
                   <div
                     className={`overflow-hidden transition-all duration-500 ${isOpen
-                        ? "max-h-[300px] pb-5 sm:pb-7 opacity-100"
-                        : "max-h-0 opacity-0"
+                      ? "max-h-[300px] pb-5 sm:pb-7 opacity-100"
+                      : "max-h-0 opacity-0"
                       }`}
                   >
 
-                    <p className="max-w-3xl text-xs sm:text-[15px] leading-relaxed text-white/45">
+                    <p className="max-w-2xl text-[13px] sm:text-[14px] leading-relaxed text-white/50">
                       {item.answer}
                     </p>
                   </div>

@@ -44,7 +44,7 @@ const Testimonial = () => {
 
         {/* MASSIVE SMOOTH AURORA */}
         <div
-          className="absolute left-1/2 top-[38%] h-[1200px] w-[1800px] -translate-x-1/2 -translate-y-1/2"
+          className="absolute left-1/2 top-[38%] h-[700px] w-[1100px] -translate-x-1/2 -translate-y-1/2"
           style={{
             background: `
         radial-gradient(circle at center,
@@ -92,7 +92,6 @@ const Testimonial = () => {
         />
 
         {/* GIANT GLASS ORB */}
-        <div className="absolute left-1/2 top-[42%] h-[950px] w-[950px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/[0.03] bg-white/[0.01] backdrop-blur-[2px]" />
 
         {/* TOP BLENDING GLOW */}
         <div
@@ -155,7 +154,7 @@ const Testimonial = () => {
           }}
         />
 
-        
+
       </div>
 
       {/* CONTENT */}
@@ -170,22 +169,22 @@ const Testimonial = () => {
             </span>
           </div>
 
-          <h2 className="text-4xl font-semibold tracking-[-0.05em] text-white md:text-6xl">
+          <h2 className="text-[2rem] font-semibold tracking-[-0.045em] text-white sm:text-[2.8rem] md:text-[3.5rem]">
             Trusted by Brands & Creators
           </h2>
 
-          <p className="mt-5 text-sm font-medium uppercase tracking-[0.25em] text-white/25">
+          <p className="mt-3 text-[11px] font-medium uppercase tracking-[0.22em] text-white/25">
             And there's a good reason why.
           </p>
         </div>
 
         {/* TESTIMONIAL GRID */}
-        <div className="relative z-20 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="relative z-20 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
 
           {testimonials.map((item, i) => (
             <div
               key={i}
-              className="group relative overflow-hidden rounded-[36px] border border-white/10 bg-black/30 p-8 backdrop-blur-3xl transition-all duration-500 hover:-translate-y-2 hover:border-emerald-400/20"
+              className="group relative overflow-hidden rounded-[26px] border border-white/8 bg-black/20 p-5 backdrop-blur-2xl transition-all duration-300 hover:-translate-y-1 hover:border-emerald-400/15"
             >
 
               {/* HOVER GLOW */}
@@ -202,7 +201,7 @@ const Testimonial = () => {
               {/* TOP */}
               <div className="relative z-10 flex items-center gap-4">
 
-                <div className="flex h-14 w-14 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-sm font-semibold">
+                <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-xs font-semibold">
                   {item.name.charAt(0)}
                 </div>
 
@@ -217,15 +216,6 @@ const Testimonial = () => {
                 </div>
               </div>
 
-              {/* STARS */}
-              <div className="relative z-10 mt-6 flex gap-1">
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <div
-                    key={index}
-                    className="h-2.5 w-2.5 rounded-full bg-emerald-300"
-                  />
-                ))}
-              </div>
 
               {/* TEXT */}
               <p className="relative z-10 mt-7 text-[15px] leading-relaxed text-white/65">

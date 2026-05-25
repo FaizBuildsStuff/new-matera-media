@@ -56,7 +56,7 @@ const Workshowcase = () => {
         <section className="relative border-none outline-none px-6 py-24 sm:py-32 lg:py-40 text-white">
 
             {/* BACKGROUND */}
-      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
+            <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
                 {/* MASSIVE ATMOSPHERIC CORE */}
                 <div
@@ -196,7 +196,7 @@ const Workshowcase = () => {
                     }}
                 />
 
-                
+
 
 
             </div>
@@ -217,7 +217,7 @@ const Workshowcase = () => {
                                 <Sparkles className="h-5 w-5 text-emerald-300" />
                             </div>
 
-                            <h2 className="text-4xl sm:text-5xl font-semibold tracking-[-0.06em] text-white">
+                            <h2 className="text-[2rem] sm:text-[2.8rem] font-semibold tracking-[-0.05em] text-white">
                                 Portfolio
                             </h2>
                         </div>
@@ -303,7 +303,7 @@ const Workshowcase = () => {
                                 <div className="group relative overflow-hidden rounded-[24px] sm:rounded-[36px] border border-white/10 bg-black/40">
 
                                     {/* IMAGE */}
-                                    <div className="relative h-[400px] sm:h-[600px] lg:h-[760px] overflow-hidden">
+                                    <div className="relative h-[320px] sm:h-[460px] lg:h-[560px] overflow-hidden">
 
                                         <Image
                                             src={filtered[0]?.image || ""}
@@ -372,10 +372,10 @@ const Workshowcase = () => {
                                                 PERFORMANCE CREATIVE
                                             </p>
 
-                                            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 sm:gap-8">
+                                            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-6">
 
                                                 <div>
-                                                    <h3 className="max-w-xl text-3xl sm:text-5xl font-semibold tracking-[-0.06em] text-white">
+                                                    <h3 className="max-w-xl text-2xl sm:text-[2.7rem] font-semibold tracking-[-0.05em] text-white">
                                                         {filtered[0]?.title}
                                                     </h3>
 
@@ -385,9 +385,9 @@ const Workshowcase = () => {
                                                     </p>
                                                 </div>
 
-                                                <button className="group/button self-start sm:self-auto flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-full border border-white/10 bg-white/10 backdrop-blur-2xl transition-all duration-500 hover:scale-110 hover:bg-white hover:text-black">
+                                                <button className="group/button self-start sm:self-auto flex h-11 w-11 sm:h-13 sm:w-13 items-center justify-center rounded-full border border-white/10 bg-white/10 backdrop-blur-2xl transition-all duration-300 hover:scale-105 hover:bg-white hover:text-black">
 
-                                                    <ArrowUpRight className="h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-500 group-hover/button:rotate-45" />
+                                                    <ArrowUpRight className="h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover/button:rotate-45" />
                                                 </button>
                                             </div>
                                         </div>
