@@ -4,291 +4,291 @@ import React, { useRef } from "react";
 import { ArrowLeft, ArrowRight, Play } from "lucide-react";
 
 const reels = [
-  {
-    title: "Skincare UGC",
-    stats: "4.8x ROAS",
-    thumb:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop",
-  },
-  {
-    title: "Fitness Ad",
-    stats: "32% Lower CAC",
-    thumb:
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop",
-  },
-  {
-    title: "SaaS Creative",
-    stats: "7.1% CTR",
-    thumb:
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200&auto=format&fit=crop",
-  },
-  {
-    title: "TikTok Product Ad",
-    stats: "6.3x ROAS",
-    thumb:
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop",
-  },
+ {
+ title: "Skincare UGC",
+ stats: "4.8x ROAS",
+ thumb:
+ "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop",
+ },
+ {
+ title: "Fitness Ad",
+ stats: "32% Lower CAC",
+ thumb:
+ "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop",
+ },
+ {
+ title: "SaaS Creative",
+ stats: "7.1% CTR",
+ thumb:
+ "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200&auto=format&fit=crop",
+ },
+ {
+ title: "TikTok Product Ad",
+ stats: "6.3x ROAS",
+ thumb:
+ "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop",
+ },
 ];
 
 const Adportfolio = () => {
-  const scrollRef = useRef<HTMLDivElement | null>(null);
+ const scrollRef = useRef<HTMLDivElement | null>(null);
 
-  const scroll = (dir: "left" | "right") => {
-    if (!scrollRef.current) return;
+ const scroll = (dir: "left" | "right") => {
+ if (!scrollRef.current) return;
 
-    scrollRef.current.scrollBy({
-      left: dir === "left" ? -380 : 380,
-      behavior: "smooth",
-    });
-  };
+ scrollRef.current.scrollBy({
+ left: dir === "left" ? -380 : 380,
+ behavior: "smooth",
+ });
+ };
 
-  return (
-    <section className="relative overflow-hidden py-20 text-white md:py-24">
+ return (
+ <section className="relative py-20 text-white md:py-24">
 
-      {/* BACKGROUND */}
-      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
+ {/* BACKGROUND */}
+ <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-        {/* MASSIVE GREEN ATMOSPHERE */}
-        <div
-          className="absolute left-1/2 top-[-25%] h-[900px] w-[1600px] -translate-x-1/2 md:h-[1200px] md:w-[2600px]"
-          style={{
-            background: `
-              radial-gradient(
-                ellipse at center,
-                rgba(190,242,100,0.40) 0%,
-                rgba(163,230,53,0.26) 22%,
-                rgba(132,204,22,0.16) 42%,
-                rgba(101,163,13,0.08) 58%,
-                transparent 78%
-              )
-            `,
-            filter: "blur(50px)",
-            opacity: 0.95,
-          }}
-        />
+ {/* MASSIVE GREEN ATMOSPHERE */}
+ <div
+ className="absolute left-1/2 top-[-25%] h-[900px] w-[1600px] -translate-x-1/2 md:h-[1200px] md:w-[2600px]"
+ style={{
+ background: `
+ radial-gradient(
+ ellipse at center,
+ rgba(190,242,100,0.40) 0%,
+ rgba(163,230,53,0.26) 22%,
+ rgba(132,204,22,0.16) 42%,
+ rgba(101,163,13,0.08) 58%,
+ transparent 78%
+ )
+ `,
+ filter: "blur(90px)",
+ opacity: 0.95,
+ }}
+ />
 
-        {/* CENTER FOCUS */}
-        <div
-          className="absolute left-1/2 top-[18%] h-[500px] w-[900px] -translate-x-1/2"
-          style={{
-            background: `
-              radial-gradient(
-                ellipse,
-                rgba(255,255,255,0.08),
-                rgba(217,249,157,0.06),
-                rgba(190,242,100,0.03),
-                transparent 72%
-              )
-            `,
-            filter: "blur(50px)",
-          }}
-        />
+ {/* CENTER FOCUS */}
+ <div
+ className="absolute left-1/2 top-[18%] h-[500px] w-[900px] -translate-x-1/2"
+ style={{
+ background: `
+ radial-gradient(
+ ellipse,
+ rgba(255,255,255,0.08),
+ rgba(217,249,157,0.06),
+ rgba(190,242,100,0.03),
+ transparent 72%
+ )
+ `,
+ filter: "blur(90px)",
+ }}
+ />
 
-        {/* LEFT GLOW */}
-        <div
-          className="absolute left-[-10%] top-[30%] h-[600px] w-[600px] rounded-full bg-lime-300/12"
-          style={{ filter: "blur(50px)" }}
-        />
+ {/* LEFT GLOW */}
+ <div
+ className="absolute left-[-10%] top-[30%] h-[600px] w-[600px] rounded-full bg-lime-300/12"
+ style={{ filter: "blur(90px)" }}
+ />
 
-        {/* RIGHT GLOW */}
-        <div
-          className="absolute right-[-10%] top-[15%] h-[700px] w-[700px] rounded-full bg-green-300/10"
-          style={{ filter: "blur(50px)" }}
-        />
+ {/* RIGHT GLOW */}
+ <div
+ className="absolute right-[-10%] top-[15%] h-[700px] w-[700px] rounded-full bg-green-300/10"
+ style={{ filter: "blur(90px)" }}
+ />
 
-        {/* GLASS PANEL */}
-        <div className="absolute left-1/2 top-[50%] h-[78%] w-[96%] -translate-x-1/2 overflow-hidden rounded-[40px] border border-white/[0.04] bg-white/[0.015] backdrop-blur-[2px]">
+ {/* GLASS PANEL */}
+ <div className="absolute left-1/2 top-[50%] h-[78%] w-[96%] -translate-x-1/2 overflow-hidden rounded-[40px] border border-white/[0.04] bg-white/[0.015] backdrop-blur-[2px]">
 
-          <div className="absolute inset-0 bg-gradient-to-b from-white/[0.02] via-transparent to-black opacity-80" />
-        </div>
+ <div className="absolute inset-0 bg-gradient-to-b from-white/[0.02] via-transparent to-black opacity-80" />
+ </div>
 
-        {/* GRID */}
-        <div
-          className="absolute inset-0 opacity-[0.025]"
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)
-            `,
-            backgroundSize: "90px 90px",
-            maskImage:
-              "radial-gradient(circle at center, black, transparent 82%)",
-          }}
-        />
+ {/* GRID */}
+ <div
+ className="absolute inset-0 opacity-[0.025]"
+ style={{
+ backgroundImage: `
+ linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+ linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)
+ `,
+ backgroundSize: "90px 90px",
+ maskImage:
+ "radial-gradient(circle at center, black, transparent 82%)",
+ }}
+ />
 
-        {/* CINEMATIC GRAIN */}
-        <div
-          className="absolute inset-0 opacity-[0.16]"
-          style={{
-            backgroundImage: `
-              radial-gradient(rgba(255,255,255,0.045) 0.8px, transparent 0.8px)
-            `,
-            backgroundSize: "4px 4px",
-            mixBlendMode: "soft-light",
-          }}
-        />
+ {/* CINEMATIC GRAIN */}
+ <div
+ className="absolute inset-0 opacity-[0.16]"
+ style={{
+ backgroundImage: `
+ radial-gradient(rgba(255,255,255,0.045) 0.8px, transparent 0.8px)
+ `,
+ backgroundSize: "4px 4px",
+ mixBlendMode: "soft-light",
+ }}
+ />
 
-        {/* LIGHT LINES */}
-        <div
-          className="absolute left-[12%] top-0 h-full w-px"
-          style={{
-            background:
-              "linear-gradient(to bottom, transparent, rgba(190,242,100,0.16), transparent)",
-          }}
-        />
+ {/* LIGHT LINES */}
+ <div
+ className="absolute left-[12%] top-0 h-full w-px"
+ style={{
+ background:
+ "linear-gradient(to bottom, transparent, rgba(190,242,100,0.16), transparent)",
+ }}
+ />
 
-        <div
-          className="absolute right-[12%] top-0 h-full w-px"
-          style={{
-            background:
-              "linear-gradient(to bottom, transparent, rgba(190,242,100,0.12), transparent)",
-          }}
-        />
-        {/* BOTTOM DARK BLEND */}
+ <div
+ className="absolute right-[12%] top-0 h-full w-px"
+ style={{
+ background:
+ "linear-gradient(to bottom, transparent, rgba(190,242,100,0.12), transparent)",
+ }}
+ />
+ {/* BOTTOM DARK BLEND */}
 <div
-  className="absolute bottom-[-12%] left-0 h-[45%] w-full"
-  style={{
-    background:
-      "linear-gradient(to top, rgba(0,0,0,0.98), rgba(0,0,0,0.82), transparent)",
-    filter: "blur(20px)",
-  }}
+ className="absolute bottom-[-12%] left-0 h-[45%] w-full"
+ style={{
+ background:
+ "linear-gradient(to top, rgba(0,0,0,0.98), rgba(0,0,0,0.82), transparent)",
+ filter: "blur(20px)",
+ }}
 />
-      </div>
+ </div>
 
-      {/* CONTENT */}
-      <div className="relative z-20 mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-10">
+ {/* CONTENT */}
+ <div className="relative z-20 mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-10">
 
-        {/* TOP */}
-        <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+ {/* TOP */}
+ <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
 
-          {/* LEFT */}
-          <div>
+ {/* LEFT */}
+ <div>
 
-            {/* HEADING */}
-            <h2 className="text-[2.1rem] font-semibold leading-[0.95] tracking-[-0.05em] sm:text-[3.2rem] lg:text-[4.2rem]">
-              Our Work
-            </h2>
+ {/* HEADING */}
+ <h2 className="text-[2.1rem] font-semibold leading-[0.95] tracking-[-0.05em] sm:text-[3.2rem] lg:text-[4.2rem]">
+ Our Work
+ </h2>
 
-            {/* DESC */}
-            <p className="mt-4 max-w-xl text-[14px] leading-[1.8] text-white/50 sm:text-[15px]">
-              These creatives lowered CAC&rsquo;s and lifted ROAS.
-            </p>
-          </div>
+ {/* DESC */}
+ <p className="mt-4 max-w-xl text-[14px] leading-[1.8] text-white/50 sm:text-[15px]">
+ These creatives lowered CAC&rsquo;s and lifted ROAS.
+ </p>
+ </div>
 
-          {/* BUTTONS */}
-          <div className="flex items-center gap-3">
+ {/* BUTTONS */}
+ <div className="flex items-center gap-3">
 
-            <button
-              onClick={() => scroll("left")}
-              className="group relative flex h-13 w-13 items-center justify-center overflow-hidden rounded-full border border-white/[0.08] bg-white/[0.03] backdrop-blur-2xl transition-all duration-300 hover:border-lime-300/30"
-            >
+ <button
+ onClick={() => scroll("left")}
+ className="group relative flex h-13 w-13 items-center justify-center overflow-hidden rounded-full border border-white/[0.08] bg-white/[0.03] backdrop-blur-2xl transition-all duration-300 hover:border-lime-300/30"
+ >
 
-              <div
-                className="absolute inset-0 opacity-0 transition-all duration-500 group-hover:opacity-100"
-                style={{
-                  background:
-                    "radial-gradient(circle, rgba(190,242,100,0.18), transparent 70%)",
-                }}
-              />
+ <div
+ className="absolute inset-0 opacity-0 transition-all duration-500 group-hover:opacity-100"
+ style={{
+ background:
+ "radial-gradient(circle, rgba(190,242,100,0.18), transparent 70%)",
+ }}
+ />
 
-              <ArrowLeft className="relative z-10 h-5 w-5" />
-            </button>
+ <ArrowLeft className="relative z-10 h-5 w-5" />
+ </button>
 
-            <button
-              onClick={() => scroll("right")}
-              className="group relative flex h-13 w-13 items-center justify-center overflow-hidden rounded-full border border-white/[0.08] bg-white/[0.03] backdrop-blur-2xl transition-all duration-300 hover:border-lime-300/30"
-            >
+ <button
+ onClick={() => scroll("right")}
+ className="group relative flex h-13 w-13 items-center justify-center overflow-hidden rounded-full border border-white/[0.08] bg-white/[0.03] backdrop-blur-2xl transition-all duration-300 hover:border-lime-300/30"
+ >
 
-              <div
-                className="absolute inset-0 opacity-0 transition-all duration-500 group-hover:opacity-100"
-                style={{
-                  background:
-                    "radial-gradient(circle, rgba(190,242,100,0.18), transparent 70%)",
-                }}
-              />
+ <div
+ className="absolute inset-0 opacity-0 transition-all duration-500 group-hover:opacity-100"
+ style={{
+ background:
+ "radial-gradient(circle, rgba(190,242,100,0.18), transparent 70%)",
+ }}
+ />
 
-              <ArrowRight className="relative z-10 h-5 w-5" />
-            </button>
-          </div>
-        </div>
+ <ArrowRight className="relative z-10 h-5 w-5" />
+ </button>
+ </div>
+ </div>
 
-        {/* REELS */}
-        <div
-          ref={scrollRef}
-          className="flex gap-5 overflow-x-auto pb-6 scrollbar-none"
-        >
+ {/* REELS */}
+ <div
+ ref={scrollRef}
+ className="flex gap-5 overflow-x-auto pb-6 scrollbar-none"
+ >
 
-          {reels.map((item, index) => (
-            <div
-              key={index}
-              className="group relative w-[280px] shrink-0 overflow-hidden rounded-[28px] border border-white/[0.08] bg-white/[0.03] backdrop-blur-2xl sm:w-[320px] md:w-[350px]"
-            >
+ {reels.map((item, index) => (
+ <div
+ key={index}
+ className="group relative w-[280px] shrink-0 overflow-hidden rounded-[28px] border border-white/[0.08] bg-white/[0.03] backdrop-blur-2xl sm:w-[320px] md:w-[350px]"
+ >
 
-              {/* HOVER LIGHT */}
-              <div
-                className="absolute inset-0 z-10 opacity-0 transition-all duration-700 group-hover:opacity-100"
-                style={{
-                  background: `
-                    linear-gradient(
-                      180deg,
-                      rgba(190,242,100,0.14),
-                      transparent 28%
-                    )
-                  `,
-                }}
-              />
+ {/* HOVER LIGHT */}
+ <div
+ className="absolute inset-0 z-10 opacity-0 transition-all duration-700 group-hover:opacity-100"
+ style={{
+ background: `
+ linear-gradient(
+ 180deg,
+ rgba(190,242,100,0.14),
+ transparent 28%
+ )
+ `,
+ }}
+ />
 
-              {/* VIDEO */}
-              <div className="relative aspect-[9/16] overflow-hidden">
+ {/* VIDEO */}
+ <div className="relative aspect-[9/16] overflow-hidden">
 
-                <img
-                  src={item.thumb}
-                  alt={item.title}
-                  className="h-full w-full object-cover transition-all duration-700 group-hover:scale-[1.06]"
-                />
+ <img
+ src={item.thumb}
+ alt={item.title}
+ className="h-full w-full object-cover transition-all duration-700 group-hover:scale-[1.06]"
+ />
 
-                {/* OVERLAY */}
-                <div className="absolute inset-0 bg-black/25" />
+ {/* OVERLAY */}
+ <div className="absolute inset-0 bg-black/25" />
 
-                {/* TOP BADGE */}
-                <div className="absolute left-4 top-4 z-20 rounded-full border border-white/10 bg-black/30 px-3 py-1.5 text-[10px] font-medium text-white backdrop-blur-xl">
-                  {item.stats}
-                </div>
+ {/* TOP BADGE */}
+ <div className="absolute left-4 top-4 z-20 rounded-full border border-white/10 bg-black/30 px-3 py-1.5 text-[10px] font-medium text-white backdrop-blur-xl">
+ {item.stats}
+ </div>
 
-                {/* PLAY BUTTON */}
-                <div className="absolute left-1/2 top-1/2 z-20 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-white/10 backdrop-blur-2xl transition-all duration-500 group-hover:scale-110">
+ {/* PLAY BUTTON */}
+ <div className="absolute left-1/2 top-1/2 z-20 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-white/10 backdrop-blur-2xl transition-all duration-500 group-hover:scale-110">
 
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-[0_0_35px_rgba(255,255,255,0.4)]">
+ <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-[0_0_35px_rgba(255,255,255,0.4)]">
 
-                    <Play className="ml-0.5 h-4 w-4 fill-black text-black" />
-                  </div>
-                </div>
+ <Play className="ml-0.5 h-4 w-4 fill-black text-black" />
+ </div>
+ </div>
 
-                {/* BOTTOM */}
-                <div className="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black via-black/70 to-transparent p-6">
+ {/* BOTTOM */}
+ <div className="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black via-black/70 to-transparent p-6">
 
-                  <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-[10px] uppercase tracking-[0.22em] text-white/60 backdrop-blur-xl">
-                    Meta Ads
-                  </div>
+ <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-[10px] uppercase tracking-[0.22em] text-white/60 backdrop-blur-xl">
+ Meta Ads
+ </div>
 
-                  <h3 className="text-[1.2rem] font-semibold tracking-[-0.05em]">
-                    {item.title}
-                  </h3>
+ <h3 className="text-[1.2rem] font-semibold tracking-[-0.05em]">
+ {item.title}
+ </h3>
 
-                  <p className="mt-2 text-[13px] text-white/50">
-                    Performance Creative
-                  </p>
-                </div>
+ <p className="mt-2 text-[13px] text-white/50">
+ Performance Creative
+ </p>
+ </div>
 
-                {/* EDGE LIGHT */}
-                <div className="absolute inset-0 rounded-[28px] border border-white/10" />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+ {/* EDGE LIGHT */}
+ <div className="absolute inset-0 rounded-[28px] border border-white/10" />
+ </div>
+ </div>
+ ))}
+ </div>
+ </div>
+ </section>
+ );
 };
 
 export default Adportfolio;
