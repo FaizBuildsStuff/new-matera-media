@@ -18,35 +18,21 @@ const features = [
 
 const YtPricing = () => {
   return (
-    <section
-      className="
-        relative 
-        
-        py-24 text-white
-
-        md:py-32
-      "
-    >
+    <section className="relative overflow-hidden py-14 text-white sm:py-16 md:py-18">
 
       {/* BACKGROUND */}
       <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-        
-
         {/* MASSIVE RED ATMOSPHERE */}
         <div
-          className="
-            absolute left-1/2 top-[-25%]
-            h-[1300px] w-[2600px]
-            -translate-x-1/2
-          "
+          className="absolute left-1/2 top-[-30%] h-[950px] w-[1800px] -translate-x-1/2"
           style={{
             background: `
               radial-gradient(
                 ellipse at center,
-                rgba(255,0,76,0.18) 0%,
-                rgba(255,40,40,0.10) 20%,
-                rgba(255,255,255,0.03) 44%,
+                rgba(255,0,76,0.14) 0%,
+                rgba(255,40,40,0.07) 20%,
+                rgba(255,255,255,0.02) 44%,
                 transparent 74%
               )
             `,
@@ -56,45 +42,33 @@ const YtPricing = () => {
 
         {/* LEFT GLOW */}
         <div
-          className="
-            absolute left-[-12%] top-[12%]
-            h-[900px] w-[900px]
-            rounded-full
-          "
+          className="absolute left-[-12%] top-[12%] h-[620px] w-[620px] rounded-full"
           style={{
             background:
-              "radial-gradient(circle, rgba(255,0,76,0.12), transparent 72%)",
+              "radial-gradient(circle, rgba(255,0,76,0.08), transparent 72%)",
             filter: "blur(50px)",
           }}
         />
 
         {/* RIGHT GLOW */}
         <div
-          className="
-            absolute right-[-10%] top-[0%]
-            h-[1000px] w-[1000px]
-            rounded-full
-          "
+          className="absolute right-[-10%] top-[0%] h-[720px] w-[720px] rounded-full"
           style={{
             background:
-              "radial-gradient(circle, rgba(255,40,40,0.12), transparent 72%)",
+              "radial-gradient(circle, rgba(255,40,40,0.08), transparent 72%)",
             filter: "blur(50px)",
           }}
         />
 
         {/* LIGHT CORE */}
         <div
-          className="
-            absolute left-1/2 top-[30%]
-            h-[420px] w-[900px]
-            -translate-x-1/2
-          "
+          className="absolute left-1/2 top-[30%] h-[280px] w-[700px] -translate-x-1/2"
           style={{
             background: `
               radial-gradient(
                 ellipse,
-                rgba(255,255,255,0.08),
-                rgba(255,0,76,0.04),
+                rgba(255,255,255,0.06),
+                rgba(255,0,76,0.03),
                 transparent 72%
               )
             `,
@@ -104,21 +78,17 @@ const YtPricing = () => {
 
         {/* LIGHT STREAK */}
         <div
-          className="
-            absolute left-[-10%] top-[45%]
-            h-[260px] w-[1000px]
-            rotate-[18deg]
-          "
+          className="absolute left-[-10%] top-[45%] h-[180px] w-[760px] rotate-[18deg]"
           style={{
             background:
-              "linear-gradient(to right, transparent, rgba(255,0,76,0.10), transparent)",
+              "linear-gradient(to right, transparent, rgba(255,0,76,0.06), transparent)",
             filter: "blur(50px)",
           }}
         />
 
         {/* GRID */}
         <div
-          className="absolute inset-0 opacity-[0.025]"
+          className="absolute inset-0 opacity-[0.02]"
           style={{
             backgroundImage: `
               linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
@@ -132,323 +102,149 @@ const YtPricing = () => {
 
         {/* GRAIN */}
         <div
-          className="absolute inset-0 opacity-[0.12] mix-blend-soft-light"
+          className="absolute inset-0 opacity-[0.10] mix-blend-soft-light"
           style={{
             backgroundImage:
               "url('https://www.transparenttextures.com/patterns/asfalt-dark.png')",
           }}
         />
 
-        
+        {/* BOTTOM BLEND */}
+        <div
+          className="absolute bottom-[-10%] left-0 h-[40%] w-full"
+          style={{
+            background:
+              "linear-gradient(to top, rgba(0,0,0,0.92), rgba(0,0,0,0.58), transparent)",
+            filter: "blur(20px)",
+          }}
+        />
       </div>
 
       {/* CONTENT */}
-      <div className="relative z-20 mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-10">
+      <div className="relative z-20 mx-auto max-w-[1350px] px-5 sm:px-8 lg:px-10">
 
         {/* TOP */}
-        <div className="mb-20 text-center">
+        <div className="mb-12 text-center">
 
           {/* LABEL */}
-          <div
-            className="
-              mb-6 inline-flex items-center gap-3
-              rounded-full
-              border border-red-400/10
-              bg-red-500/5
-              px-5 py-3
-              backdrop-blur-xl
-            "
-          >
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-red-400/10 bg-red-500/5 px-4 py-2 backdrop-blur-xl">
 
-            <div className="h-2.5 w-2.5 rounded-full bg-red-400 shadow-[0_0_18px_rgba(255,0,76,1)]" />
+            <div className="h-2 w-2 rounded-full bg-red-400 shadow-[0_0_18px_rgba(255,0,76,1)]" />
 
-            <span
-              className="
-                text-[10px]
-                font-semibold
-                uppercase
-                tracking-[0.26em]
-                text-red-100
-              "
-            >
+            <span className="text-[9px] font-semibold uppercase tracking-[0.22em] text-red-100">
               INVESTMENT
             </span>
           </div>
 
           {/* HEADING */}
-          <h2
-            className="
-              mx-auto max-w-5xl
-              text-[3rem]
-              font-semibold
-              leading-[1]
-              tracking-[-0.05em]
-
-              sm:text-[5rem]
-
-              lg:text-[6rem]
-            "
-          >
+          <h2 className="mx-auto max-w-4xl text-[2.1rem] font-semibold leading-[1] tracking-[-0.05em] sm:text-[2.8rem] lg:text-[3.4rem]">
             Plans For
             <br />
 
-            <span
-              className="
-                bg-gradient-to-b
-                from-white
-                to-red-200
-                bg-clip-text
-                text-transparent
-              "
-            >
+            <span className="bg-gradient-to-b from-white to-red-200 bg-clip-text text-transparent">
               Youtube Growth
             </span>
           </h2>
 
           {/* TEXT */}
-          <p
-            className="
-              mx-auto mt-8 max-w-2xl
-              text-[15px]
-              leading-[1.9]
-              text-white/45
-
-              sm:text-[17px]
-            "
-          >
-            This plan is designed to grow your YouTube
-            presence, build authority, and generate
-            consistent inbound opportunities every month.
+          <p className="mx-auto mt-4 max-w-2xl text-[14px] leading-[1.8] text-white/45 sm:text-[15px]">
+            This plan is designed to grow your YouTube presence,
+            build authority, and generate consistent inbound
+            opportunities every month.
           </p>
         </div>
 
         {/* CARD */}
-        <div
-          className="
-            group relative mx-auto
-            max-w-[950px]
-            overflow-hidden
-            rounded-[48px]
-            border border-white/[0.06]
-            bg-white/[0.03]
-            backdrop-blur-3xl
-            transition-all duration-700
-
-            hover:border-red-400/15
-          "
-        >
+        <div className="group relative mx-auto max-w-[820px] overflow-hidden rounded-[32px] border border-white/[0.03] bg-white/[0.025] backdrop-blur-2xl transition-all duration-700 hover:border-red-400/12">
 
           {/* CARD GLOW */}
           <div
-            className="
-              absolute inset-0 opacity-0
-              transition-all duration-700
-
-              group-hover:opacity-100
-            "
+            className="absolute inset-0 opacity-0 transition-all duration-700 group-hover:opacity-100"
             style={{
-              background: `
-                radial-gradient(
-                  circle at top,
-                  rgba(255,0,76,0.14),
-                  transparent 72%
-                )
-              `,
+              background:
+                "radial-gradient(circle at top, rgba(255,0,76,0.10), transparent 72%)",
             }}
           />
 
           {/* TOP LIGHT */}
           <div
-            className="
-              absolute left-1/2 top-0
-              h-[220px] w-[600px]
-              -translate-x-1/2
-            "
+            className="absolute left-1/2 top-0 h-[160px] w-[420px] -translate-x-1/2"
             style={{
-              background: `
-                radial-gradient(
-                  ellipse,
-                  rgba(255,255,255,0.08),
-                  transparent 72%
-                )
-              `,
+              background:
+                "radial-gradient(ellipse, rgba(255,255,255,0.06), transparent 72%)",
               filter: "blur(50px)",
             }}
           />
 
           {/* SHINE */}
           <div
-            className="
-              absolute left-[-30%] top-[-20%]
-              h-[420px] w-[180px]
-              rotate-[24deg]
-              opacity-0
-              transition-all duration-1000
-
-              group-hover:left-[120%]
-              group-hover:opacity-100
-            "
+            className="absolute left-[-30%] top-[-20%] h-[320px] w-[120px] rotate-[24deg] opacity-0 transition-all duration-1000 group-hover:left-[120%] group-hover:opacity-100"
             style={{
               background:
-                "linear-gradient(to right, transparent, rgba(255,255,255,0.16), transparent)",
+                "linear-gradient(to right, transparent, rgba(255,255,255,0.10), transparent)",
               filter: "blur(20px)",
             }}
           />
 
-          <div
-            className="
-              relative z-10
-              grid gap-0
-
-              lg:grid-cols-[0.9fr_1.1fr]
-            "
-          >
+          <div className="relative z-10 grid lg:grid-cols-[0.88fr_1.12fr]">
 
             {/* LEFT */}
-            <div
-              className="
-                relative overflow-hidden
-                border-b border-white/[0.06]
-                p-8
-
-                md:p-12
-
-                lg:border-b-0
-                lg:border-r
-                lg:border-white/[0.06]
-              "
-            >
+            <div className="relative overflow-hidden border-b border-white/[0.03] p-6 md:p-8 lg:border-b-0 lg:border-r lg:border-white/[0.03]">
 
               {/* ICON */}
-              <div
-                className="
-                  relative mb-10 flex h-20 w-20
-                  items-center justify-center
-                  rounded-[28px]
-                  border border-red-400/10
-                  bg-red-500/5
-                "
-              >
+              <div className="relative mb-7 flex h-11 w-11 items-center justify-center rounded-[20px] border border-red-400/10 bg-red-500/5">
 
-                <div
-                  className="
-                    absolute inset-0 rounded-[28px]
-                    bg-red-500/10 blur-2xl
-                  "
-                />
+                <div className="absolute inset-0 rounded-[20px] bg-red-500/10 blur-xl" />
 
-                <PlayCircle className="relative z-10 h-10 w-10 text-red-300" />
+                <PlayCircle className="relative z-10 h-6 w-6 text-red-300" />
               </div>
 
               {/* PLAN */}
-              <div
-                className="
-                  inline-flex items-center gap-2
-                  rounded-full
-                  border border-red-400/10
-                  bg-red-500/5
-                  px-4 py-2
-                "
-              >
+              <div className="inline-flex items-center gap-2 rounded-full border border-red-400/10 bg-red-500/5 px-3 py-1.5">
 
-                <Sparkles className="h-4 w-4 text-red-300" />
+                <Sparkles className="h-3.5 w-3.5 text-red-300" />
 
-                <span
-                  className="
-                    text-[10px]
-                    font-semibold
-                    uppercase
-                    tracking-[0.16em]
-                    text-red-100
-                  "
-                >
+                <span className="text-[9px] font-semibold uppercase tracking-[0.14em] text-red-100">
                   Growth System
                 </span>
               </div>
 
               {/* TITLE */}
-              <h3
-                className="
-                  mt-7
-                  text-[3rem]
-                  font-semibold
-                  leading-[0.95]
-                  tracking-[-0.06em]
-
-                  md:text-[4rem]
-                "
-              >
+              <h3 className="mt-5 text-[2.2rem] font-semibold leading-[0.95] tracking-[-0.05em] sm:text-[2.6rem]">
                 YouTube
                 <br />
                 Growth
               </h3>
 
               {/* DESC */}
-              <p
-                className="
-                  mt-6 max-w-md
-                  text-[15px]
-                  leading-[1.9]
-                  text-white/45
-                "
-              >
-                Premium long-form content designed
-                to increase authority, grow reach,
-                and convert viewers into qualified clients.
+              <p className="mt-4 max-w-sm text-[13px] leading-[1.75] text-white/45">
+                Premium long-form content designed to increase authority,
+                grow reach, and convert viewers into qualified clients.
               </p>
             </div>
 
             {/* RIGHT */}
-            <div className="p-8 md:p-12">
+            <div className="p-6 md:p-8">
 
               {/* FEATURES */}
-              <div className="space-y-5">
+              <div className="space-y-3">
 
                 {features.map((feature, index) => (
                   <div
                     key={index}
-                    className="
-                      group/item flex items-start gap-4
-                      rounded-[24px]
-                      border border-white/[0.05]
-                      bg-white/[0.02]
-                      p-5
-                      transition-all duration-500
-
-                      hover:border-red-400/12
-                      hover:bg-red-500/[0.03]
-                    "
+                    className="group/item flex items-start gap-3 rounded-[20px] border border-white/[0.04] bg-white/[0.02] p-4 transition-all duration-500 hover:border-red-400/10 hover:bg-red-500/[0.03]"
                   >
 
                     {/* ICON */}
-                    <div
-                      className="
-                        relative mt-0.5 flex h-11 w-11
-                        shrink-0 items-center justify-center
-                        rounded-full
-                        border border-red-400/10
-                        bg-red-500/5
-                      "
-                    >
+                    <div className="relative mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-red-400/10 bg-red-500/5">
 
-                      <div
-                        className="
-                          absolute inset-0 rounded-full
-                          bg-red-500/10 blur-lg
-                        "
-                      />
+                      <div className="absolute inset-0 rounded-full bg-red-500/10 blur-lg" />
 
-                      <Check className="relative z-10 h-5 w-5 text-red-300" />
+                      <Check className="relative z-10 h-4 w-4 text-red-300" />
                     </div>
 
                     {/* TEXT */}
-                    <p
-                      className="
-                        text-[15px]
-                        leading-[1.7]
-                        text-white/85
-                      "
-                    >
+                    <p className="text-[13px] leading-[1.7] text-white/85">
                       {feature}
                     </p>
                   </div>
@@ -456,57 +252,22 @@ const YtPricing = () => {
               </div>
 
               {/* BUTTON */}
-              <button
-                className="
-                  group/button mt-10
-                  flex w-full items-center
-                  justify-between
-                  rounded-full
-                  border border-red-400/10
-                  bg-red-500
-                  px-7 py-5
-                  transition-all duration-500
+              <button className="group/button mt-7 flex w-full items-center justify-between rounded-full border border-red-400/10 bg-red-500 px-5 py-4 transition-all duration-500 hover:scale-[1.01]">
 
-                  hover:scale-[1.02]
-                "
-              >
-
-                <span
-                  className="
-                    text-[11px]
-                    font-semibold
-                    uppercase
-                    tracking-[0.2em]
-                    text-white
-                  "
-                >
+                <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white">
                   I Need This
                 </span>
 
-                <div
-                  className="
-                    flex h-11 w-11
-                    items-center justify-center
-                    rounded-full
-                    bg-white text-black
-                    transition-all duration-500
+                <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-black transition-all duration-500 group-hover/button:rotate-45">
 
-                    group-hover/button:rotate-45
-                  "
-                >
-                  <ArrowRight className="h-5 w-5" />
+                  <ArrowRight className="h-4 w-4" />
                 </div>
               </button>
             </div>
           </div>
 
           {/* EDGE LIGHT */}
-          <div
-            className="
-              absolute inset-0 rounded-[48px]
-              border border-white/[0.03]
-            "
-          />
+          <div className="absolute inset-0 rounded-[32px] border border-white/[0.03]" />
         </div>
       </div>
     </section>

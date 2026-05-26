@@ -64,93 +64,47 @@ const PrivacyPolicyClient = () => {
         {/* BASE */}
         <div className="absolute inset-0 bg-[#020302]" />
 
-        {/* MASSIVE TOP GREEN ATMOSPHERE */}
+        {/* MAIN ATMOSPHERE */}
         <div
-          className="
-            absolute left-1/2 top-[-35%]
-            h-[1600px] w-[3600px]
-            -translate-x-1/2
-          "
+          className="absolute left-1/2 top-[-22%] h-[1100px] w-[2200px] -translate-x-1/2"
           style={{
             background: `
               radial-gradient(
                 ellipse at center,
-                rgba(163,230,53,0.16) 0%,
-                rgba(74,222,128,0.10) 18%,
-                rgba(34,197,94,0.06) 34%,
-                rgba(255,255,255,0.015) 48%,
-                transparent 76%
-              )
-            `,
-            filter: "blur(220px)",
-          }}
-        />
-
-        {/* LEFT GLOW */}
-        <div
-          className="
-            absolute left-[-18%] top-[18%]
-            h-[1000px] w-[1000px]
-          "
-          style={{
-            background: `
-              radial-gradient(
-                circle,
-                rgba(34,197,94,0.14),
-                rgba(16,185,129,0.06),
-                transparent 72%
-              )
-            `,
-            filter: "blur(220px)",
-          }}
-        />
-
-        {/* RIGHT GLOW */}
-        <div
-          className="
-            absolute right-[-15%] top-[8%]
-            h-[1100px] w-[1100px]
-          "
-          style={{
-            background: `
-              radial-gradient(
-                circle,
-                rgba(163,230,53,0.14),
-                rgba(34,197,94,0.06),
-                transparent 72%
-              )
-            `,
-            filter: "blur(240px)",
-          }}
-        />
-
-        {/* CENTER LIGHT */}
-        <div
-          className="
-            absolute left-1/2 top-[30%]
-            h-[800px] w-[1200px]
-            -translate-x-1/2
-          "
-          style={{
-            background: `
-              radial-gradient(
-                ellipse,
-                rgba(255,255,255,0.03),
-                rgba(163,230,53,0.03),
-                transparent 72%
+                rgba(163,230,53,0.14) 0%,
+                rgba(74,222,128,0.08) 20%,
+                rgba(34,197,94,0.05) 38%,
+                rgba(255,255,255,0.015) 50%,
+                transparent 74%
               )
             `,
             filter: "blur(140px)",
           }}
         />
 
-        {/* CINEMATIC LIGHT */}
+        {/* LEFT GLOW */}
         <div
-          className="
-            absolute left-[-10%] top-[42%]
-            h-[260px] w-[130%]
-            rotate-[-8deg]
-          "
+          className="absolute left-[-12%] top-[18%] h-[620px] w-[620px]"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(34,197,94,0.10), transparent 72%)",
+            filter: "blur(150px)",
+          }}
+        />
+
+        {/* RIGHT GLOW */}
+        <div
+          className="absolute right-[-10%] top-[8%] h-[700px] w-[700px]"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(163,230,53,0.10), transparent 72%)",
+            filter: "blur(170px)",
+          }}
+        />
+
+        {/* LIGHT STREAK */}
+        <div
+          className="absolute left-[-10%] top-[40%] h-[180px] w-[120%] rotate-[-8deg]"
           style={{
             background: `
               linear-gradient(
@@ -161,27 +115,13 @@ const PrivacyPolicyClient = () => {
                 transparent
               )
             `,
-            filter: "blur(90px)",
+            filter: "blur(60px)",
           }}
-        />
-
-        {/* GLASS FOG */}
-        <div
-          className="
-            absolute right-[10%] top-[18%]
-            hidden h-[320px] w-[320px]
-            rounded-full
-            border border-white/[0.04]
-            bg-white/[0.02]
-            backdrop-blur-3xl
-
-            lg:block
-          "
         />
 
         {/* GRID */}
         <div
-          className="absolute inset-0 opacity-[0.022]"
+          className="absolute inset-0 opacity-[0.02]"
           style={{
             backgroundImage: `
               linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
@@ -193,59 +133,38 @@ const PrivacyPolicyClient = () => {
           }}
         />
 
-        {/* NOISE */}
+        {/* GRAIN */}
         <div
-          className="absolute inset-0 opacity-[0.11] mix-blend-soft-light"
+          className="absolute inset-0 opacity-[0.10] mix-blend-soft-light"
           style={{
             backgroundImage:
               "url('https://www.transparenttextures.com/patterns/asfalt-dark.png')",
           }}
         />
 
-        {/* EXTRA GRAIN */}
+        {/* BOTTOM BLEND */}
         <div
-          className="absolute inset-0 opacity-[0.03] mix-blend-overlay"
+          className="absolute bottom-[-10%] left-0 h-[40%] w-full"
           style={{
-            backgroundImage:
-              "url('https://www.transparenttextures.com/patterns/noise.png')",
-          }}
-        />
-
-        {/* VIGNETTE */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: `
-              radial-gradient(
-                ellipse at center,
-                transparent 38%,
-                rgba(0,0,0,0.38) 78%,
-                rgba(0,0,0,0.98) 100%
-              )
-            `,
+            background:
+              "linear-gradient(to top, rgba(0,0,0,0.92), rgba(0,0,0,0.58), transparent)",
+            filter: "blur(20px)",
           }}
         />
       </div>
 
       {/* CONTENT */}
-      <div className="relative z-20 mx-auto max-w-7xl px-5 sm:px-8">
+      <div className="relative z-20 mx-auto max-w-[1350px] px-5 sm:px-8 lg:px-10">
 
         {/* HERO */}
-        <section className="pt-32 pb-24 text-center md:pt-40">
+        <section className="pt-28 pb-16 text-center md:pt-34 md:pb-20">
 
           {/* LABEL */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="
-              mb-8 inline-flex items-center gap-3
-              rounded-full
-              border border-lime-400/10
-              bg-lime-400/[0.05]
-              px-5 py-3
-              backdrop-blur-xl
-            "
+            className="mb-6 inline-flex items-center gap-2 rounded-full border border-lime-400/10 bg-lime-400/[0.05] px-4 py-2 backdrop-blur-xl"
           >
 
             <div className="relative flex h-2 w-2">
@@ -255,39 +174,20 @@ const PrivacyPolicyClient = () => {
               <div className="relative h-2 w-2 rounded-full bg-lime-300" />
             </div>
 
-            <span
-              className="
-                text-[10px]
-                font-semibold
-                uppercase
-                tracking-[0.22em]
-                text-lime-100/80
-              "
-            >
+            <span className="text-[9px] font-semibold uppercase tracking-[0.22em] text-lime-100/80">
               PRIVACY PROTOCOL
             </span>
           </motion.div>
 
           {/* HEADING */}
           <motion.h1
-            initial={{ opacity: 0, y: 60 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 1,
               ease: [0.16, 1, 0.3, 1],
             }}
-            className="
-              mx-auto max-w-6xl
-
-              text-[3.3rem]
-              font-semibold
-              leading-[0.94]
-              tracking-[-0.055em]
-
-              sm:text-[5.5rem]
-
-              lg:text-[7.5rem]
-            "
+            className="mx-auto max-w-5xl text-[2.5rem] font-semibold leading-[0.95] tracking-[-0.055em] sm:text-[4.2rem] lg:text-[5.8rem]"
           >
             Your Privacy
             <br />
@@ -295,27 +195,9 @@ const PrivacyPolicyClient = () => {
             <span className="relative inline-block">
 
               {/* GLOW */}
-              <span
-                className="
-                  absolute inset-0
-                  bg-gradient-to-r
-                  from-lime-300
-                  via-white
-                  to-green-300
-                  opacity-20 blur-3xl
-                "
-              />
+              <span className="absolute inset-0 bg-gradient-to-r from-lime-300 via-white to-green-300 opacity-20 blur-3xl" />
 
-              <span
-                className="
-                  relative bg-gradient-to-b
-                  from-white
-                  via-lime-100
-                  to-green-300
-                  bg-clip-text
-                  text-transparent
-                "
-              >
+              <span className="relative bg-gradient-to-b from-white via-lime-100 to-green-300 bg-clip-text text-transparent">
                 Matters To Us.
               </span>
             </span>
@@ -323,54 +205,32 @@ const PrivacyPolicyClient = () => {
 
           {/* TEXT */}
           <motion.p
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 1,
               delay: 0.15,
             }}
-            className="
-              mx-auto mt-8 max-w-2xl
-              text-[15px]
-              leading-[2]
-              text-white/45
-
-              sm:text-[18px]
-            "
+            className="mx-auto mt-6 max-w-2xl text-[14px] leading-[1.9] text-white/45 sm:text-[16px]"
           >
-            This Privacy Policy explains how
-            Matera Media collects, uses,
-            and protects your information
-            across our services and platforms.
+            This Privacy Policy explains how Matera Media collects,
+            uses, and protects your information across our services
+            and platforms.
           </motion.p>
 
           {/* UPDATED */}
-          <div
-            className="
-              mt-10 inline-flex items-center gap-3
-              rounded-full
-              border border-white/[0.08]
-              bg-white/[0.03]
-              px-5 py-3
-            "
-          >
+          <div className="mt-8 inline-flex items-center gap-3 rounded-full border border-white/[0.08] bg-white/[0.03] px-4 py-2.5">
 
-            <div className="h-2 w-2 rounded-full bg-lime-300" />
+            <div className="h-2 w-2 rounded-full bg-lime-300 shadow-[0_0_14px_rgba(163,230,53,1)]" />
 
-            <span className="text-sm text-white/55">
+            <span className="text-[12px] text-white/55">
               Revised — April 7, 2026
             </span>
           </div>
         </section>
 
-        {/* TOP SECURITY CARDS */}
-        <section
-          className="
-            grid gap-5 pb-20
-
-            md:grid-cols-3
-          "
-        >
+        {/* TOP CARDS */}
+        <section className="grid gap-4 pb-16 md:grid-cols-3">
 
           {[
             {
@@ -396,38 +256,24 @@ const PrivacyPolicyClient = () => {
             return (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
                   duration: 0.8,
                   delay: i * 0.05,
                 }}
                 viewport={{ once: true }}
-                className="
-                  group relative overflow-hidden
-                  rounded-[34px]
-                  border border-white/[0.06]
-                  bg-gradient-to-b
-                  from-white/[0.04]
-                  to-white/[0.015]
-                  p-8
-                  backdrop-blur-3xl
-                "
+                className="group relative overflow-hidden rounded-[28px] border border-white/[0.05] bg-white/[0.025] p-5 backdrop-blur-2xl transition-all duration-500 hover:-translate-y-1 hover:border-lime-400/15"
               >
 
                 {/* GLOW */}
                 <div
-                  className="
-                    absolute inset-0 opacity-0
-                    transition-all duration-700
-
-                    group-hover:opacity-100
-                  "
+                  className="absolute inset-0 opacity-0 transition-all duration-700 group-hover:opacity-100"
                   style={{
                     background: `
                       radial-gradient(
                         circle at top right,
-                        rgba(163,230,53,0.14),
+                        rgba(163,230,53,0.12),
                         transparent 72%
                       )
                     `,
@@ -436,38 +282,19 @@ const PrivacyPolicyClient = () => {
 
                 <div className="relative z-10">
 
-                  <div
-                    className="
-                      flex h-14 w-14
-                      items-center justify-center
-                      rounded-[18px]
-                      border border-white/[0.08]
-                      bg-white/[0.03]
-                    "
-                  >
+                  {/* ICON */}
+                  <div className="flex h-12 w-12 items-center justify-center rounded-[16px] border border-white/[0.08] bg-white/[0.03]">
 
-                    <Icon className="h-6 w-6 text-lime-200" />
+                    <Icon className="h-5 w-5 text-lime-200" />
                   </div>
 
-                  <h3
-                    className="
-                      mt-7
-                      text-[1.45rem]
-                      font-semibold
-                      tracking-[-0.04em]
-                    "
-                  >
+                  {/* TITLE */}
+                  <h3 className="mt-5 text-[1.2rem] font-semibold tracking-[-0.04em]">
                     {card.title}
                   </h3>
 
-                  <p
-                    className="
-                      mt-4
-                      text-[14px]
-                      leading-[1.9]
-                      text-white/45
-                    "
-                  >
+                  {/* TEXT */}
+                  <p className="mt-3 text-[13px] leading-[1.8] text-white/45">
                     {card.text}
                   </p>
                 </div>
@@ -476,91 +303,52 @@ const PrivacyPolicyClient = () => {
           })}
         </section>
 
-        {/* POLICY SECTIONS */}
-        <section className="pb-28">
+        {/* POLICY */}
+        <section className="pb-20">
 
-          <div className="space-y-6">
+          <div className="space-y-4">
 
             {sections.map((section, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
                   duration: 0.8,
                   delay: i * 0.04,
                 }}
                 viewport={{ once: true }}
-                className="
-                  group relative overflow-hidden
-                  rounded-[36px]
-                  border border-white/[0.06]
-                  bg-gradient-to-b
-                  from-white/[0.04]
-                  to-white/[0.015]
-                  p-8
-                  backdrop-blur-3xl
-
-                  md:p-10
-                "
+                className="group relative overflow-hidden rounded-[30px] border border-white/[0.05] bg-white/[0.025] p-5 backdrop-blur-2xl transition-all duration-500 hover:border-lime-400/12 md:p-6"
               >
 
-                {/* HOVER GLOW */}
+                {/* GLOW */}
                 <div
-                  className="
-                    absolute inset-0 opacity-0
-                    transition-all duration-700
-
-                    group-hover:opacity-100
-                  "
+                  className="absolute inset-0 opacity-0 transition-all duration-700 group-hover:opacity-100"
                   style={{
                     background: `
                       radial-gradient(
                         circle at right,
-                        rgba(163,230,53,0.10),
+                        rgba(163,230,53,0.08),
                         transparent 72%
                       )
                     `,
                   }}
                 />
 
-                {/* BIG NUMBER */}
-                <div
-                  className="
-                    pointer-events-none absolute
-                    right-6 top-2
-                    text-[8rem]
-                    font-semibold
-                    leading-none
-                    tracking-[-0.08em]
-                    text-white/[0.02]
-                  "
-                >
+                {/* NUMBER */}
+                <div className="pointer-events-none absolute right-5 top-2 text-[5rem] font-semibold leading-none tracking-[-0.08em] text-white/[0.02]">
                   0{i + 1}
                 </div>
 
                 <div className="relative z-10">
 
-                  <h3
-                    className="
-                      text-[1.8rem]
-                      font-semibold
-                      tracking-[-0.05em]
-                    "
-                  >
+                  {/* TITLE */}
+                  <h3 className="text-[1.3rem] font-semibold tracking-[-0.04em] sm:text-[1.5rem]">
                     {section.title}
                   </h3>
 
-                  <p
-                    className="
-                      mt-5 max-w-4xl
-                      text-[15px]
-                      leading-[2]
-                      text-white/45
-
-                      sm:text-[16px]
-                    "
-                  >
+                  {/* TEXT */}
+                  <p className="mt-4 max-w-4xl text-[13px] leading-[1.9] text-white/45 sm:text-[14px]">
                     {section.content}
                   </p>
                 </div>
@@ -568,129 +356,68 @@ const PrivacyPolicyClient = () => {
             ))}
           </div>
 
-          {/* CONTACT SECTION */}
+          {/* CONTACT */}
           <motion.div
-            initial={{ opacity: 0, y: 60 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 1,
+              duration: 0.9,
             }}
             viewport={{ once: true }}
-            className="
-              relative mt-20 overflow-hidden
-              rounded-[42px]
-              border border-white/[0.06]
-              bg-gradient-to-b
-              from-white/[0.04]
-              to-white/[0.015]
-              px-6 py-16 text-center
-              backdrop-blur-3xl
-
-              md:px-10
-            "
+            className="relative mt-14 overflow-hidden rounded-[34px] border border-white/[0.05] bg-white/[0.025] px-6 py-14 text-center backdrop-blur-2xl md:px-10"
           >
 
-            {/* MASSIVE GLOW */}
+            {/* GLOW */}
             <div
-              className="
-                absolute left-1/2 top-0
-                h-[500px] w-[900px]
-                -translate-x-1/2
-              "
+              className="absolute left-1/2 top-0 h-[320px] w-[620px] -translate-x-1/2"
               style={{
                 background: `
                   radial-gradient(
                     ellipse,
-                    rgba(163,230,53,0.12),
+                    rgba(163,230,53,0.10),
                     transparent 72%
                   )
                 `,
-                filter: "blur(90px)",
+                filter: "blur(80px)",
               }}
             />
 
             <div className="relative z-10">
 
-              <h3
-                className="
-                  text-[2.3rem]
-                  font-semibold
-                  tracking-[-0.05em]
-
-                  md:text-[3.6rem]
-                "
-              >
+              {/* TITLE */}
+              <h3 className="text-[1.8rem] font-semibold tracking-[-0.05em] md:text-[2.5rem]">
                 Contact Information
               </h3>
 
-              <p
-                className="
-                  mx-auto mt-5 max-w-2xl
-                  text-[15px]
-                  leading-[1.9]
-                  text-white/45
-                "
-              >
+              {/* TEXT */}
+              <p className="mx-auto mt-4 max-w-2xl text-[14px] leading-[1.9] text-white/45">
                 Questions about privacy or data handling?
                 Reach out directly to Matera Media.
               </p>
 
               {/* EMAIL CARD */}
-              <div
-                className="
-                  group mx-auto mt-10 flex
-                  w-fit items-center gap-4
-                  overflow-hidden rounded-full
-                  border border-white/[0.08]
-                  bg-white/[0.03]
-                  px-6 py-5
-                  backdrop-blur-2xl
-                "
-              >
+              <div className="group mx-auto mt-8 flex w-fit items-center gap-4 overflow-hidden rounded-full border border-white/[0.08] bg-white/[0.03] px-5 py-4 backdrop-blur-2xl">
 
-                <div
-                  className="
-                    flex h-12 w-12
-                    items-center justify-center
-                    rounded-full
-                    border border-white/[0.08]
-                    bg-white/[0.03]
-                  "
-                >
+                <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.03]">
 
-                  <Mail className="h-5 w-5 text-lime-200" />
+                  <Mail className="h-4 w-4 text-lime-200" />
                 </div>
 
                 <div className="text-left">
 
-                  <p className="text-xs uppercase tracking-[0.2em] text-white/40">
+                  <p className="text-[10px] uppercase tracking-[0.18em] text-white/40">
                     Email Matera Media
                   </p>
 
                   <a
                     href="mailto:materamedia@gmail.com"
-                    className="
-                      mt-1 block
-                      text-[1rem]
-                      font-medium
-                      text-white
-                    "
+                    className="mt-1 block text-[14px] font-medium text-white"
                   >
                     materamedia@gmail.com
                   </a>
                 </div>
 
-                <div
-                  className="
-                    flex h-11 w-11
-                    items-center justify-center
-                    rounded-full
-                    bg-lime-300 text-black
-                    transition-all duration-500
-
-                    group-hover:rotate-45
-                  "
-                >
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lime-300 text-black transition-all duration-500 group-hover:rotate-45">
 
                   <ArrowRight className="h-4 w-4" />
                 </div>

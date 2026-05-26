@@ -11,13 +11,7 @@ import {
 
 const SaasCalendly = () => {
   return (
-    <section id="calendly" className="
-        relative 
-        
-        py-24 text-white
-
-        md:py-32
-      "
+    <section id="calendly" className="relative py-16 sm:py-20 text-white md:py-20 sm:py-16 sm:py-20"
     >
 
       {/* BACKGROUND */}
@@ -27,11 +21,7 @@ const SaasCalendly = () => {
 
         {/* TOP ATMOSPHERE */}
         <div
-          className="
-            absolute left-1/2 top-[-30%]
-            h-[1200px] w-[2600px]
-            -translate-x-1/2
-          "
+          className="absolute left-1/2 top-[-30%] h-[1200px] w-[2600px] -translate-x-1/2"
           style={{
             background: `
               radial-gradient(
@@ -48,10 +38,7 @@ const SaasCalendly = () => {
 
         {/* LEFT GLOW */}
         <div
-          className="
-            absolute left-[-10%] top-[20%]
-            h-[700px] w-[700px]
-          "
+          className="absolute left-[-10%] top-[20%] h-[700px] w-[700px]"
           style={{
             background:
               "radial-gradient(circle, rgba(6,182,212,0.10), transparent 72%)",
@@ -61,10 +48,7 @@ const SaasCalendly = () => {
 
         {/* RIGHT GLOW */}
         <div
-          className="
-            absolute right-[-10%] top-[8%]
-            h-[700px] w-[700px]
-          "
+          className="absolute right-[-10%] top-[8%] h-[700px] w-[700px]"
           style={{
             background:
               "radial-gradient(circle, rgba(168,85,247,0.12), transparent 72%)",
@@ -116,30 +100,13 @@ const SaasCalendly = () => {
 
           {/* HEADING */}
           <h2
-            className="
-              mx-auto max-w-5xl
-              text-[3rem]
-              font-semibold
-              leading-[0.94]
-              tracking-[-0.07em]
-
-              sm:text-[5rem]
-
-              lg:text-[6.5rem]
-            "
+            className="mx-auto max-w-5xl text-[3rem] font-semibold leading-[0.94] tracking-[-0.07em] sm:text-[3rem] lg:text-[2.5rem]"
           >
             Let’s Scale Your
             <br />
 
             <span
-              className="
-                bg-gradient-to-b
-                from-white
-                via-blue-100
-                to-violet-200
-                bg-clip-text
-                text-transparent
-              "
+              className="bg-gradient-to-b from-white via-blue-100 to-violet-200 bg-clip-text text-transparent"
             >
               SaaS With Video.
             </span>
@@ -147,14 +114,7 @@ const SaasCalendly = () => {
 
           {/* TEXT */}
           <p
-            className="
-              mx-auto mt-7 max-w-2xl
-              text-[15px]
-              leading-[1.9]
-              text-white/45
-
-              sm:text-[17px]
-            "
+            className="mx-auto mt-7 max-w-2xl text-[15px] leading-[1.9] text-white/45 sm:text-[17px]"
           >
             Book a premium strategy call and let’s
             build a SaaS video system designed to
@@ -172,22 +132,12 @@ const SaasCalendly = () => {
             ease: [0.16, 1, 0.3, 1],
           }}
           viewport={{ once: true }}
-          className="
-            relative overflow-hidden
-            rounded-[36px]
-            border border-white/[0.06]
-            bg-white/[0.03]
-            backdrop-blur-3xl
-          "
+          className="relative overflow-hidden rounded-[36px] border border-white/[0.03] bg-white/[0.03] backdrop-blur-2xl"
         >
 
           {/* INNER LIGHT */}
           <div
-            className="
-              absolute left-1/2 top-0
-              h-[280px] w-[500px]
-              -translate-x-1/2
-            "
+            className="absolute left-1/2 top-0 h-[280px] w-[500px] -translate-x-1/2"
             style={{
               background: `
                 radial-gradient(
@@ -201,13 +151,7 @@ const SaasCalendly = () => {
           />
 
           <div
-            className="
-              grid items-start gap-10
-              p-5
-
-              lg:grid-cols-[0.75fr_1.25fr]
-              lg:p-7
-            "
+            className="grid items-start gap-10 p-5 lg:grid-cols-[0.75fr_1.25fr] lg:p-7"
           >
 
             {/* LEFT */}
@@ -215,21 +159,12 @@ const SaasCalendly = () => {
 
               {/* MINI CARD */}
               <div
-                className="
-                  relative overflow-hidden
-                  rounded-[28px]
-                  border border-white/[0.06]
-                  bg-black/30
-                  p-6
-                "
+                className="relative overflow-hidden rounded-[28px] border border-white/[0.03] bg-black/30 p-6"
               >
 
                 {/* GLOW */}
                 <div
-                  className="
-                    absolute right-[-20%] top-[-20%]
-                    h-[240px] w-[240px]
-                  "
+                  className="absolute right-[-20%] top-[-20%] h-[240px] w-[240px]"
                   style={{
                     background: `
                       radial-gradient(
@@ -246,13 +181,7 @@ const SaasCalendly = () => {
 
                   {/* ICON */}
                   <div
-                    className="
-                      flex h-14 w-14
-                      items-center justify-center
-                      rounded-[18px]
-                      border border-white/[0.08]
-                      bg-white/[0.03]
-                    "
+                    className="flex h-14 w-14 items-center justify-center rounded-[18px] border border-white/[0.08] bg-white/[0.03]"
                   >
 
                     <CalendarDays className="h-6 w-6 text-violet-200" />
@@ -260,24 +189,14 @@ const SaasCalendly = () => {
 
                   {/* TITLE */}
                   <h3
-                    className="
-                      mt-6
-                      text-[1.7rem]
-                      font-semibold
-                      tracking-[-0.05em]
-                    "
+                    className="mt-6 text-[1.7rem] font-semibold tracking-[-0.05em]"
                   >
                     Strategy Session
                   </h3>
 
                   {/* TEXT */}
                   <p
-                    className="
-                      mt-4
-                      text-[14px]
-                      leading-[1.9]
-                      text-white/45
-                    "
+                    className="mt-4 text-[14px] leading-[1.9] text-white/45"
                   >
                     We’ll review your SaaS product,
                     growth goals, messaging, and
@@ -291,13 +210,7 @@ const SaasCalendly = () => {
                     <div className="flex items-center gap-3">
 
                       <div
-                        className="
-                          flex h-10 w-10
-                          items-center justify-center
-                          rounded-full
-                          border border-white/[0.08]
-                          bg-white/[0.03]
-                        "
+                        className="flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.03]"
                       >
 
                         <Clock3 className="h-4 w-4 text-cyan-200" />
@@ -318,13 +231,7 @@ const SaasCalendly = () => {
                     <div className="flex items-center gap-3">
 
                       <div
-                        className="
-                          flex h-10 w-10
-                          items-center justify-center
-                          rounded-full
-                          border border-white/[0.08]
-                          bg-white/[0.03]
-                        "
+                        className="flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.03]"
                       >
 
                         <Sparkles className="h-4 w-4 text-violet-200" />
@@ -344,55 +251,22 @@ const SaasCalendly = () => {
 
                   {/* BUTTON */}
                   <button
-                    className="
-                      group/button relative mt-8
-                      flex w-full items-center
-                      justify-between overflow-hidden
-                      rounded-[20px]
-                      border border-violet-400/20
-                      bg-violet-500 px-5 py-4
-                      text-white
-                      transition-all duration-500
-                    "
+                    className="group/button relative mt-8 flex w-full items-center justify-between overflow-hidden rounded-[20px] border border-violet-400/20 bg-violet-500 px-5 py-4 text-white transition-all duration-500"
                   >
 
                     {/* SHINE */}
                     <div
-                      className="
-                        absolute inset-0
-                        bg-gradient-to-r
-                        from-transparent
-                        via-white/[0.08]
-                        to-transparent
-                        opacity-0 transition-all duration-700
-
-                        group-hover/button:opacity-100
-                      "
+                      className="absolute inset-0 bg-gradient-to-r from-transparent via-white/[0.08] to-transparent opacity-0 transition-all duration-700 group-hover/button:opacity-100"
                     />
 
                     <span
-                      className="
-                        relative z-10
-                        text-[12px]
-                        font-semibold
-                        uppercase
-                        tracking-[0.20em]
-                      "
+                      className="relative z-10 text-[12px] font-semibold uppercase tracking-[0.20em]"
                     >
                       Book Now
                     </span>
 
                     <div
-                      className="
-                        relative z-10 flex h-10 w-10
-                        items-center justify-center
-                        rounded-full
-                        border border-white/10
-                        bg-white/10
-                        transition-all duration-500
-
-                        group-hover/button:rotate-45
-                      "
+                      className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.04] bg-white/10 transition-all duration-500 group-hover/button:rotate-45"
                     >
 
                       <ArrowRight className="h-4 w-4" />
@@ -404,22 +278,12 @@ const SaasCalendly = () => {
 
             {/* RIGHT */}
             <div
-              className="
-                overflow-hidden
-                rounded-[30px]
-                border border-white/[0.06]
-                bg-black/40
-              "
+              className="overflow-hidden rounded-[30px] border border-white/[0.03] bg-black/40"
             >
 
               {/* TOP BAR */}
               <div
-                className="
-                  flex items-center justify-between
-                  border-b border-white/[0.06]
-                  bg-white/[0.02]
-                  px-5 py-4
-                "
+                className="flex items-center justify-between border-b border-white/[0.03] bg-white/[0.02] px-5 py-4"
               >
 
                 <div className="flex items-center gap-2">
@@ -430,25 +294,13 @@ const SaasCalendly = () => {
                 </div>
 
                 <div
-                  className="
-                    inline-flex items-center gap-2
-                    rounded-full
-                    border border-white/[0.08]
-                    bg-white/[0.03]
-                    px-3 py-2
-                  "
+                  className="inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-2"
                 >
 
                   <Sparkles className="h-3.5 w-3.5 text-violet-200" />
 
                   <span
-                    className="
-                      text-[10px]
-                      font-semibold
-                      uppercase
-                      tracking-[0.18em]
-                      text-white/70
-                    "
+                    className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/70"
                   >
                     Calendly
                   </span>
