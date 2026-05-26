@@ -33,20 +33,12 @@ const process = [
 
 const AdProcess = () => {
   return (
-    <section
-      className="
-        relative 
-        
-        py-24 text-white
-
-        md:py-32
-      "
-    >
+    <section className="relative overflow-hidden py-18 text-white md:py-22">
 
       {/* BACKGROUND */}
       <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-        
+
 
         {/* HUGE GREEN ATMOSPHERE */}
         <div
@@ -111,19 +103,13 @@ const AdProcess = () => {
           }}
         />
 
-        
+
       </div>
 
       {/* CONTENT */}
-      <div className="relative z-20 mx-auto max-w-[1650px] px-5 sm:px-8 lg:px-10">
+      <div className="relative z-20 mx-auto max-w-[1450px] px-5 sm:px-8 lg:px-10">
 
-        <div
-          className="
-            grid items-center gap-16
-
-            lg:grid-cols-[0.95fr_1.05fr]
-          "
-        >
+        <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1fr]">
 
           {/* LEFT */}
           <div>
@@ -131,11 +117,11 @@ const AdProcess = () => {
             {/* LABEL */}
             <div
               className="
-                mb-6 inline-flex items-center gap-2
+                mb-4 inline-flex items-center gap-2
                 rounded-full
                 border border-lime-300/10
                 bg-lime-300/5
-                px-4 py-2
+                px-3 py-1.5
                 backdrop-blur-xl
               "
             >
@@ -156,42 +142,39 @@ const AdProcess = () => {
             </div>
 
             {/* HEADING */}
-<h2
-  className="
+            <h2
+              className="
     max-w-3xl
-    text-[2.8rem]
+    text-[2.1rem]
     font-semibold
     leading-[1.02]
     tracking-[-0.045em]
 
-    sm:text-[4.6rem]
+    sm:text-[3.2rem]
     sm:leading-[1]
 
-    lg:text-[5.5rem]
+    lg:text-[4.2rem]
     lg:leading-[0.98]
   "
->
-  The Workflow
-</h2>
+            >
+              The Workflow
+            </h2>
 
 
             {/* STEPS */}
-            <div className="mt-16 space-y-10">
+            <div className="mt-10 space-y-6">
 
               {process.map((item, index) => (
                 <div
                   key={index}
-                  className="
-                    group flex gap-5
-                  "
-                >
+                  className="group flex gap-4">
 
                   {/* NUMBER */}
                   <div
                     className="
-                      relative flex h-14 w-14 shrink-0
+                      relative flex h-11 w-11 shrink-0
                       items-center justify-center
-                      rounded-2xl
+                      rounded-xl
                       border border-lime-300/10
                       bg-lime-300/5
                       backdrop-blur-3xl
@@ -210,7 +193,7 @@ const AdProcess = () => {
                     <span
                       className="
                         relative z-10
-                        text-[1rem]
+                        text-[13px]
                         font-semibold
                         text-lime-200
                       "
@@ -224,7 +207,7 @@ const AdProcess = () => {
 
                     <h3
                       className="
-                        text-[1.7rem]
+                        text-[1.2rem]
                         font-semibold
                         tracking-[-0.04em]
                       "
@@ -234,9 +217,7 @@ const AdProcess = () => {
 
                     <p
                       className="
-                        mt-3 max-w-xl
-                        text-[15px]
-                        leading-[1.9]
+                        mt-2 max-w-lg text-[13px] leading-[1.75]
                         text-white/45
                       "
                     >
@@ -249,24 +230,24 @@ const AdProcess = () => {
           </div>
 
           {/* RIGHT VISUAL */}
-<div
-  className="
+          <div
+            className="
     relative flex items-center justify-center
     py-10
-    min-h-[760px]
+    min-h-[520px]
   "
->
+          >
 
-  {/* MASSIVE ATMOSPHERE */}
-  <div
-    className="
+            {/* MASSIVE ATMOSPHERE */}
+            <div
+              className="
       absolute left-1/2 top-1/2
-      h-[900px] w-[900px]
+      h-[620px] w-[620px]
       -translate-x-1/2 -translate-y-1/2
       rounded-full
     "
-    style={{
-      background: `
+              style={{
+                background: `
         radial-gradient(
           circle,
           rgba(190,242,100,0.22) 0%,
@@ -275,48 +256,48 @@ const AdProcess = () => {
           transparent 72%
         )
       `,
-      filter: "blur(50px)",
-    }}
-  />
+                filter: "blur(50px)",
+              }}
+            />
 
-  {/* HUGE OUTER RING */}
-  <div
-    className="
+            {/* HUGE OUTER RING */}
+            <div
+              className="
       absolute left-1/2 top-1/2
-      h-[680px] w-[680px]
+      h-[480px] w-[480px]
       -translate-x-1/2 -translate-y-1/2
       rounded-full
       border border-lime-300/[0.05]
     "
-  />
+            />
 
-  {/* SECOND RING */}
-  <div
-    className="
-      absolute left-1/2 top-1/2
-      h-[520px] w-[520px]
-      -translate-x-1/2 -translate-y-1/2
-      rounded-full
-      border border-white/[0.04]
-    "
-  />
-
-  {/* THIRD RING */}
-  <div
-    className="
+            {/* SECOND RING */}
+            <div
+              className="
       absolute left-1/2 top-1/2
       h-[360px] w-[360px]
       -translate-x-1/2 -translate-y-1/2
       rounded-full
+      border border-white/[0.04]
+    "
+            />
+
+            {/* THIRD RING */}
+            <div
+              className="
+      absolute left-1/2 top-1/2
+      h-[240px] w-[240px]
+      -translate-x-1/2 -translate-y-1/2
+      rounded-full
       border border-lime-300/[0.05]
     "
-  />
+            />
 
-  {/* CENTER CORE */}
-  <div
-    className="
+            {/* CENTER CORE */}
+            <div
+              className="
       absolute left-1/2 top-1/2 z-30
-      flex h-[170px] w-[170px]
+      flex h-[120px] w-[120px]
       -translate-x-1/2 -translate-y-1/2
       items-center justify-center
       rounded-full
@@ -325,53 +306,53 @@ const AdProcess = () => {
       backdrop-blur-3xl
       shadow-[0_0_120px_rgba(190,242,100,0.18)]
     "
-  >
+            >
 
-    {/* INNER GLOW */}
-    <div
-      className="
+              {/* INNER GLOW */}
+              <div
+                className="
         absolute inset-0 rounded-full
         bg-lime-300/10 blur-3xl
       "
-    />
+              />
 
-    {/* CORE DISC */}
-    <div
-      className="
-        relative flex h-28 w-28
+              {/* CORE DISC */}
+              <div
+                className="
+        relative flex h-20 w-20
         items-center justify-center
         rounded-full
         bg-lime-300
         shadow-[0_0_60px_rgba(190,242,100,0.45)]
       "
-    >
+              >
 
-      <div
-        className="
+                <div
+                  className="
           absolute inset-0 rounded-full
           bg-lime-300 blur-2xl opacity-50
         "
-      />
+                />
 
-      <Sparkles className="relative z-10 h-10 w-10 text-black" />
-    </div>
-  </div>
+                <Sparkles className="relative z-10 h-6 w-6 text-black" />
+              </div>
+            </div>
 
-  {/* MAIN ROTATION SYSTEM */}
-  <div
-    className="
+            {/* MAIN ROTATION SYSTEM */}
+            <div
+              className="
       absolute left-1/2 top-1/2
-      h-[520px] w-[520px]
+      h-[360px] w-[360px]
       -translate-x-1/2 -translate-y-1/2
       animate-[spin_24s_linear_infinite]
     "
-  >
+            >
 
-    {/* DISC 1 */}
-    <div
-      className="
+              {/* DISC 1 */}
+              <div
+                className="
         absolute left-1/2 top-0
-        h-[140px] w-[140px]
+        h-[95px] w-[95px]
         -translate-x-1/2
         rounded-full
         border border-lime-300/10
@@ -379,25 +360,25 @@ const AdProcess = () => {
         backdrop-blur-3xl
         shadow-[0_0_80px_rgba(190,242,100,0.14)]
       "
-    >
+              >
 
-      <div
-        className="
+                <div
+                  className="
           absolute inset-0 rounded-full
           bg-lime-300/10 blur-2xl
         "
-      />
+                />
 
-      <div className="flex h-full items-center justify-center">
-        <Target className="h-12 w-12 text-lime-200" />
-      </div>
-    </div>
+                <div className="flex h-full items-center justify-center">
+                  <Target className="h-8 w-8 text-lime-200" />
+                </div>
+              </div>
 
-    {/* DISC 2 */}
-    <div
-      className="
+              {/* DISC 2 */}
+              <div
+                className="
         absolute bottom-0 left-1/2
-        h-[160px] w-[160px]
+        h-[110px] w-[110px]
         -translate-x-1/2
         rounded-full
         border border-lime-300/10
@@ -405,25 +386,25 @@ const AdProcess = () => {
         backdrop-blur-3xl
         shadow-[0_0_90px_rgba(190,242,100,0.16)]
       "
-    >
+              >
 
-      <div
-        className="
+                <div
+                  className="
           absolute inset-0 rounded-full
           bg-lime-300/10 blur-2xl
         "
-      />
+                />
 
-      <div className="flex h-full items-center justify-center">
-        <BarChart3 className="h-14 w-14 text-lime-200" />
-      </div>
-    </div>
+                <div className="flex h-full items-center justify-center">
+                  <BarChart3 className="h-9 w-9 text-lime-200" />
+                </div>
+              </div>
 
-    {/* DISC 3 */}
-    <div
-      className="
+              {/* DISC 3 */}
+              <div
+                className="
         absolute left-0 top-1/2
-        h-[120px] w-[120px]
+        h-[82px] w-[82px]
         -translate-y-1/2
         rounded-full
         border border-lime-300/10
@@ -431,25 +412,25 @@ const AdProcess = () => {
         backdrop-blur-3xl
         shadow-[0_0_70px_rgba(190,242,100,0.14)]
       "
-    >
+              >
 
-      <div
-        className="
+                <div
+                  className="
           absolute inset-0 rounded-full
           bg-lime-300/10 blur-2xl
         "
-      />
+                />
 
-      <div className="flex h-full items-center justify-center">
-        <ShieldCheck className="h-10 w-10 text-lime-200" />
-      </div>
-    </div>
+                <div className="flex h-full items-center justify-center">
+                  <ShieldCheck className="h-7 w-7 text-lime-200" />
+                </div>
+              </div>
 
-    {/* DISC 4 */}
-    <div
-      className="
+              {/* DISC 4 */}
+              <div
+                className="
         absolute right-0 top-1/2
-        h-[120px] w-[120px]
+        h-[82px] w-[82px]
         -translate-y-1/2
         rounded-full
         border border-lime-300/10
@@ -457,45 +438,45 @@ const AdProcess = () => {
         backdrop-blur-3xl
         shadow-[0_0_70px_rgba(190,242,100,0.14)]
       "
-    >
+              >
 
-      <div
-        className="
+                <div
+                  className="
           absolute inset-0 rounded-full
           bg-lime-300/10 blur-2xl
         "
-      />
+                />
 
-      <div className="flex h-full items-center justify-center">
-        <Sparkles className="h-10 w-10 text-lime-200" />
-      </div>
-    </div>
-  </div>
+                <div className="flex h-full items-center justify-center">
+                  <Sparkles className="h-10 w-10 text-lime-200" />
+                </div>
+              </div>
+            </div>
 
-  {/* SECOND ROTATION */}
-  <div
-    className="
+            {/* SECOND ROTATION */}
+            <div
+              className="
       absolute left-1/2 top-1/2
-      h-[760px] w-[760px]
+      h-[520px] w-[520px]
       -translate-x-1/2 -translate-y-1/2
       animate-[spin_40s_linear_infinite_reverse]
     "
-  >
+            >
 
-    {/* SMALL NODE */}
-    <div
-      className="
+              {/* SMALL NODE */}
+              <div
+                className="
         absolute left-1/2 top-0
-        h-7 w-7
+        h-5 w-5
         -translate-x-1/2
         rounded-full
         bg-lime-300
         shadow-[0_0_40px_rgba(190,242,100,0.9)]
       "
-    />
+              />
 
-    <div
-      className="
+              <div
+                className="
         absolute bottom-0 left-1/2
         h-5 w-5
         -translate-x-1/2
@@ -503,21 +484,21 @@ const AdProcess = () => {
         bg-lime-300/80
         shadow-[0_0_30px_rgba(190,242,100,0.8)]
       "
-    />
+              />
 
-    <div
-      className="
+              <div
+                className="
         absolute left-0 top-1/2
-        h-6 w-6
+        h-4 w-4
         -translate-y-1/2
         rounded-full
         bg-lime-300/70
         shadow-[0_0_30px_rgba(190,242,100,0.8)]
       "
-    />
+              />
 
-    <div
-      className="
+              <div
+                className="
         absolute right-0 top-1/2
         h-6 w-6
         -translate-y-1/2
@@ -525,9 +506,9 @@ const AdProcess = () => {
         bg-lime-300/70
         shadow-[0_0_30px_rgba(190,242,100,0.8)]
       "
-    />
-  </div>
-</div>
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

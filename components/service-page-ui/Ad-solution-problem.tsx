@@ -48,20 +48,12 @@ const solutions = [
 
 const Adsolutionproblem = () => {
   return (
-    <section
-      className="
-        relative 
-        
-        py-24 text-white
-
-        md:py-32
-      "
-    >
+    <section className="relative overflow-hidden py-20 text-white md:py-24">
 
       {/* BACKGROUND */}
       <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
-        
+
 
         {/* MASSIVE CENTER AURORA */}
         <div
@@ -203,14 +195,14 @@ const Adsolutionproblem = () => {
           }}
         />
 
-        
+
       </div>
 
       {/* CONTENT */}
-      <div className="relative z-20 mx-auto max-w-[1650px] px-5 sm:px-8 lg:px-10">
+      <div className="relative z-20 mx-auto max-w-[1450px] px-5 sm:px-8 lg:px-10">
 
         {/* HEADING */}
-        <div className="mb-20 text-center">
+        <div className="mb-14 text-center">
 
           <div
             className="
@@ -237,59 +229,32 @@ const Adsolutionproblem = () => {
             </span>
           </div>
 
-          <h2
-            className="
-              mx-auto max-w-5xl
-              text-[2.8rem]
-              font-semibold
-              leading-[0.94]
-              tracking-[-0.07em]
-
-              sm:text-[4.7rem]
-
-              lg:text-[6rem]
-            "
-          >
+          <h2 className="mx-auto max-w-4xl text-[2.2rem] font-semibold leading-[0.95] tracking-[-0.05em] sm:text-[3.5rem] lg:text-[4.6rem]">
             Most Brands Don’t
             <br />
             Need Better Media Buying.
           </h2>
 
-          <p
-            className="
-              mx-auto mt-6 max-w-3xl
-              text-[15px]
-              leading-[1.9]
-              text-white/45
-
-              sm:text-[17px]
-            "
-          >
+          <p className="mx-auto mt-4 max-w-2xl text-[14px] leading-[1.8] text-white/50 sm:text-[15px]">
             They need a creative system engineered for retention,
             iteration, and scalable paid performance.
           </p>
         </div>
 
         {/* GRID */}
-        <div
-          className="
-            grid gap-8
-
-            lg:grid-cols-2
-          "
-        >
+        <div className="grid gap-5 lg:grid-cols-2">
 
           {/* PROBLEMS SIDE */}
           <div
             className="
               relative overflow-hidden
-              rounded-[42px]
+              rounded-[30px]
               border border-red-500/10
               bg-white/[0.025]
-              p-7
+              p-5
               backdrop-blur-3xl
 
-              md:p-10
+              md:p-8
             "
           >
 
@@ -312,7 +277,7 @@ const Adsolutionproblem = () => {
               className="
                 absolute inset-0
                 flex items-center justify-center
-                text-[180px]
+                text-[120px]
                 font-black
                 tracking-[-0.1em]
                 text-red-500/[0.03]
@@ -352,13 +317,13 @@ const Adsolutionproblem = () => {
               {/* TITLE */}
               <h3
                 className="
-                  mb-10
-                  text-[2.2rem]
+                  mb-8
+                  text-[1.9rem]
                   font-semibold
                   leading-[0.98]
                   tracking-[-0.06em]
 
-                  sm:text-[3.4rem]
+                  sm:text-[2.8rem]
                 "
               >
                 Why Most
@@ -367,7 +332,7 @@ const Adsolutionproblem = () => {
               </h3>
 
               {/* CARDS */}
-              <div className="space-y-5">
+              <div className="space-y-4">
 
                 {problems.map((item, index) => {
                   const Icon = item.icon;
@@ -377,7 +342,7 @@ const Adsolutionproblem = () => {
                       key={index}
                       className="
                         group relative overflow-hidden
-                        rounded-[28px]
+                        rounded-[24px]
                         border border-white/[0.06]
                         bg-black/30
                         p-6
@@ -402,12 +367,12 @@ const Adsolutionproblem = () => {
                         }}
                       />
 
-                      <div className="relative z-10 flex gap-5">
+                      <div className="relative z-10 flex gap-4">
 
                         {/* ICON */}
                         <div
                           className="
-                            relative flex h-14 w-14 shrink-0
+                            relative flex h-12 w-12 shrink-0
                             items-center justify-center
                             rounded-2xl
                             border border-red-400/10
@@ -422,7 +387,7 @@ const Adsolutionproblem = () => {
                             "
                           />
 
-                          <Icon className="relative z-10 h-6 w-6 text-red-200 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110" />
+                          <Icon className="relative z-10 h-5 w-5 text-red-200 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110" />
                         </div>
 
                         {/* TEXT */}
@@ -430,7 +395,7 @@ const Adsolutionproblem = () => {
 
                           <h4
                             className="
-                              text-[1.15rem]
+                              text-[1rem]
                               font-semibold
                               tracking-[-0.03em]
                             "
@@ -529,13 +494,13 @@ const Adsolutionproblem = () => {
               {/* TITLE */}
               <h3
                 className="
-                  mb-10
-                  text-[2.2rem]
+                  mb-8
+                  text-[1.9rem]
                   font-semibold
                   leading-[0.98]
                   tracking-[-0.06em]
 
-                  sm:text-[3.4rem]
+                  sm:text-[2.8rem]
                 "
               >
                 How We Build
@@ -554,7 +519,7 @@ const Adsolutionproblem = () => {
                       key={index}
                       className="
                         group relative overflow-hidden
-                        rounded-[28px]
+                        rounded-[24px]
                         border border-white/[0.06]
                         bg-black/30
                         p-6
@@ -617,8 +582,7 @@ const Adsolutionproblem = () => {
 
                           <p
                             className="
-                              mt-2 text-sm
-                              leading-[1.85]
+                              mt-2 text-[13px] leading-[1.75]
                               text-white/45
                             "
                           >

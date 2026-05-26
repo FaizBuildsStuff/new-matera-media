@@ -37,17 +37,11 @@ const stats = [
 const AdResults = () => {
     return (
         <section
-            className="
-        relative 
-        
-        py-20 text-white
-
-        md:py-28
-      "
+            className="relative overflow-hidden py-16 text-white md:py-20"
         >
 
             {/* BACKGROUND */}
-      <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
+            <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
 
                 {/* BASE */}
                 <div className="absolute inset-0 bg-black" />
@@ -108,34 +102,18 @@ const AdResults = () => {
             </div>
 
             {/* CONTENT */}
-            <div className="relative z-20 mx-auto max-w-[1650px] px-5 sm:px-8 lg:px-10">
+            <div className="relative z-20 mx-auto max-w-[1450px] px-5 sm:px-8 lg:px-10">
 
                 {/* TOP */}
                 <div
-                    className="
-            mb-14 flex flex-col gap-8
-
-            lg:flex-row
-            lg:items-start
-            lg:justify-between
-          "
+                    className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between"
                 >
 
                     {/* LEFT */}
                     <div className="max-w-4xl">
 
                         <h2
-                            className="
-                max-w-4xl
-                text-[2.3rem]
-                font-semibold
-                leading-[1]
-                tracking-[-0.06em]
-
-                sm:text-[4rem]
-
-                lg:text-[5rem]
-              "
+                            className="max-w-3xl text-[2rem] font-semibold leading-[0.98] tracking-[-0.05em] sm:text-[3rem] lg:text-[4rem]"
                         >
                             Over Many Years Of Expertise In
                             <br />
@@ -147,7 +125,7 @@ const AdResults = () => {
                                 {/* CENTER ICON */}
                                 <span
                                     className="
-                    relative flex h-14 w-14
+                    relative flex h-11 w-11
                     items-center justify-center
                     rounded-full
                     border border-lime-300/20
@@ -163,7 +141,7 @@ const AdResults = () => {
                     "
                                     />
 
-                                    <Orbit className="h-6 w-6 text-black" />
+                                    <Orbit className="h-4 w-4 text-black" />
                                 </span>
 
                                 Marketing
@@ -175,13 +153,7 @@ const AdResults = () => {
                     <div className="max-w-md">
 
                         <p
-                            className="
-                text-[15px]
-                leading-[1.9]
-                text-white/70
-
-                sm:text-[17px]
-              "
+                            className="text-[14px] leading-[1.8] text-white/60 sm:text-[15px]"
                         >
                             Active campaigns across multiple industries,
                             helping brands scale revenue through
@@ -194,7 +166,7 @@ const AdResults = () => {
                 <div
                     className="
             relative z-30
-            mb-[-22px]
+            mb-[-16px]
             ml-0 w-fit
 
             md:ml-8
@@ -213,8 +185,8 @@ const AdResults = () => {
 
                         <div
                             className="
-                px-7 py-4
-                text-sm
+                px-5 py-3
+                text-[13px]
                 font-medium
                 text-white/80
               "
@@ -224,7 +196,7 @@ const AdResults = () => {
 
                         <div
                             className="
-                flex h-[58px] w-[58px]
+                flex h-[48px] w-[48px]
                 items-center justify-center
                 border-l border-white/[0.06]
                 bg-lime-300/10
@@ -233,14 +205,14 @@ const AdResults = () => {
 
                             <div
                                 className="
-                  flex h-10 w-10
+                  flex h-8 w-8
                   items-center justify-center
                   rounded-full
                   bg-lime-300
                   shadow-[0_0_30px_rgba(190,242,100,0.45)]
                 "
                             >
-                                <Orbit className="h-5 w-5 text-black" />
+                                <Orbit className="h-4 w-4 text-black" />
                             </div>
                         </div>
                     </div>
@@ -249,7 +221,7 @@ const AdResults = () => {
                 {/* CARDS */}
                 <div
                     className="
-            grid gap-6
+            grid gap-4
 
             md:grid-cols-2
             xl:grid-cols-3
@@ -264,10 +236,10 @@ const AdResults = () => {
                                 key={index}
                                 className="
                   group relative overflow-hidden
-                  rounded-[30px]
+                  rounded-[24px]
                   border border-white/[0.06]
                   bg-[#080808]
-                  px-8 pb-10 pt-7
+                  px-6 pb-7 pt-6
                   transition-all duration-500
 
                   hover:border-lime-300/15
@@ -315,7 +287,7 @@ const AdResults = () => {
                                 <div
                                     className="
                     relative z-10
-                    mb-16 flex h-14 w-14
+                    mb-10 flex h-11 w-11
                     items-center justify-center
                     rounded-full
                     border border-lime-300/10
@@ -330,19 +302,19 @@ const AdResults = () => {
                     "
                                     />
 
-                                    <Icon className="relative z-10 h-6 w-6 text-lime-200" />
+                                    <Icon className="relative z-10 h-4 w-4 text-lime-200" />
                                 </div>
 
                                 {/* VALUE */}
                                 <h3
                                     className="
                     relative z-10
-                    text-[3.4rem]
+                    text-[2.5rem]
                     font-semibold
                     leading-none
                     tracking-[-0.08em]
 
-                    sm:text-[4.4rem]
+                    sm:text-[3.2rem]
                   "
                                 >
                                     {item.value}
@@ -352,8 +324,8 @@ const AdResults = () => {
                                 <p
                                     className="
                     relative z-10
-                    mt-7
-                    text-[1.2rem]
+                    mt-4
+                    text-[1rem]
                     font-medium
                     tracking-[-0.03em]
                     text-white/90

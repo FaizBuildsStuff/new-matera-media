@@ -20,15 +20,7 @@ const features = [
 
 const AdPricing = () => {
   return (
-    <section
-      className="
-        relative 
-        
-        py-24 text-white
-
-        md:py-32
-      "
-    >
+    <section className="relative overflow-hidden py-18 text-white md:py-22">
 
       {/* BACKGROUND */}
       <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">
@@ -214,19 +206,19 @@ const AdPricing = () => {
 </div>
 
       {/* CONTENT */}
-      <div className="relative z-20 mx-auto max-w-[1650px] px-5 sm:px-8 lg:px-10">
+      <div className="relative z-20 mx-auto max-w-[1450px] px-5 sm:px-8 lg:px-10">
 
         {/* TOP */}
-        <div className="mb-20 text-center">
+        <div className="mb-12 text-center">
 
           {/* LABEL */}
           <div
             className="
-              mb-6 inline-flex items-center gap-2
+              mb-4 inline-flex items-center gap-2
               rounded-full
               border border-lime-300/10
               bg-lime-300/5
-              px-4 py-2
+              px-3 py-1.5
               backdrop-blur-xl
             "
           >
@@ -250,14 +242,14 @@ const AdPricing = () => {
           <h2
             className="
               mx-auto max-w-5xl
-              text-[2.8rem]
+              text-[2.1rem]
               font-semibold
               leading-[1]
               tracking-[-0.055em]
 
-              sm:text-[4.8rem]
+              sm:text-[3.3rem]
 
-              lg:text-[6rem]
+              lg:text-[4.4rem]
             "
           >
             Plans Built for
@@ -268,9 +260,7 @@ const AdPricing = () => {
           {/* TEXT */}
           <p
             className="
-              mx-auto mt-7 max-w-3xl
-              text-[15px]
-              leading-[1.9]
+              mx-auto mt-4 max-w-2xl text-[14px] leading-[1.8]
               text-white/45
 
               sm:text-[17px]
@@ -282,13 +272,13 @@ const AdPricing = () => {
         </div>
 
         {/* PRICING CARD */}
-        <div className="relative mx-auto max-w-[1200px]">
+        <div className="relative mx-auto max-w-[980px]">
 
           {/* MASSIVE GLOW */}
           <div
             className="
               absolute left-1/2 top-1/2
-              h-[500px] w-[900px]
+              h-[320px] w-[620px]
               -translate-x-1/2 -translate-y-1/2
             "
             style={{
@@ -307,7 +297,7 @@ const AdPricing = () => {
           <div
             className="
               relative overflow-hidden
-              rounded-[42px]
+              rounded-[28px]
               border border-white/[0.06]
               bg-white/[0.03]
               backdrop-blur-3xl
@@ -336,13 +326,13 @@ const AdPricing = () => {
               className="
                 absolute left-1/2 top-1/2
                 -translate-x-1/2 -translate-y-1/2
-                text-[180px]
+                text-[120px]
                 font-black
                 tracking-[-0.1em]
                 text-white/[0.02]
                 select-none
 
-                md:text-[260px]
+                md:text-[180px]
               "
             >
               SCALE
@@ -351,11 +341,11 @@ const AdPricing = () => {
             <div
               className="
                 relative z-20
-                grid gap-12
-                p-8
+                grid gap-6
+                p-6
 
                 lg:grid-cols-[0.95fr_1.05fr]
-                lg:p-14
+                lg:p-8
               "
             >
 
@@ -369,21 +359,21 @@ const AdPricing = () => {
                     rounded-full
                     border border-lime-300/10
                     bg-lime-300/5
-                    px-5 py-3
+                    px-4 py-2
                     backdrop-blur-xl
                   "
                 >
 
                   <div
                     className="
-                      flex h-10 w-10
+                      flex h-8 w-8
                       items-center justify-center
                       rounded-full
                       bg-lime-300
                       shadow-[0_0_30px_rgba(190,242,100,0.45)]
                     "
                   >
-                    <Sparkles className="h-5 w-5 text-black" />
+                    <Sparkles className="h-4 w-4 text-black" />
                   </div>
 
                   <span
@@ -402,13 +392,13 @@ const AdPricing = () => {
                 {/* TITLE */}
                 <h3
                   className="
-                    mt-10
-                    text-[3rem]
+                    mt-6
+                    text-[2.1rem]
                     font-semibold
                     leading-[0.92]
                     tracking-[-0.07em]
 
-                    sm:text-[5rem]
+                    sm:text-[3.3rem]
                   "
                 >
                   Winner ad
@@ -419,9 +409,7 @@ const AdPricing = () => {
                 {/* DESC */}
                 <p
                   className="
-                    mt-7 max-w-xl
-                    text-[15px]
-                    leading-[1.9]
+                    mt-4 max-w-lg text-[14px] leading-[1.8]
                     text-white/45
 
                     sm:text-[17px]
@@ -435,14 +423,13 @@ const AdPricing = () => {
                 {/* CTA */}
                 <button
                   className="
-                    group relative mt-12
+                    group relative mt-8
                     flex items-center gap-4
                     overflow-hidden
                     rounded-full
                     border border-lime-300/10
                     bg-lime-300
-                    px-7 py-4
-                    text-sm
+                    px-5 py-3 text-[12px]
                     font-semibold
                     uppercase
                     tracking-[0.14em]
@@ -461,7 +448,7 @@ const AdPricing = () => {
                   <div
                     className="
                       relative z-10
-                      flex h-10 w-10
+                      flex h-8 w-8
                       items-center justify-center
                       rounded-full
                       bg-black text-lime-300
@@ -494,13 +481,13 @@ const AdPricing = () => {
               <div
                 className="
                   relative overflow-hidden
-                  rounded-[34px]
+                  rounded-[24px]
                   border border-white/[0.06]
                   bg-black/30
-                  p-7
+                  p-5
                   backdrop-blur-3xl
 
-                  md:p-10
+                  md:p-7
                 "
               >
 
@@ -528,7 +515,7 @@ const AdPricing = () => {
 
                   <div
                     className="
-                      flex h-14 w-14
+                      flex h-11 w-11
                       items-center justify-center
                       rounded-2xl
                       border border-lime-300/10
@@ -543,14 +530,14 @@ const AdPricing = () => {
                       "
                     />
 
-                    <BadgeDollarSign className="relative z-10 h-7 w-7 text-lime-200" />
+                    <BadgeDollarSign className="relative z-10 h-5 w-5 text-lime-200" />
                   </div>
 
                   <div>
 
                     <h4
                       className="
-                        text-[1.5rem]
+                        text-[1.15rem]
                         font-semibold
                         tracking-[-0.04em]
                       "
@@ -565,17 +552,17 @@ const AdPricing = () => {
                 </div>
 
                 {/* FEATURES */}
-                <div className="mt-10 space-y-4">
+                <div className="mt-6 space-y-3">
 
                   {features.map((feature, index) => (
                     <div
                       key={index}
                       className="
                         group flex items-start gap-4
-                        rounded-2xl
+                        rounded-xl
                         border border-white/[0.04]
                         bg-white/[0.02]
-                        p-4
+                        p-3
                         transition-all duration-500
 
                         hover:border-lime-300/12
@@ -587,7 +574,7 @@ const AdPricing = () => {
                       <div
                         className="
                           relative mt-0.5
-                          flex h-9 w-9 shrink-0
+                          flex h-7 w-7 shrink-0
                           items-center justify-center
                           rounded-full
                           bg-lime-300/10
@@ -608,8 +595,7 @@ const AdPricing = () => {
 
                       <p
                         className="
-                          text-[15px]
-                          leading-[1.7]
+                          text-[13px] leading-[1.6]
                           text-white/75
                         "
                       >
@@ -624,7 +610,7 @@ const AdPricing = () => {
             {/* EDGE LIGHT */}
             <div
               className="
-                absolute inset-0 rounded-[42px]
+                absolute inset-0 rounded-[28px]
                 border border-white/[0.03]
               "
             />
