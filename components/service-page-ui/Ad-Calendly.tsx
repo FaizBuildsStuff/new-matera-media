@@ -13,7 +13,7 @@ const AdCalendly = () => {
  return (
  <section
  id="calendly"
- className="relative px-6 py-16 text-white sm:py-20 lg:py-24"
+ className="relative px-6 py-16 text-white sm:py-20 lg:py-24 overflow-x-clip"
  >
  {/* BACKGROUND */}
  <div className="absolute inset-0 pointer-events-none">

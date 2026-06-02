@@ -39,7 +39,6 @@ const plans = [
       "Scripting & Creative Direction",
       "Storyboarding",
       "Voiceover Included",
-      "Interactive Product Tours",
     ],
     popular: false,
   },

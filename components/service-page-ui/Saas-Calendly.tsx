@@ -11,7 +11,7 @@ import {
 
 const SaasCalendly = () => {
  return (
- <section id="calendly" className="relative py-16 sm:py-20 text-white md:py-20 sm:py-16 sm:py-20"
+ <section id="calendly" className="relative py-16 sm:py-20 text-white md:py-20 sm:py-16 sm:py-20 overflow-x-clip"
  >
 
  {/* BACKGROUND */}

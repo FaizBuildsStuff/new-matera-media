@@ -80,7 +80,7 @@ const AdHero = () => {
  }, []);
 
  return (
- <section ref={containerRef} className="relative min-h-[92vh] text-white selection:bg-lime-500/30">
+ <section ref={containerRef} className="relative min-h-[92vh] text-white selection:bg-lime-500/30 overflow-x-clip">
 
  {/* BACKGROUND ARCHITECTURE */}
  <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">

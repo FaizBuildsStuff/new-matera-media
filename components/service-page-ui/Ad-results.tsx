@@ -37,7 +37,7 @@ const stats = [
 const AdResults = () => {
  return (
  <section
- className="relative py-20 text-white lg:py-24"
+ className="relative overflow-x-clip py-20 text-white lg:py-24"
  >
 
  {/* BACKGROUND */}
@@ -104,7 +104,7 @@ const AdResults = () => {
  <div className="max-w-4xl">
 
  <h2
- className="max-w-3xl text-[2rem] font-semibold leading-[0.98] tracking-[-0.05em] sm:text-[3rem] lg:text-[4rem]"
+ className="max-w-3xl text-[1.8rem] font-semibold leading-[0.98] tracking-[-0.05em] sm:text-[2.5rem] lg:text-[3.5rem]"
  >
  Over Many Years Of Expertise In
  <br />
@@ -116,7 +116,7 @@ const AdResults = () => {
  {/* CENTER ICON */}
  <span
  className="
- relative flex h-11 w-11
+ relative flex h-8 w-8 sm:h-11 sm:w-11
  items-center justify-center
  rounded-full
  border border-lime-300/20
@@ -132,7 +132,7 @@ const AdResults = () => {
  "
  />
 
- <Orbit className="h-4 w-4 text-black" />
+ <Orbit className="h-3 w-3 sm:h-4 sm:w-4 text-black" />
  </span>
 
  Marketing

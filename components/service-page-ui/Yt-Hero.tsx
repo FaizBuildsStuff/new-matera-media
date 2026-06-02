@@ -32,7 +32,7 @@ const floatingCards = [
 
 const YtHero = () => {
  return (
- <section className="relative pt-28 text-white md:pt-36">
+ <section className="relative pt-28 text-white md:pt-36 overflow-x-clip">
 
  {/* BACKGROUND */}
  <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">

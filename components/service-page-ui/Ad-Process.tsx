@@ -33,7 +33,7 @@ const process = [
 
 const AdProcess = () => {
  return (
- <section className="relative py-18 text-white md:py-22">
+ <section className="relative py-18 text-white md:py-22 overflow-x-clip">
 
  {/* BACKGROUND */}
  <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">

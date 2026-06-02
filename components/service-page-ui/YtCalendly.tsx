@@ -12,7 +12,7 @@ const YtCalendly = () => {
  return (
  <section
  id="calendly"
- className="relative py-14 text-white sm:py-16 md:py-18"
+ className="relative py-14 text-white sm:py-16 md:py-18 overflow-x-clip"
  >
 
  {/* BACKGROUND */}

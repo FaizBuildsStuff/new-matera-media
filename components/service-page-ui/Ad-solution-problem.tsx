@@ -48,7 +48,7 @@ const solutions = [
 
 const Adsolutionproblem = () => {
  return (
- <section className="relative py-20 text-white md:py-24">
+ <section className="relative py-20 text-white md:py-24 overflow-x-clip">
 
  {/* BACKGROUND */}
  <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">

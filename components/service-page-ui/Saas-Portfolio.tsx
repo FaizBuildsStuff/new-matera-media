@@ -38,7 +38,7 @@ const projects = [
 
 const SaasPortfolio = () => {
  return (
- <section className="relative py-14 text-white sm:py-16 md:py-18">
+ <section className="relative py-14 text-white sm:py-16 md:py-18 overflow-x-clip">
 
  {/* BACKGROUND */}
  <div className="absolute inset-0 pointer-events-none transform-gpu will-change-transform">

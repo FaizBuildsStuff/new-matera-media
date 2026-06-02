@@ -316,10 +316,10 @@ const Footer = () => {
             {/* LEFT */}
             <div>
               <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.22em] text-white/45">
-                © 2026 Matera Media
+                © 2025 Matera Media
               </div>
               <div className="mt-1 text-[9px] sm:text-[11px] uppercase tracking-[0.22em] text-white/20">
-                Engineered for Attention & Revenue
+                Coolest Firm
               </div>
             </div>
 
